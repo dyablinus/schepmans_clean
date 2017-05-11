@@ -76,5 +76,5 @@
 
 </div>
 
-<!--en col8 actu-->
+<!--end col8 actu-->
 </div>

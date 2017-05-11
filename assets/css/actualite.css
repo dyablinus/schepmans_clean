@@ -3,6 +3,7 @@
 }
 .actu {
     background-color: rgb(251, 251, 251);
+    padding-left: 5%;
 }
 .titre, .fa-rss{
     font-size: 350%;

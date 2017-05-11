@@ -8,12 +8,10 @@
 	}(document, 'script', 'facebook-jssdk'));
 
 </script>
-<div class="container">
 
-<div class="row">
-    <div class="col-md-8">
- <p></p>
-    </div>
+
+
+ 
     <div class="col-md-4">
         <h1 style="color:#175079;">Facebook</h1>
               <div id="text-2" class="widget-container widget_text">
@@ -27,19 +25,11 @@
 				<!--<div class="fb-page" data-href="https://www.facebook.com/schepmansfrancoise/?fref=ts" data-width="380" data-hide-cover="false"
 				 data-show-facepile="false" data-show-posts="false"></div>-->
 				<!--Fin du bouton-->
-			</div></div>
-</div>
-<div class="row">
-    <div class="col-md-8">
-       
-    </div>
-    <div class="col-md-4">
+			</div>
+    
          <h1 style="color:#175079;">Twitter</h1>
     <div  style="overflow:scroll; height:300px; overflow-x:hidden; width:100%;" class="col-md-4">
     <a  class="twitter-timeline" href="https://twitter.com/fschepmans">Tweets by fschepmans</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-Fin de la discussion
+ 
     </div>
-</div>
-   
-    </div>
-</div>
+ </div>
