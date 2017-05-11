@@ -13,7 +13,8 @@
     <link rel="stylesheet" media="screen" href="<?= base_url ("/node_modules/bootstrap/dist/css/bootstrap.min.css") ?>">
     <link rel="stylesheet" href="<?= base_url("node_modules/font-awesome/css/font-awesome.min.css") ?>">
     <link rel="stylesheet" type="text/css" media="all" href="<?= ("/vendor/carousel/style.css")?>"/>
-    <link rel="stylesheet" href="<?= base_url("/assets/css/homepage.css")?>">    
+    <link rel="stylesheet" href="<?= base_url("/assets/css/homepage.css")?>">
+    <link rel="stylesheet" href="<?= base_url("assets/css/footer.css")?>">
     <link rel="stylesheet" href="<?= base_url("assets/css/actualite.css")?>">
     <link rel="stylesheet" href="<?= base_url("/assets/css/about.css")?>">
     <link rel="stylesheet" href="<?= base_url("assets/css/contact.css")?>">
@@ -37,9 +38,6 @@
 <?php $this->load->view('template/base/navdroit');?>
 
     
-
-
-
 
 
 

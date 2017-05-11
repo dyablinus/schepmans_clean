@@ -1,6 +1,5 @@
+<img id="bannière" src="<?= base_url("assets/images/canall.jpg ")?>">
 
-
-    <img id="bannière" src="<?= base_url("assets/images/canall.jpg")?>">
 
 
 <div id="box_about">
@@ -22,7 +21,7 @@
 
 
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <img id="portraitschepmans" src="<?= base_url("assets/images/schepmans.jpg")?>">
+                <img id="portraitschepmans" src="<?= base_url("assets/images/schepmans.jpg ")?>">
 
             </div>
         </div>
@@ -60,52 +59,42 @@
 
 
                                 <p class="p_about">En octobre 2006, suite au scrutin communal, le MR regagne les rangs de la majorité à Molenbeek-Saint-Jean.
-                                    Durant la législature 2006-2012, j'ai exercé, comme
-                                    <p class="p_about">Première échevine, trois compétences importantes telles que l’Economie, le Commerce et
-                                        la Culture française.</p>
-                                    <br>
-                                    <p class="p_about">Le 29 juin 2007, suite au décès inopiné de Jacques Simonet, je lui succède au poste de
-                                        chef de groupe MR au Parlement régional bruxellois jusqu'au 2009.</p>
-                                    <br>
-                                    <p class="p_about">Surviennent ensuite les élections communales d'octobre 2012, où le MR réalise un excellent
-                                        score et qui provoque un chamboulement: une coalition inédite,
-                                        <p class="p_about">réunissant le MR, le cdH et Ecolo/Groen se forme, mettant aussi fin à plusieurs décennies
-                                            de mayorat socialiste. Je deviens bourgmestre de Molenbeek dans le
-                                            <p class="p_about">souci d'apporter le changement promis à nos habitants. Dans mes compétences,
-                                                j'ai notamment la Police, les Affaires légales, le Personnel communal, l'Instruction
-                                                <p class="p_about">publique francophone, la Petite enfance, les Crèches francophones, les Cultes
-                                                    et laïcité, l'Egalité des chances, la Culture française, les Bibliothèques
-                                                    francophones,
-                                                    <p class="p_about">les Festivités, les Monuments.</p>
-                                                    <br>
-                                                    <p class="p_about">Dans la foulée de ce nouveau défi, je quitte le Parlement bruxellois
-                                                        pour rejoindre, à l'issue des élections fédérales du 25 mai 2014,
-                                                        la Chambre des Représentants
-                                                        <p class="p_about">où je suis élue députée et vice-Présidente du Parlement.</p>
-                                                        <br>
-                                                        <p class="p_about">Au travers de toutes mes responsabilités, la promotion de la citoyenneté
-                                                            et la participation sont l’épine dorsale de mon engagement. Plus
-                                                            précisément, via la Région
-                                                            <p class="p_about">et désormais le niveau fédéral, je me consacre à donner aux citoyens
-                                                                une meilleure qualité de vie (cela passe par la propreté,
-                                                                la sécurité, un logement salubre, la
-                                                                <p class="p_about">rénovation urbaine, etc.). La revitalisation économique et
-                                                                    commerciale retient également toute mon attention. Je
-                                                                    suis particulièrement vigilante aux questions relatives
-                                                                    <p class="p_about">à l’émancipation des individus en leur donnant les moyens
-                                                                        d’être vraiment maîtres de leur destin. Cela passe,
-                                                                        entre autres, par l'apprentissage des langues et
-                                                                        de la
-                                                                        <p class="p_about">citoyenneté.</p>
-                                                                        <br>
-                                                                        <p class="p_about">Mon parcours le démontre : pour moi, la politique,
-                                                                            c'est une passion de plus de 30 ans et c’est
-                                                                            toute une vie consacrée aux Bruxellois en général
-                                                                            et aux Molenbeekois
-                                                                            <p class="p_about">en particulier! Parce que « Bleue de Bruxelles
-                                                                                ! » et de ses habitants, tout simplement
-                                                                                !</p>
-                                                                            <br>
+                                    Durant la législature 2006-2012, j'ai exercé, comme </p>
+                                <p class="p_about">Première échevine, trois compétences importantes telles que l’Economie, le Commerce et la
+                                    Culture française.</p>
+                                <br>
+                                <p class="p_about">Le 29 juin 2007, suite au décès inopiné de Jacques Simonet, je lui succède au poste de chef
+                                    de groupe MR au Parlement régional bruxellois jusqu'au 2009.</p>
+                                <br>
+                                <p class="p_about">Surviennent ensuite les élections communales d'octobre 2012, où le MR réalise un excellent
+                                    score et qui provoque un chamboulement: une coalition inédite, </p>
+                                <p class="p_about">réunissant le MR, le cdH et Ecolo/Groen se forme, mettant aussi fin à plusieurs décennies
+                                    de mayorat socialiste. Je deviens bourgmestre de Molenbeek dans le </p>
+                                <p class="p_about">souci d'apporter le changement promis à nos habitants. Dans mes compétences, j'ai notamment
+                                    la Police, les Affaires légales, le Personnel communal, l'Instruction </p>
+                                <p class="p_about">publique francophone, la Petite enfance, les Crèches francophones, les Cultes et laïcité,
+                                    l'Egalité des chances, la Culture française, les Bibliothèques francophones, </p>
+                                <p class="p_about">les Festivités, les Monuments.</p>
+                                <br>
+                                <p class="p_about">Dans la foulée de ce nouveau défi, je quitte le Parlement bruxellois pour rejoindre, à l'issue
+                                    des élections fédérales du 25 mai 2014, la Chambre des Représentants </p>
+                                <p class="p_about">où je suis élue députée et vice-Présidente du Parlement.</p>
+                                <br>
+                                <p class="p_about">Au travers de toutes mes responsabilités, la promotion de la citoyenneté et la participation
+                                    sont l’épine dorsale de mon engagement. Plus précisément, via la Région </p>
+                                <p class="p_about">et désormais le niveau fédéral, je me consacre à donner aux citoyens une meilleure qualité
+                                    de vie (cela passe par la propreté, la sécurité, un logement salubre, la </p>
+                                <p class="p_about">rénovation urbaine, etc.). La revitalisation économique et commerciale retient également
+                                    toute mon attention. Je suis particulièrement vigilante aux questions relatives </p>
+                                <p class="p_about">à l’émancipation des individus en leur donnant les moyens d’être vraiment maîtres de leur
+                                    destin. Cela passe, entre autres, par l'apprentissage des langues et de la </p>
+                                <p class="p_about">citoyenneté.</p>
+                                <br>
+                                <p class="p_about">Mon parcours le démontre : pour moi, la politique, c'est une passion de plus de 30 ans et
+                                    c’est toute une vie consacrée aux Bruxellois en général et aux Molenbeekois </p>
+                                <p class="p_about">en particulier! Parce que « Bleue de Bruxelles ! » et de ses habitants, tout simplement !
+                                </p>
+                                <br>
     </div>
     <!--end container-->
 </div>
