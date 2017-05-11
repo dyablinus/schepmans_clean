@@ -6,7 +6,7 @@ class About extends MY_Controller {
 			 parent::__construct();
 		 }
     public function index(){
-		$this->render('schepmans/about');
+		$this->render1('schepmans/about');
 	}
 
 

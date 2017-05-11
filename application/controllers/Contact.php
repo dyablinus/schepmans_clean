@@ -6,7 +6,7 @@ class Contact extends MY_Controller {
 			 parent::__construct();
 		 }
     public function index(){
-		$this->render('schepmans/contact');
+		$this->render1('schepmans/contact');
 	}
 
 
