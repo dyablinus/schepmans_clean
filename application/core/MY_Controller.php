@@ -7,6 +7,10 @@ class MY_Controller extends CI_Controller {
 			$this->data["view_content"] = $this->load->view($view ,$this->data, TRUE);
 			$this->load->view($template, $this->data);
     }
+        public function render1($view,  $template = 'template/base/index2'){
+			$this->data["view_content"] = $this->load->view($view ,$this->data, TRUE);
+			$this->load->view($template, $this->data);
+    }
 
 
 }

@@ -4,19 +4,19 @@
 .navbar#background-blank{
     background-color: white;
     border: none;
-    padding: 5px;
+    
 }
 #scheplogo{
     padding-top: 8px;
 }
-.col-sm-2 {
+.colmd {
     padding-top: 2%;
     padding-bottom: 1%;
     text-align: center;
 
 }
-.fa{
-    font-size: 30px;
+.nav .syl.fa{
+    font-size: 25px;
     border: 1px solid black;
     border-radius: 40px;
     padding: 8px;
@@ -38,7 +38,7 @@ div.col-sm-2:hover{
     background-color: lightblue;
     
 }
-.col-sm-2 a{
+.colmd a{
     text-decoration: none;
 }
 @media screen and (max-width: 767px) {

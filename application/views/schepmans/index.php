@@ -1,5 +1,4 @@
-<div class="container">
-
+<!--- caroussel start -->
 <div class="box_carousel">
 
     <div class="row">
@@ -105,26 +104,25 @@
     </div>
     </div>
 </div>
-    <!--/ #slider-->
+<!-- caroussel end -->
 
-<!--END CAROUSEL-->
 
 <div class="jumbotron">
     <div class="container">
         <div class="row fafa">
-            <div class="col-xs-1"><i class="fa fa-users" aria-hidden="true"></i>
+            <div class="col-xs-1"><i class="syl fa fa-users" aria-hidden="true"></i>
 </div>
             <div class="col-xs-3">
                 <h3 class="jumbofont">ÉQUIPE</h3>
                 <p class="jumbopara">Apendum pupum</p>
                 </div>
-            <div class="col-xs-1"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            <div class="col-xs-1"><i class="syl fa fa-thumbs-up" aria-hidden="true"></i>
 </div>
             <div class="col-xs-3">
                 <h3 class="jumbofont">PARTIE POLITIQUE</h3>
                 <p class="jumbopara">Apendum pupum</p>
                 </div>
-            <div class="col-xs-1"><i class="fa fa-calendar" aria-hidden="true"></i>
+            <div class="col-xs-1"><i class="syl fa fa-calendar" aria-hidden="true"></i>
 </div>
             <div class="col-xs-3">
                 <h3 class="jumbofont">CALENDRIER</h3>
@@ -137,70 +135,66 @@
 
 <!-- actuality page start/ main page -->
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 textdeco">
     <h2 class="padactu">DERNIÈRES ACTUALITÉS
     </h2>
-    <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i>
- June 17, 2012 <i class="fa fa-info-circle" aria-hidden="true"></i>
+    <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i>
+ June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>
 News.</p>
-        <img src="<?= base_url ("/assets/images/schep2.jpg") ?>" id="homeimg1" alt="">
+        <img src="<?= base_url ("assets/images/schep2.jpg") ?>" id="homeimg1" alt="">
         <p class="colorpara"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quis sapiente minima voluptatem fuga aliquam et accusamus labore, mollitia pariatur nulla provident officiis ut eveniet dolorem velit, inventore magni quasi?</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/"  title="Read More →">Read More →</a>
+        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/"  title="Read More →">Voir plus →</a>
     </div>
     <div class="col-md-4">
-    <h2>Video title</h2>
-    <section class="post-meta">
-    <div class="post-date">May 10, 2017</div>
-    <div class="post-tags">Info</div>
-    <div class="post-comment">Comments</div>
-    </section>
-    <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i>
- June 17, 2012 <i class="fa fa-info-circle" aria-hidden="true"></i>
-News.</p>
-    <img class="taille" src="<?= base_url ("assets/images/schepmans_logo.jpg") ?>" alt="">
+    
     </div>
 </div>
+<div class="row">
+
+    <div class="col-md-8 borduresepar"></div>
+    <div class="col-md-4"></div>
+</div>
+
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 textdeco">
         <h2 class="articlfont">Jean-Pierre achete une voiture à Molenbeek</h2>
-        <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i>
- June 17, 2012 <i class="fa fa-info-circle" aria-hidden="true"></i>
+        <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i>
+ June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>
 News.</p>
-        <img class="taille" src="<?= base_url ("assets/images/schepmans_logo.jpg") ?>" alt="">
+        <img class="taille" src="<?= base_url ("assets/images/schep4.jpg") ?>" alt="">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Read More →</a>
+        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus →</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 textdeco">
         <h2 class="articlfont">Jean-Michel le beauf va a la commune de Molenbeek</h2>
-        <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i>
- June 17, 2012 <i class="fa fa-info-circle" aria-hidden="true"></i>
+        <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i>
+ June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>
 News.</p>
-        <img class="taille" src="<?= base_url ("assets/images/schepmans_logo.jpg") ?>" alt="">
+        <img class="taille" src="<?= base_url ("assets/images/schep5.jpg") ?>" alt="">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/"  title="Read More →">Read More →</a>
+        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/"  title="Read More →">Voir plus →</a>
         </div>
         <div class="col-md-4"></div>
     </div>
-<div class="row">
-        <div class="col-md-4">
+<div class="row marginpourfooter">
+        <div class="col-md-4 textdeco">
         <h2 class="articlfont">Jean-Aimarre en a marre de la marée haute</h2>
-        <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i>
- June 17, 2012 <i class="fa fa-info-circle" aria-hidden="true"></i>
+        <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i>
+ June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>
 News.</p>
-        <img class="taille" src="<?= base_url ("assets/images/schepmans_logo.jpg") ?>" alt="">
+        <img class="taille" src="<?= base_url ("assets/images/schep3.jpg") ?>" alt="">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/"  title="Read More →">Read More →</a>
+        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/"  title="Read More →">Voir plus →</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 textdeco">
         <h2 class="articlfont">Je sais plus quoi écrire comme titre c'est relou</h2>
-        <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i>
- June 17, 2012 <i class="fa fa-info-circle" aria-hidden="true"></i>
+        <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i>
+ June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>
 News.</p>
-        <img class="taille" src="<?= base_url ("assets/images/schepmans_logo.jpg") ?>" alt="">
+        <img class="taille" src="<?= base_url ("assets/images/schep7.jpg") ?>" alt="">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/"  title="Read More →">Read More →</a>
+        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/"  title="Read More →">Voir plus →</a>
         </div>
         <div class="col-md-4"></div>
     </div>
 <!-- main page end -->
-</div>

@@ -1,0 +1,66 @@
+.box_form_contact {
+    margin-top: 5%;
+}
+
+.contact-form{ 
+    margin-top:15px;
+}
+
+.contact-form .textarea{ 
+    min-height:220px; 
+    resize:none;
+}
+
+.form-control{ 
+    box-shadow:none; 
+    border-color:#eee; 
+    height:49px;
+}
+
+.form-control:focus{ 
+    box-shadow:none; 
+    border-color:#175079;
+}
+
+.form-control-feedback{ 
+    line-height:50px;
+}
+
+.main-btn{ 
+    color:#fff;
+}
+.main-btn:hover{ 
+    background:rgb(180, 180, 180);
+    border-color: rgb(180, 180, 180);
+    color:#175079;
+}
+
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
+
+/*CONTACT*/
+.box_phone{
+    padding:10px;
+    background:#175079;
+    margin-bottom: 5%;
+}
+
+.contact {
+text-align: center;
+
+}
+.contact_categorie {
+    color: white;
+}
+.inline_block {
+    display: inline-block;
+}
+
+.box_phone > p {
+    font-size: 15px;
+}
+.first-box {
+    margin-top: 11%;
+}
