@@ -1,4 +1,4 @@
-.nav .fa{
+/*.nav .fa{
     font-size: 25px;
     border: 1px solid black;
     border-radius: 40px;
@@ -29,8 +29,9 @@
 }
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
-    /*background-color: ;*/
-}
+    /*background-color: ;
+        }
+
 
 .modal-content{
     color: #175079;
@@ -41,4 +42,4 @@
 
 #copyright, #subscrite {
     display:inline-block;
-}
+}*/

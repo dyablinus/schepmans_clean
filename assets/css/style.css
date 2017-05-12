@@ -1,0 +1,102 @@
+/*Page About*/
+
+@font-face {
+    font-family: "sullivan";
+    src: url('../fonts/Sullivan.ttf')
+}
+#box_about{
+    padding: 0 5% 0 15%;
+}
+
+
+.p_about {
+    color : #666161;
+    line-height: 25px;
+    font-family: "Alegreya";
+    font-size: 18px;
+}
+.title_about {
+    color : #175079;
+    margin: 0px;
+    margin-bottom: 50px;
+    font-family: "sullivan";
+    font-style: normal;
+    font-weight: bold;
+}
+
+#font-size {
+    font-size: 55px;
+}
+#size_h1{
+    font-size: 85px;
+}
+
+#bannière {
+    
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 110px;
+
+}
+#portraitschepmans {
+    width: 80%;
+}
+.barre
+{
+   margin: 100px 165px 100px 0px;
+   border-bottom: 1px solid black;
+   background-color: lightgrey;
+}
+
+/*END ABOUT*/
+
+/*DEBUT FOOTER*/
+.nav_footer .fa{
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 8px;
+    color: lightblue;
+}
+.nav_footer>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: white;
+}
+.fa.fa-youtube:hover{
+    color: red;
+}
+.fa.fa-facebook-official:hover{
+    color: blue;
+}
+.fa.fa-twitter:hover{
+    color: blue;
+}
+.fa.fa-rss:hover{
+    color: black;
+}
+#footerarnault{
+    background-color: #175079;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 1px 1px black;
+    padding: 2.5% 0;
+    
+}
+.nav_footer > li > a{
+    padding-top: 0;
+}
+.modal-content{
+    color: #175079;
+}
+.btncontact {
+    color: #175079;
+}
+
+#copyright, #subscrite {
+    display:inline-block;
+}
+#text_footer {
+    display: inline-block;
+    margin: 0 0 0 5%;
+}
+/*FIN FOOTER*/
