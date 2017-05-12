@@ -1,3 +1,4 @@
+
 /* DEBUT NAVBARRE*/
 
 .navbar_top {
@@ -26,19 +27,19 @@
     color: lightblue;
 }
 
-.youtube_navtop>a>.fa-youtube:hover{
+#nav_icontop .youtube_navtop>a>.fa-youtube:hover{
     color: red;
 }
-.youtube_navtop>a>.fa-facebook-official:hover{
+#fb:hover{
     color: blue;
 }
-.youtube_navtop>a>.fa-twitter:hover{
+#twit:hover{
     color: blue;
 }
-.youtube_navtop>a>.fa-rss:hover{
+#nav_icontop .actu_navtop>a>.fa-rss:hover{
     color: black;
 }
-#nav_j >.hovernav>.a_nav_top:hover{
+#nav_j .hovernav .a_nav_top:hover{
     background-color: lightblue;
     color: white;
     

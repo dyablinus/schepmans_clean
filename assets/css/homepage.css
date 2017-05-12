@@ -78,6 +78,9 @@ div.jumbotron{
 #marginpourfooter{
     margin-bottom: 10%;
 }
+.slides li img{
+    width: 100%;
+}
 @media screen and (max-width: 550px) {
     .fafa .fa{
     font-size: 15px;

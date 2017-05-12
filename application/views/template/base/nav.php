@@ -12,12 +12,12 @@
         <ul class="nav navbar-nav navbar-right" id="nav_icontop">
             <li id="nav_icontope" class="hovernav" class="facebook_navtop">
                 <a href="#" title="Facebook">
-                    <i class="icon_top fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="icon_top fa fa-facebook-official" id="fb" aria-hidden="true"></i>
                 </a>
             </li>
             <li class="hovernav" class="twitter_navtop">
                 <a href="#" title="Twitter">
-                    <i class="icon_top fa fa-twitter" aria-hidden="true"></i>
+                    <i class="icon_top fa fa-twitter" id="twit" aria-hidden="true"></i>
                 </a>
             </li>
             <li class="youtube_navtop">
