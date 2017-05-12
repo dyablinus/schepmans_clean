@@ -10,7 +10,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu" src="<?= base_url("assets/images/1.jpg")?>" alt="">
+    <img class="img_actu img" src="<?= base_url("assets/images/7.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
@@ -27,7 +27,7 @@
 </div>
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu" src="<?= base_url("assets/images/2.jpg")?>" alt="">
+    <img class="img_actu" src="<?= base_url("assets/images/schep4.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">
@@ -43,7 +43,7 @@
 </div>
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu" src="<?= base_url("assets/images/6.jpg")?>" alt="">
+    <img class="img_actu" src="<?= base_url("assets/images/9.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">
@@ -59,7 +59,7 @@
 </div>
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu" src="<?= base_url("assets/images/4.jpg")?>" alt="">
+    <img class="img_actu" src="<?= base_url("assets/images/11.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">

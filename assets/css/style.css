@@ -20,18 +20,12 @@
 }
 #nav_icontop .icon_top{
     font-size: 25px;
-    border: 1px solid black;
+    border: 1px solid lightblue;
     border-radius: 40px;
     padding: 8px;
     color: lightblue;
 }
-#nav_icontop>#nav_icontope>.icon_top{
-    font-size: 25px;
-    border: 1px solid black;
-    border-radius: 40px;
-    padding: 8px;
-    color: lightblue;
-}
+
 .youtube_navtop>a>.fa-youtube:hover{
     color: red;
 }
@@ -122,7 +116,7 @@
 /*DEBUT FOOTER*/
 .nav_footer .fa{
     font-size: 25px;
-    border: 1px solid black;
+    border: 1px solid lightblue;
     border-radius: 40px;
     padding: 8px;
     color: lightblue;
@@ -177,5 +171,8 @@
 }
 #copyright > p {
     margin: 5% 0;
+}
+a#back-top{
+    display: none !important;
 }
 /*FIN FOOTER*/

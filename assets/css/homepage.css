@@ -75,7 +75,7 @@ div.jumbotron{
     margin-bottom: 1%;
     
 }
-.marginpourfooter{
+#marginpourfooter{
     margin-bottom: 10%;
 }
 @media screen and (max-width: 550px) {
