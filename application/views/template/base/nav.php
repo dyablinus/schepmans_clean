@@ -1,95 +1,62 @@
 <nav class="navbar navbar-default" id="background-blank" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="row">
-        <div class="col-md-6 schep">
-
-            <ul class="nav navbar-nav">
-                <li>
-
-                    <img src="<?= base_url("/assets/images/schepmans_logo.jpg ")?>" id="scheplogo" alt="" title="Logo">
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-6 sociaux">
-            <!-- réseaux sociaux -->
-            <ul class="nav navbar-nav navbar-right">
-                <li class="facebook"><a href="#" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>
-<span></span></a></li>
-                <li class="twitter"><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
-<span></span></a></li>
-                <li class="youtube"><a href="#" title="Youtube"><i class="fa fa-youtube" aria-hidden="true"></i>
-<span></span></a></li>
-                <li class="actu"><a href="#" title="Actu"><i class="fa fa-rss" aria-hidden="true"></i>
-<span></span></a></li>
-            </ul>
-        </div>
-    </div>
-
-
-</nav>
-
-<nav class="navbar navbar-default pad" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <!-- menu burger -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-
-
-        <div class="row">
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-
-            </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-
-                <li class="hovernav"><a href="<?= base_url ("/schepmans/index ") ?>">HOME</a></li>
-            </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-
-                <li class="hovernav"><a href="<?= base_url ("/schepmans/about ") ?>">QUI SUIS-JE?</a></li>
-            </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-
-                <li class="hovernav"><a href="<?= base_url ("/schepmans/actualite ") ?>">Actualités</a></li>
-            </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-
-                <li class="hovernav"><a href="<?= base_url ("/schepmans ") ?>">MOLENBEEK</a></li>
-            </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-
-                <li class="hovernav"><a href="<?= base_url ("/schepmans ") ?>">CONTACT</a></li>
-            </div>
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-
-            </div>
-        </div>
   
-    <!-- /.navbar-collapse -->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 schep">
+            <div id="logo_schep">  
+            <img src="<?= base_url("/assets/images/schepmans_logo.jpg ")?>" id="scheplogo" title="Logo">
+            </div> 
+        </div>
+
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 sociaux">
+        <!-- réseaux sociaux -->
+        <ul class="nav navbar-nav navbar-right" id="nav_icontop">
+            <li id="nav_icontope" class="hovernav" class="facebook_navtop">
+                <a href="#" title="Facebook">
+                    <i class="icon_top fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hovernav" class="twitter_navtop">
+                <a href="#" title="Twitter">
+                    <i class="icon_top fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="youtube_navtop">
+                <a href="#" title="Youtube">
+                    <i class="icon_top fa fa-youtube" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="actu_navtop">
+                <a href="#" title="Actu">
+                    <i class="icon_top fa fa-rss" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
 </nav>
 
-<!--
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <a class="navbar-brand" href="#">Title</a>
-    <ul class="nav navbar-nav">
-        <li>
-            <a href="<?= base_url(" /schepmans/index.php ")?>">HOME</a>
+
+<nav class="navbar navbar-default navbar_top" role="navigation">
+
+    <ul id="nav_j" class="nav navbar-nav nav_haut">
+        
+  
+        <li class="hovernav">
+            <a class="a_nav_top" href="<?= base_url("/index") ?>">HOME</a>
         </li>
-        <li>
-            <a href="<?= base_url(" /schepmans/index.php ")?>">HOME</a>
+        <li class="hovernav">
+            <a class="a_nav_top" href="<?= base_url("/about") ?>">QUI SUIS-JE ?</a>
         </li>
-        <li>
-            <a href="<?= base_url(" /schepmans/index.php ")?>">HOME</a>
+        <li class="hovernav">
+            <a class="a_nav_top" href="<?= base_url("/actualite") ?>">ACTUALITÉ</a>
         </li>
-        <li>
-            <a href="<?= base_url(" /schepmans/index.php ")?>">HOME</a>
+        <li class="hovernav">
+            <a class="a_nav_top" href="<?= base_url("/molenbeek") ?>">MOLENBEEK</a>
         </li>
+        <li class="hovernav">
+            <a class="a_nav_top" href="<?= base_url("/contact") ?>">CONTACT</a>
+        </li>
+      
     </ul>
-</nav>-->
+</nav>

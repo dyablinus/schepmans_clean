@@ -6,7 +6,7 @@ class Test extends MY_Controller {
 			 parent::__construct();
 		 }
     public function index(){
-		$this->render1('template/base/footer');
+		$this->render1('template/base/test');
 	}
 
 

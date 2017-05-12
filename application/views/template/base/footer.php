@@ -13,17 +13,17 @@
         </ul>
 
 
-        <div id="text_footer">
+      
             <div id="copyright">
                 <p>Copyright Molengeek 2017</p>
             </div>
-            <div id="subscrite">
+            <div id="subscrite" class="pull-right">
                 <p>Subscribe to the Newsletter: </p>
+        <button type="button" class="btn btncontact" id="buttonfoot" data-toggle="modal" data-target="#myModal">Je m'inscris</button>
             </div>
-        </div>
+
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-lg btncontact" id="buttonfoot" data-toggle="modal" data-target="#myModal">Je m'inscris</button>
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
