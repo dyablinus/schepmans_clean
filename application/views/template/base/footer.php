@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="footer_padding">
 
     <footer id="footerarnault">
         <ul class="nav navbar-nav navbar-left nav_footer">

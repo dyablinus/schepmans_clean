@@ -27,9 +27,9 @@
 
 
 </head>
-<body>
+<body style="background-image:linear-gradient(rgba(27, 27, 255, 0.73), white);">
 
-<div class="container">
+<div style="background-color: white; box-shadow: -1em 0 125px black, 1em 0 125px black;" class="container">
 <?php  $this->load->view('template/base/nav'); ?> 
 
 <?= $view_content ?> 
