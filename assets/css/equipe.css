@@ -1,4 +1,39 @@
+#titre_equipe {
+    background-color: #175079;
+    color: white;
+    font-size: 30px;
+    padding: 1.5% 0;
+    margin: 0 0 3% 0;
+}
+
 .row_equipe {
     background-color: #eee;
     margin: 0 0 5% 0;
+    padding: 3% 0;
+}
+
+.elue_equipe {
+    font-size:20px;
+    color: #175079;
+
+    margin: 0 0 5% 0;
+}
+
+.role_equipe {
+    color: #97bed3;
+    display: inline-block;
+    margin: 0 0 5% 0;
+}
+
+.portrait_equipe {
+    width: 125px;
+    margin: 0 0 20% 62%;
+}
+.email_equipe {
+    margin: 0 0 5% 0;
+}
+.block_equipe{
+    margin: 0 0 0 5%;
+    display: inline-block;
+    padding: 0 ;
 }
