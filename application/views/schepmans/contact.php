@@ -27,41 +27,41 @@
                     </div>
                     <button type="submit" class="btn main-btn pull-right btn-primary" value="Envoyer"> Envoyer un message </button>
 
-           
-    </form>
+
+                </form>
             </div>
-        </div>
-    
+
+
             <br>
-        </div>
-    
-
-    <?php echo validation_errors("<p class='alert alert-dissmissable alert-danger'>"); ?>
 
 
-        <div class="contact">
-            <div class="col-sm-4 col-xs-4 first-box">
+
+            <?php echo validation_errors("<p class='alert alert-dissmissable alert-danger'>"); ?>
 
 
-                <div id="contact_box" class="box_phone">
-                    <i class="contact_icon fa fa-phone" aria-hidden="true"></i>
-                    <h3 class="inline_block contact_categorie">Phone</h3>
-                    <p class="contact_categorie">+880-1700-987654</p><br>
+            <div class="contact">
+                <div class="col-sm-4 col-xs-4 first-box">
+
+
+                    <div id="contact_box" class="box_phone">
+                        <i class="contact_icon fa fa-phone" aria-hidden="true"></i>
+                        <h3 class="inline_block contact_categorie">Phone</h3>
+                        <p class="contact_categorie">+880-1700-987654</p><br>
+                    </div>
+
+                    <div id="contact_box" class="box_phone">
+                        <i class="contact_icon fa fa-map" aria-hidden="true"></i>
+                        <h3 class="inline_block contact_categorie">Location</h3>
+                        <p class="contact_categorie">1036 Gulshan Road</p><br>
+                    </div>
+
+                    <div id="contact_box" class="box_phone">
+                        <i class="contact_icon fa fa-envelope" aria-hidden="true"></i>
+                        <h3 class="inline_block contact_categorie">E-mail</h3>
+                        <p class="contact_categorie">info@yourdomain.com</p><br>
+                    </div>
+
                 </div>
-
-                <div id="contact_box" class="box_phone">
-                    <i class="contact_icon fa fa-map" aria-hidden="true"></i>
-                    <h3 class="inline_block contact_categorie">Location</h3>
-                    <p class="contact_categorie">1036 Gulshan Road</p><br>
-                </div>
-
-                <div id="contact_box" class="box_phone">
-                    <i class="contact_icon fa fa-envelope" aria-hidden="true"></i>
-                    <h3 class="inline_block contact_categorie">E-mail</h3>
-                    <p class="contact_categorie">info@yourdomain.com</p><br>
-                </div>
-
             </div>
         </div>
     </div>
-</div>
