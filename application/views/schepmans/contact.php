@@ -7,7 +7,7 @@
     <div class="row">
         <div class="container" id="contain_contact">
             <div class="col-xs-7 col-sm-7 col-lg-7 box_form_contact">
-                <h2>Formulaire de contact</h2>
+                <h2 class="contact_titre">Formulaire de contact</h2>
                 <form action="<?php echo base_url('user/contact_post'); ?>" method="POST" class="contact-form" role="form" id="contact-form">
                     <div class="form-group">
                         <input id="author" type="text" name="nom" value="<?php echo $nom ?>" id="name" placeholder="Votre nom" class="form-control">
