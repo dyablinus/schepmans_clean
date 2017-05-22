@@ -6,7 +6,7 @@ class MY_Controller extends CI_Controller {
         public function render($view, $template = 'template/base/index'){
 			$this->data["view_content"] = $this->load->view($view ,$this->data, TRUE);
 			$this->load->view($template, $this->data);
-			$this->output->enable_profiler(TRUE);
+
 
     }
         public function render1($view,  $template = 'template/base/index2'){

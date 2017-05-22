@@ -4,13 +4,13 @@
 
 <div id="box_about">
 
+                <h1 id="size_h1" class="title_about"> Françoise Schepmans</h1>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
         <div class="row">
 
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-                <h1 id="size_h1" class="title_about"> Françoise Schepmans</h1>
 
                 <p class="p_about"> Françoise A.M. Schepmans (née le 18 juin 1960 à Berchem-Sainte-Agathe) est une femme politique belge, fille
                     de Jacques Schepmans, dernier directeur général de l'hebdomadaire Pourquoi Pas ?.</p>
