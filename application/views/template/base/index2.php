@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="<?= base_url("/assets/css/contact.css")?>">
 
+    <link rel="stylesheet" href="<?= base_url("/assets/css/equipe.css")?>">
+
     <link rel="stylesheet" href="<?= base_url("/assets/css/style.css")?>">
     <title>Schepmans</title>
 
