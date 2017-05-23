@@ -27,7 +27,7 @@
         <div id="slider" class="flexslider">
             <ul class="slides">
                 <li>
-                    <img src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg" alt="" />
+                    <img src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg" alt="Françoise Schepmans image de présentation" />
                     <div class="caption">
                         <div class="caption-entry">
                             <div class="caption-title">
@@ -46,7 +46,7 @@
 
 
                 <li>
-                    <img src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg" alt="" />
+                    <img src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg" alt="Dernier article sur Françoise Schepmans" />
                     <div class="caption">
                         <div class="caption-entry">
                             <div class="caption-title">
@@ -64,7 +64,7 @@
 
 
                 <li>
-                    <img src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg" alt="" />
+                    <img src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg" alt="Un récent article sur la bourgmestre" />
                     <div class="caption">
                         <div class="caption-entry">
                             <div class="caption-title">
@@ -82,7 +82,7 @@
 
 
                 <li>
-                    <img src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg" alt="" />
+                    <img src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg" alt="Action  pour la ville à l'initiative de Françoise Schepmans'" />
                     <div class="caption">
                         <div class="caption-entry">
                             <div class="caption-title">
@@ -100,7 +100,7 @@
 
 
                 <li>
-                    <img src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg" alt="" />
+                    <img src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg" alt="Une Bourgmestre accomplie" />
                     <div class="caption">
                         <div class="caption-entry">
                             <div class="caption-title">
@@ -151,11 +151,10 @@
 <div class="col-md-8" id="marginpourfooter">
 <div class="row">
     <div class="col-md-12 textdeco">
-        <h2 class="padactu">DERNIÈRES ACTUALITÉS
-        </h2>
+        <h1 class="padactu">DERNIÈRES ACTUALITÉS </h1>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            News.
         </p>
-        <img src="<?= base_url ("assets/images/schep2.jpg") ?>" id="homeimg1" alt="">
+        <img src="<?= base_url ("assets/images/schep2.jpg") ?>" id="homeimg1" alt="Dernier article paru sur la Bourgmestre">
         <p class="colorpara"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quis sapiente minima voluptatem fuga aliquam et accusamus
             labore, mollitia pariatur nulla provident officiis ut eveniet dolorem velit, inventore magni quasi?</p>
         <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus</a>
@@ -167,7 +166,7 @@
         <h2 class="articlfont">Jean-Pierre achete une voiture à Molenbeek</h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
-        <img class="taille" src="<?= base_url ("/assets/images/schep4.jpg") ?>" alt="">
+        <img class="taille" src="<?= base_url ("/assets/images/schep4.jpg") ?>" alt="Relate les derniers évènements sur la vice députée">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
         <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus →</a>
@@ -176,7 +175,7 @@
         <h2 class="articlfont">Jean-Michel le beauf de Molenbeek</h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
-        <img class="taille" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="">
+        <img class="taille" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="Présentation des actions en faveur de ">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
         <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus →</a>
@@ -188,7 +187,7 @@
         <h2 class="articlfont">Jean-Aimarre en a marre de la marée haute</h2>
         <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
-        <img class="taille" src="<?= base_url ("/assets/images/schep3.jpg") ?>" alt="">
+        <img class="taille" src="<?= base_url ("/assets/images/schep3.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
         <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus →</a>
@@ -197,7 +196,7 @@
         <h2 class="articlfont">Je sais plus quoi écrire comme titre c'est relou</h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
-        <img class="taille" src="<?= base_url ("/assets/images/schep7.jpg") ?>" alt="">
+        <img class="taille" src="<?= base_url ("/assets/images/schep7.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
         <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus →</a>
