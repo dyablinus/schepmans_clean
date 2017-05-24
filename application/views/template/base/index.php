@@ -22,6 +22,8 @@
   
     <link rel="stylesheet" href="<?= base_url("assets/css/style.css")?>">
 
+     <link rel="stylesheet" href="<?= base_url("assets/css/molenbeek.css")?>">
+
    <link rel='stylesheet' id='css_flexslider-css' href="<?= base_url('/assets/css/slider.css')?>">
     <title>Schepmans</title>
 
