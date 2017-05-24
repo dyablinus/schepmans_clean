@@ -17,6 +17,8 @@
                 <p class="p_about">Elle occupe actuellement les fonctions de députée fédérale, Vice-présidente de la Chambre des représentants
                     ainsi que bourgmestre de la commune de Molenbeek-Saint-Jean.Le 3 mars 2008, elle est élue pour la première
                     fois administratrice cooptée au conseil d'administration de l'Université libre de Bruxelles.</p>
+                    
+                    <p> <?php echo lang('message_accueil') ?></p>
             </div>
 
 
