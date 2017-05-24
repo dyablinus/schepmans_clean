@@ -19,8 +19,9 @@
     <link rel="stylesheet" href="<?= base_url("/assets/css/contact.css")?>">
 
     <link rel="stylesheet" href="<?= base_url("/assets/css/style.css")?>">
-    <title>Schepmans</title>
+    <link rel='stylesheet' href="<?= base_url("/node_modules/fullcalendar/dist/fullcalendar.css") ?>">
 
+    <title>Schepmans</title>
 
 </head>
 <body style="background-image: linear-gradient(rgba(156, 156, 255, 0.19), white);">
@@ -37,9 +38,21 @@
 
 <?php  $this->load->view('template/base/footer'); ?> 
 
-
- <script src="<?= base_url ("/node_modules/jquery/dist/jquery.js") ?>"></script>
+ <script src="<?= base_url ("/node_modules/jquery/dist/jquery.min.js") ?>"></script>
  <script src="<?= base_url ("/node_modules/bootstrap/dist/js/bootstrap.min.js") ?>"></script>
+<script src="<?= base_url ("/node_modules/fullcalendar/dist/moment.min.js")?>"></script>
+<script src="<?= base_url("/node_modules/fullcalendar/dist/fullcalendar.js")?>"></script>
+<script>
+$(document).ready(function(){
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        // put your options and callbacks here
+    })
+
+});
+</script>
 </body>
 </html>
         <!-- Page Content Slider -->
