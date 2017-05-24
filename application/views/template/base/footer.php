@@ -14,8 +14,8 @@
 
 
       
-            <div id="copyright">
-                <p>Copyright Molengeek 2017</p>
+            <div id="copyright" itemscope itemtype="http://schema.org/Person">
+                <p><span itemprop="copyrightHolder">Copyright Molengeek 2017</span></p>
             </div>
             <div id="subscrite" class="pull-right">
                 <p>Subscribe to the Newsletter: </p>
