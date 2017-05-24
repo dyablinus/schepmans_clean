@@ -10,22 +10,22 @@
                 <h1>Contactez Françoise Schepmans</h1>
                 <form action="<?php echo base_url('user/contact_post'); ?>" method="POST" class="contact-form" role="form" id="contact-form">
                     <div class="form-group">
-                        <input id="author" type="text" name="nom" value="<?php echo $nom ?>" id="name" placeholder="Votre nom" class="form-control">
+                        <input id="author" title="Votre nom" type="text" name="nom" value="<?php echo $nom ?>" id="name" placeholder="Votre nom" class="form-control">
 
                     </div>
                     <div class="form-group">
-                        <input type="text" name="prenom" value="<?php echo $prenom ?>" id="name" placeholder="Votre prénom" class="form-control">
+                        <input title="Votre prénom" type="text" name="prenom" value="<?php echo $prenom ?>" id="name" placeholder="Votre prénom" class="form-control">
                     </div>
                     <div class="form-group">
-                        <input type="text" name="email" value="<?php echo $email ?>" id="email" placeholder="Votre email" class="form-control">
+                        <input title="Votre email" type="text" name="email" value="<?php echo $email ?>" id="email" placeholder="Votre email" class="form-control">
 
                     </div>
                     <div class="form-group">
 
-                        <textarea cols="70" id="message" name="message" value="<?php echo $message ?>" rows="3" type="text" class="form-control"
+                        <textarea cols="70" id="message" name="message" value="<?php echo $message ?>" rows="3" title="Écrivez votre message" type="text" class="form-control"
                             placeholder="Votre message"></textarea>
                     </div>
-                    <button type="submit" class="btn main-btn pull-right btn-primary" value="Envoyer"> Envoyer un message </button>
+                    <button title="" type="submit" class="btn main-btn pull-right btn-primary" value="Envoyer"> Envoyer un message </button>
 
            
     </form>

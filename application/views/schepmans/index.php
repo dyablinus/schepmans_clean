@@ -129,19 +129,19 @@
             <div class="col-xs-1"><i class="syl fa fa-users" aria-hidden="true"></i>
             </div>
             <div class="col-xs-3">
-                <a target="_blank" href="<?= base_url("/equipe") ?>"><h3 class="jumbofont">ÉQUIPE</h3></a>
+                <a target="_blank" title="Liste des membres constituant l\'équipe" accesskey="e" href="<?= base_url("/equipe") ?>"><h3 class="jumbofont">ÉQUIPE</h3></a>
                 <p class="jumbopara">Apendum pupum</p>
             </div>
             <div class="col-xs-1"><i class="syl fa fa-thumbs-up" aria-hidden="true"></i>
             </div>
             <div class="col-xs-3">
-                <a href="http://www.mr.be/" target="_blank"><h3 class="jumbofont">PARTIE POLITIQUE</h3></a>
+                <a title="partie politique du mr" accesskey="p" href="http://www.mr.be/" target="_blank"><h3 class="jumbofont">PARTIE POLITIQUE</h3></a>
                 <p class="jumbopara">Apendum pupum</p>
             </div>
             <div class="col-xs-1"><i class="syl fa fa-calendar" aria-hidden="true"></i>
             </div>
             <div class="col-xs-3">
-                <a target="_blank" href="<?= base_url("/calendrier") ?>"><h3 class="jumbofont">CALENDRIER</h3></a>
+                <a target="_blank" title="retrouvez la liste des évènements" accesskey="s" href="<?= base_url("/calendrier") ?>"><h3 class="jumbofont">CALENDRIER</h3></a>
                 <p class="jumbopara">Apendum pupum</p>
             </div>
         </div>
