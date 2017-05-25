@@ -2,11 +2,8 @@
 
 <div id="titre_actu" class="text-center">
    <i class="fa fa-rss" aria-hidden="true"></i>
-<<<<<<< HEAD
    <h1 class="titre text-center">ACTUALITÉS</h1>
-=======
    <h6 class="titre text-center"><?php echo lang('actu_h6');?></h6>
->>>>>>> e14c4c6cd869a5b647c4728679a9168aef12f0bb
 </div>
 
 <div id="barre_actu"></div>

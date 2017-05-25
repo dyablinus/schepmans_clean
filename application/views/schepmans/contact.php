@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
         $nom = isset($input_nom)?$input_nom:"";
         $prenom = isset($input_prenom)?$input_prenom:"";
@@ -33,7 +32,7 @@
 
                 </form>
             </div>
-=======
+
 <div class="row">
     <div class="container" id="contain_contact" >
 
@@ -71,14 +70,11 @@
                     <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
                 </div>
 
->>>>>>> e14c4c6cd869a5b647c4728679a9168aef12f0bb
 
             <br>
 
-<<<<<<< HEAD
-=======
                 <button type="submit" class="btn main-btn pull-right btn-primary"><?php echo lang('contact_envoie_message');?></button>
->>>>>>> e14c4c6cd869a5b647c4728679a9168aef12f0bb
+ 
 
             <?php echo validation_errors("<p class='alert alert-dissmissable alert-danger'>"); ?>
 

@@ -12,7 +12,7 @@
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
 
-<<<<<<< HEAD
+
 
                     
                   
@@ -26,14 +26,14 @@
                         première fois administratrice cooptée au conseil d'administration de l'Université libre de Bruxelles.</p>
                 </article>
 
-=======
+
                 <p class="p_about">
                     <?php echo $this->lang->line('aboutp1');?>
                 </p>
                 <p class="p_about">
                     <?php echo $this->lang->line('aboutp2');?>
                 </p>
->>>>>>> e14c4c6cd869a5b647c4728679a9168aef12f0bb
+
             </div>
 
 
@@ -49,7 +49,7 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-<<<<<<< HEAD
+
         <h2 class="title_about" id="font-size">Portrait</h2>
         <article>
             <p class="p_about">
@@ -115,7 +115,7 @@
             </p>
             <br>
         </article>
-=======
+
         <h2 class="title_about" id="font-size">
             <?php echo $this->lang->line('abouth2');?>
         </h2>
@@ -135,7 +135,6 @@
         <p class="p_about">
             <?php echo $this->lang->line('aboutp7');?> 
         </p>
->>>>>>> e14c4c6cd869a5b647c4728679a9168aef12f0bb
     </div>
     <!--end container-->
 </div>
