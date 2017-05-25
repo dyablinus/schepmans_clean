@@ -29,9 +29,14 @@ Ses evenements, Les membres de son équipes, ses actions de député et bourgmes
     <title>Françoise Schepmans siteweb, contact et informations.</title>
 
 </head>
+<<<<<<< HEAD
 <body style="background-image: linear-gradient(rgba(156, 156, 255, 0.19), white);">
 
 <div style="background-color: white; box-shadow: -1em 0 125px black, 1em 0 125px black;" class="container">
+=======
+<body>
+<div class="container">
+>>>>>>> e14c4c6cd869a5b647c4728679a9168aef12f0bb
 <?php  $this->load->view('template/base/nav'); ?> 
 
 
