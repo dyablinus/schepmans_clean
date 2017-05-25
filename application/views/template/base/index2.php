@@ -24,7 +24,6 @@
 
 </head>
 <body>
-
 <div class="container">
 <?php  $this->load->view('template/base/nav'); ?> 
 

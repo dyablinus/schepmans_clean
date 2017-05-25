@@ -2,7 +2,7 @@
     <div class="container" id="contain_contact" >
 
         <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 box_form_contact">
-            <h2>Formulaire de contact</h2>
+            <h2><?php echo lang('contact_h2_form');?></h2>
             <form role="form" id="contact-form" class="contact-form">
 
                 <div class="form-group ">
@@ -37,7 +37,7 @@
 
 
 
-                <button type="submit" class="btn main-btn pull-right btn-primary">Envoie du message</button>
+                <button type="submit" class="btn main-btn pull-right btn-primary"><?php echo lang('contact_envoie_message');?></button>
 
 
             </form>

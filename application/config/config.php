@@ -85,7 +85,8 @@ $config ['language_abbr'] = "en";
 /* set available language abbreviations */
 $config ['lang_uri_abbr'] = array (
 		"en" => "english",
-		"fr" => "french"
+		"fr" => "french",
+		"nl" => "nederlands"
 );
 
 /* hide the language segment (use cookie) */
@@ -93,7 +94,8 @@ $config ['lang_ignore'] = TRUE;
 
 $config ['langArray'] = array (
 		"en",
-		"fr"
+		"fr",
+		"nl"
 );
 
 /* 

@@ -32,7 +32,18 @@
             </li>
         </ul>
     </div>
+<div class="lang_fr">
 
+<a class="btn_nav_lang_fr" href="http://localhost/schepmans/langchange/change/fr">FR</a>
+</div>
+<div class="lang_en">
+
+<a class="btn_nav_lang_en" href="http://localhost/schepmans/langchange/change/en">EN</a>
+</div>
+<div class="lang_nl">
+<a class="btn_nav_lang_nl"
+href="http://localhost/schepmans/langchange/change/nl">NL</a>
+</div>
 
 </nav>
 
@@ -46,16 +57,16 @@
             <a class="a_nav_top" href="<?= base_url("/index") ?>">HOME</a>
         </li>
         <li class="hovernav">
-            <a class="a_nav_top" href="<?= base_url("/about") ?>">QUI SUIS-JE ?</a>
+            <a class="a_nav_top" href="<?= base_url("/about") ?>"><?php echo lang('nav_a_href_whoim');?></a>
         </li>
         <li class="hovernav">
-            <a class="a_nav_top" href="<?= base_url("/actualite") ?>">ACTUALITÉ</a>
+            <a class="a_nav_top" href="<?= base_url("/actualite") ?>"><?php echo lang('nav_a_href_actu');?></a>
         </li>
         <li class="hovernav">
             <a class="a_nav_top" href="<?= base_url("/molenbeek") ?>">MOLENBEEK</a>
         </li>
         <li class="hovernav">
-            <a class="a_nav_top" href="<?= base_url("/contact") ?>">CONTACT</a>
+            <a class="a_nav_top" href="<?= base_url("/contact") ?>"><?php echo lang('nav_a_href_contact');?></a>
         </li>
       
     </ul>
