@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "sullivan";
+    src: url('../fonts/Sullivan.ttf')
+  }
+.molenbeek_title {
+    font-family: "sullivan";
+    color: #175079;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 45px;
+
+}
+.p_molenbeek {
+    font-family: "Alegreya";
+    font-size: 18px;
+    margin-bottom: 30px;
+    }
+
+.col-md-8.molenbeek_col{
+    margin-bottom: 40px;
+}
+.title_molen {
+ font-size: 75px;
+ text-align: center;
+ padding: 3% 0;
+ color: #175079;
+ margin-left: 58px;
+ 
+}
+.img_logo_molenbeek {
+    width: 82px;
+    margin-bottom: -180px;
+    margin-left: 125px;
+
+}
+#barre_molen{
+ border-bottom: 1px solid #175079;   
+}

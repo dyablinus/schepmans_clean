@@ -20,6 +20,7 @@
 	}(document, 'script', 'facebook-jssdk'));
 
 </script>
+
 <div class="box_carousel">
 
     <div class="row">
@@ -129,19 +130,19 @@
             <div class="col-xs-1"><i class="syl fa fa-users" aria-hidden="true"></i>
             </div>
             <div class="col-xs-3">
-                <h3 class="jumbofont">ÉQUIPE</h3>
+                <h3 class="jumbofont"><?php echo lang('index_h3_equipe');?></h3>
                 <p class="jumbopara">Apendum pupum</p>
             </div>
             <div class="col-xs-1"><i class="syl fa fa-thumbs-up" aria-hidden="true"></i>
             </div>
             <div class="col-xs-3">
-                <h3 class="jumbofont">PARTIE POLITIQUE</h3>
+                <h3 class="jumbofont"><?php echo lang('index_h3_partie_poli');?></h3>
                 <p class="jumbopara">Apendum pupum</p>
             </div>
             <div class="col-xs-1"><i class="syl fa fa-calendar" aria-hidden="true"></i>
             </div>
             <div class="col-xs-3">
-                <h3 class="jumbofont">CALENDRIER</h3>
+                <h3 class="jumbofont"><?php echo lang('index_h3_calendrier');?></h3>
                 <p class="jumbopara">Apendum pupum</p>
             </div>
         </div>
@@ -151,56 +152,56 @@
 <div class="col-md-8" id="marginpourfooter">
 <div class="row">
     <div class="col-md-12 textdeco">
-        <h2 class="padactu">DERNIÈRES ACTUALITÉS
+        <h2 class="padactu"><?php echo lang('index_h2_padactu');?>
         </h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            News.
         </p>
         <img src="<?= base_url ("assets/images/schep2.jpg") ?>" id="homeimg1" alt="">
         <p class="colorpara"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quis sapiente minima voluptatem fuga aliquam et accusamus
             labore, mollitia pariatur nulla provident officiis ut eveniet dolorem velit, inventore magni quasi?</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus</a>
+        <a class="border button gray" href=# title="Read More →"><?php echo lang('index_a_voir_plus');?></a>
     </div>
     
 </div>
 <div class="row">
     <div class="col-md-6 textdeco">
-        <h2 class="articlfont">Jean-Pierre achete une voiture à Molenbeek</h2>
+        <h2 class="articlfont"><?php echo lang('index_h2_articlfont_pierre');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
         <img class="taille" src="<?= base_url ("/assets/images/schep4.jpg") ?>" alt="">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus →</a>
+        <a class="border button gray" href=# title="Read More →"><?php echo lang('index_a_voir_plus');?></a>
     </div>
     <div class="col-md-6 textdeco">
-        <h2 class="articlfont">Jean-Michel le beauf de Molenbeek</h2>
+        <h2 class="articlfont"><?php echo lang('index_h2_articlfont_michel');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
         <img class="taille" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus →</a>
+        <a class="border button gray" href=# title="Read More →"><?php echo lang('index_a_voir_plus');?></a>
     </div>
    
 </div>
 <div class="row">
     <div class="col-md-6 textdeco">
-        <h2 class="articlfont">Jean-Aimarre en a marre de la marée haute</h2>
+        <h2 class="articlfont"><?php echo lang('index_h2_articlfont_aimarre');?></h2>
         <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
         <img class="taille" src="<?= base_url ("/assets/images/schep3.jpg") ?>" alt="">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus →</a>
+        <a class="border button gray" href=# title="Read More →"><?php echo lang('index_a_voir_plus');?></a>
     </div>
     <div class="col-md-6 textdeco">
-        <h2 class="articlfont">Je sais plus quoi écrire comme titre c'est relou</h2>
+        <h2 class="articlfont"><?php echo lang('index_h2_articlfont_relou');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
         <img class="taille" src="<?= base_url ("/assets/images/schep7.jpg") ?>" alt="">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
-        <a class="border button gray" href="http://politic.webtemplatemasters.com/cum-sociis-natoque-penatibus-et-magnis/" title="Read More →">Voir plus →</a>
+        <a class="border button gray" href=# title="Read More →"><?php echo lang('index_a_voir_plus');?></a>
     </div>
     
     
