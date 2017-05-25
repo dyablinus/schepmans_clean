@@ -33,9 +33,7 @@
                             <div class="caption-title">
                                 <h2>Schepmans</h2>
                             </div><br />
-                            <p><br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nisi enim nihil cupiditate
-                                sed ea, placeat consequatur accusamus fugiat. Dicta at possimus doloribus, laboriosam reprehenderit?
-                                Quas dolores provident ad molestiae! <br />
+                            <p><br /> Françoise Schepmans est une femme politique belge, députée mr. Elle actuellement bourgemestre de Molenbeek-Saint-Jean <br />
                             </p>
                         </div>
                         <!--/ .caption-entry-->
@@ -50,10 +48,10 @@
                     <div class="caption">
                         <div class="caption-entry">
                             <div class="caption-title">
-                                <h2>Schepmans</h2>
+                                <h2>Françoise Schepmans prochaine élection</h2>
                             </div><br />
-                            <p><br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad.<br />
+                            <p><br /> Durant les prochaines élections à Bruxelles, Françoise Schepmans sera opposée à Joelle Milquet, Yvan Mayeur et Catherine Moureaux la fille
+                             de l'ancine bourgmestre Philippe Moureaux.<br />
                             </p>
                         </div>
                         <!--/ .caption-entry-->

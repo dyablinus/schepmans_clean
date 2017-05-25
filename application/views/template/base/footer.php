@@ -34,24 +34,22 @@
                     </div>
                     <div class="modal-body">
                         <div class="container">
-                            <div class="col-md-6">
-                                <input type="text" title="Votre email, ce champs est requis" class="form-control" id="" placeholder="Votre email*">
-                                <input type="text" title="Votre prénom" class="form-control" id="" placeholder="Prénom">
-                                <input type="text" title="Votre nom" class="form-control" id="" placeholder="nom">
-                            </div>
-                            <div class="col-md-12">
-                                <h6><small>*  Champ requis</small></h6>
+                            
+                            <div style="margin-left:-15px;" class="col-md-6">
+                                
+
+                                 <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/Schepmans" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/Schepmans', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Inscrivez-vous à la newsletter</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="S'abonner" /></form>
+
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" title="Envoyez votre inscription" class="btn btn-primary btncar">S'inscrire</button>
+                        
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div
 
 
         <br>

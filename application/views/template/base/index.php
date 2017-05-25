@@ -8,7 +8,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Françoise Schepmans page d'accueil, retrouvez l'essentiel de ses informtions">
+    <meta name="description" content="Belgique election molenbeek-saint-jean Schepmans députée mr oposée à Mayeur, Moureux et Milquet.
+    Françoise Schepmans est une femme politique belge bourgmestre de Molenbeek, députée e et membre du mr.">
     <meta name="author" content="">
     <link rel="stylesheet" media="screen" href="<?= base_url ("/node_modules/bootstrap/dist/css/bootstrap.min.css") ?>">
     <link rel="stylesheet" href="<?= base_url("node_modules/font-awesome/css/font-awesome.min.css") ?>">
@@ -25,7 +26,7 @@
      <link rel="stylesheet" href="<?= base_url("assets/css/molenbeek.css")?>">
 
    <link rel='stylesheet' id='css_flexslider-css' href="<?= base_url('/assets/css/slider.css')?>">
-    <title>Françoise Schepmans information, actualité, personne politique</title>
+    <title>Françoise Schepmans femme politique belge, retrouvez toutes ses informations et contact</title>
 
 
 </head>
