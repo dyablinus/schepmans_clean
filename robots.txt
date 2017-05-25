@@ -1,0 +1,10 @@
+User-agent : Googlebot/2.1 (+http://www.google/bot.html)
+User-agent : *
+Allow : /schepmans/index
+Allow : /schepmans/actualite
+Allow : /schepmans/calendrier
+Allow : /schepmans/contact
+Disallow : /schepmans/about
+Disallow : /schepmans/equipe
+Disallow : /schepmans/admin
+Disallow : /schepmans/molenbeek

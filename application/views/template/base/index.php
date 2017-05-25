@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Françoise Schepmans page d'accueil, retrouvez l'essentiel de ses informtions">
     <meta name="author" content="">
     <link rel="stylesheet" media="screen" href="<?= base_url ("/node_modules/bootstrap/dist/css/bootstrap.min.css") ?>">
     <link rel="stylesheet" href="<?= base_url("node_modules/font-awesome/css/font-awesome.min.css") ?>">
@@ -25,13 +25,13 @@
      <link rel="stylesheet" href="<?= base_url("assets/css/molenbeek.css")?>">
 
    <link rel='stylesheet' id='css_flexslider-css' href="<?= base_url('/assets/css/slider.css')?>">
-    <title>Schepmans</title>
+    <title>Françoise Schepmans information, actualité, personne politique</title>
 
 
 </head>
-<body style="background-image: linear-gradient(rgba(156, 156, 255, 0.19), white);">
+<body>
 
-<div style="background-color: white; box-shadow: -1em 0 125px black, 1em 0 125px black;" class="container">
+<div class="container">
 <?php  $this->load->view('template/base/nav'); ?> 
 
 <?= $view_content ?> 
@@ -75,5 +75,5 @@
     </script>
 </body>
 </html>
-      
+        <!-- Page Content Slider -->
            

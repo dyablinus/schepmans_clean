@@ -93,12 +93,11 @@
 }
 #size_h1{
     font-size: 85px;
-    text-align: center;
 }
 
 #bannière {
-    margin-left: -15px;
-    width: 1170px;
+    
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 110px;
 
@@ -142,7 +141,7 @@
 #footerarnault{
     background-color: #175079;
     color: white;
-
+    border-radius: 5px;
     text-shadow: 1px 1px black;
     padding: 4% 0;
     
@@ -176,9 +175,5 @@
 }
 a#back-top{
     display: none !important;
-}
-#footer_padding{
-    padding: initial;
-    
 }
 /*FIN FOOTER*/

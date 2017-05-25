@@ -1,4 +1,4 @@
-<div class="container" id="footer_padding">
+<div class="container">
 
     <footer id="footerarnault">
         <ul class="nav navbar-nav navbar-left nav_footer">
@@ -14,12 +14,12 @@
 
 
       
-            <div id="copyright">
-                <p>Copyright Molengeek 2017</p>
+            <div id="copyright" itemscope itemtype="http://schema.org/Person">
+                <p><span itemprop="copyrightHolder">Copyright Molengeek 2017</span></p>
             </div>
             <div id="subscrite" class="pull-right">
                 <p>Subscribe to the Newsletter: </p>
-        <button type="button" class="btn btncontact" id="buttonfoot" data-toggle="modal" data-target="#myModal">Je m'inscris</button>
+        <button type="button" class="btn btncontact" title="Suivre la newsletter" accesskey="n" id="buttonfoot" data-toggle="modal" data-target="#myModal">Je m'inscris</button>
             </div>
 
 
@@ -35,9 +35,9 @@
                     <div class="modal-body">
                         <div class="container">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="" placeholder="Votre email*">
-                                <input type="text" class="form-control" id="" placeholder="Prénom">
-                                <input type="text" class="form-control" id="" placeholder="nom">
+                                <input type="text" title="Votre email, ce champs est requis" class="form-control" id="" placeholder="Votre email*">
+                                <input type="text" title="Votre prénom" class="form-control" id="" placeholder="Prénom">
+                                <input type="text" title="Votre nom" class="form-control" id="" placeholder="nom">
                             </div>
                             <div class="col-md-12">
                                 <h6><small>*  Champ requis</small></h6>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary btncar">S'inscrire</button>
+                        <button type="button" title="Envoyez votre inscription" class="btn btn-primary btncar">S'inscrire</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>

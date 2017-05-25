@@ -3,7 +3,7 @@
 
 <div id="titre_actu" class="text-center">
    <i class="fa fa-rss" aria-hidden="true"></i>
-   <h6 class="titre text-center">ACTUALITÉS</h6>
+   <h1 class="titre text-center">ACTUALITÉS</h1>
 </div>
 
 <div id="barre_actu"></div>
