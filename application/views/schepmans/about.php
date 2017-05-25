@@ -10,16 +10,11 @@
 
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-<<<<<<< HEAD
 
-                <p class="p_about"> Françoise A.M. Schepmans (née le 18 juin 1960 à Berchem-Sainte-Agathe) est une femme politique belge, fille
-                    de Jacques Schepmans, dernier directeur général de l'hebdomadaire Pourquoi Pas ?.</p>
-                <p class="p_about">Elle occupe actuellement les fonctions de députée fédérale, Vice-présidente de la Chambre des représentants
-                    ainsi que bourgmestre de la commune de Molenbeek-Saint-Jean.Le 3 mars 2008, elle est élue pour la première
-                    fois administratrice cooptée au conseil d'administration de l'Université libre de Bruxelles.</p>
+
                     
-                    <p> <?php echo lang('message_accueil') ?></p>
-=======
+                  
+
                 <h1 id="size_h1" title="Présentaion de Françoise Schepmans" class="title_about"> Françoise Schepmans</h1>
                 <article>
                     <p class="p_about"> Françoise A.M. Schepmans (née le 18 juin 1960 à Berchem-Sainte-Agathe) est une femme politique belge,
@@ -28,7 +23,7 @@
                         ainsi que bourgmestre de la commune de Molenbeek-Saint-Jean.Le 3 mars 2008, elle est élue pour la
                         première fois administratrice cooptée au conseil d'administration de l'Université libre de Bruxelles.</p>
                 </article>
->>>>>>> 4724b18f3c01af40ae630be3ad246ee2a4e140ff
+
             </div>
 
 
