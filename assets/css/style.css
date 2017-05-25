@@ -93,11 +93,12 @@
 }
 #size_h1{
     font-size: 85px;
+    text-align: center;
 }
 
 #bannière {
-    
-    width: 100%;
+    margin-left: -15px;
+    width: 1170px;
     margin-top: 10px;
     margin-bottom: 110px;
 
@@ -175,5 +176,9 @@
 }
 a#back-top{
     display: none !important;
+}
+#footer_padding{
+    padding: initial;
+    
 }
 /*FIN FOOTER*/
