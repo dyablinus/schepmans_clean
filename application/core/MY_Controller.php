@@ -8,7 +8,6 @@ class MY_Controller extends CI_Controller {
 		public $data =array();
 		 	public function __construct() {
 			parent::__construct ();
-			$this->output->enable_profiler(TRUE);
 			$this->set_lang();
 		}
         public function render($view, $template = 'template/base/index'){
@@ -21,9 +20,6 @@ class MY_Controller extends CI_Controller {
 			$this->load->view($template, $this->data);
     }
 
-
-
-	
 		protected function set_lang(){
 		$this->tab_language = $this->config->item ( 'lang_uri_abbr' );
 		//lang
@@ -64,4 +60,3 @@ class MY_Controller extends CI_Controller {
 	}
 
   }
-

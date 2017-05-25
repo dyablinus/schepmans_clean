@@ -26,14 +26,13 @@ Ses evenements, Les membres de son équipes, ses actions de député et bourgmes
 
     <link rel='stylesheet' href="<?= base_url("/node_modules/fullcalendar/dist/fullcalendar.css") ?>">
 
-    <title>Françoise Schepmans siteweb, contact et informations.</title>
+    <title>Françoise Schepmans femme politique belge, retrouvez toutes ses informations et contact</title>
 
 </head>
 <body style="background-image: linear-gradient(rgba(156, 156, 255, 0.19), white);">
 
 <div style="background-color: white; box-shadow: -1em 0 125px black, 1em 0 125px black;" class="container">
-<body>
-<div class="container">
+
 <?php  $this->load->view('template/base/nav'); ?> 
 
 

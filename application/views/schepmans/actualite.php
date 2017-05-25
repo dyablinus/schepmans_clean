@@ -2,7 +2,6 @@
 
 <div id="titre_actu" class="text-center">
    <i class="fa fa-rss" aria-hidden="true"></i>
-   <h1 class="titre text-center">ACTUALITÉS</h1>
    <h6 class="titre text-center"><?php echo lang('actu_h6');?></h6>
 </div>
 

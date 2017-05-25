@@ -27,9 +27,8 @@ if (! defined ( 'BASEPATH' ))
       $lang ['index_h2_padactu'] = "LAATSTE NIEUWS";
       $lang ['index_a_voir_plus'] = "Zie meer";
       $lang ['index_h2_articlfont_pierre'] = "Jean-Pierre een auto gekocht in Molenbeek";
-      $lang ['index_h2_articlfont_michel'] = "Jean-Michel 
-verantwoordelijk in Molenbeek"; 
-      $lang ['index_h2_articlfont_aimarre'] = "John Aimarre beu vloed";
+      $lang ['index_h2_articlfont_michel'] = "Jean-Michel verantwoordelijk in Molenbeek"; 
+      $lang ['index_h2_articlfont_aimarre'] = "Joohnn Aaai-maarree beu vloed";
       $lang ['index_h2_articlfont_relou'] = "Ik weet wat te schrijven, zoals de titel it vervelend";
       //actualité
       $lang ['actu_h6'] = "ACTUALITEITEN";

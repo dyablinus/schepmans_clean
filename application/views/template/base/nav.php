@@ -57,21 +57,17 @@ href="http://localhost/schepmans/langchange/change/nl">NL</a>
             <a title="Aller vers la page d'accueil" accesskey="h" class="a_nav_top" href="<?= base_url("/index") ?>">HOME</a>
         </li>
         <li class="hovernav">
-            <a title="En savoir d\'avantage sur Françoise Schepmans" accesskey="q" class="a_nav_top" href="<?= base_url("/about") ?>">QUI SUIS-JE ?</a>
+            <a title="En savoir d\'avantage sur Françoise Schepmans" accesskey="q" class="a_nav_top" href="<?= base_url("/about") ?>"><?php echo lang('nav_a_href_whoim');?></a>
         </li>
         <li class="hovernav">
-            <a title="Découvrir oute les actualités de la bourgmestre" accesskey="a" class="a_nav_top" href="<?= base_url("/actualite") ?>">ACTUALITÉ</a>
-            <a class="a_nav_top" href="<?= base_url("/about") ?>"><?php echo lang('nav_a_href_whoim');?></a>
+            <a title="Découvrir oute les actualités de la bourgmestre" accesskey="a" class="a_nav_top" href="<?= base_url("/actualite") ?>"><?php echo lang('nav_a_href_actu');?></a>
         </li>
-        <li class="hovernav">
-            <a class="a_nav_top" href="<?= base_url("/actualite") ?>"><?php echo lang('nav_a_href_actu');?></a>
-        </li>
+        
         <li class="hovernav">
             <a title="Actions en faveur de Molenbeek-Sain-Jean" accesskey="m" class="a_nav_top" href="<?= base_url("/molenbeek") ?>">MOLENBEEK</a>
         </li>
         <li class="hovernav">
-            <a title="Contacter Françoise Schepmans" accesskey="c" class="a_nav_top" href="<?= base_url("/contact") ?>">CONTACT</a>
-            <a class="a_nav_top" href="<?= base_url("/contact") ?>"><?php echo lang('nav_a_href_contact');?></a>
+            <a title="Contacter Françoise Schepmans" accesskey="c" class="a_nav_top" href="<?= base_url("/contact") ?>"><?php echo lang('nav_a_href_contact');?></a>
         </li>
       
     </ul>
