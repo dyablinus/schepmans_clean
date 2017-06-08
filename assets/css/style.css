@@ -1,6 +1,22 @@
 
 /* DEBUT NAVBARRE*/
+@media only screen and (max-width: 768px) {
+   .sociaux #nav_icontop .icon_top {
+        font-size: 15px;
+    }
+    .sociaux #nav_icontop li  a {
+        padding: 10px 0;
+        
+    }
+        .schep{
+        text-align: center;
 
+    }
+    .sociaux{
+        text-align: center;
+    }
+  
+}
 .btn_nav_lang_en {
     right: 40px;
     float: right;
@@ -63,16 +79,6 @@
 #nav_j >.hovernav>.a_nav_top {
     text-decoration: none;
     padding: 20px 30px;
-}
-@media screen and (max-width: 767px) {
-    .schep{
-        text-align: center;
-
-    }
-    .sociaux{
-        text-align: center;
-    }
-  
 }
 
 

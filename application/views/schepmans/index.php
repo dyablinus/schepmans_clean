@@ -155,7 +155,9 @@
     </div>
 </div>
 
-<div class="col-md-8" id="marginpourfooter">
+
+
+<div class="col-xs-8 col-sm-8 col-md-8" id="marginpourfooter">
 <div class="row">
     <div class="col-md-12 textdeco">
  

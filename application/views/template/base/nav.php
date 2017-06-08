@@ -3,11 +3,11 @@
   
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 schep">
             <div id="logo_schep">  
-            <img src="<?= base_url("/assets/images/schepmans_logo.jpg ")?>" id="scheplogo" title="Logo">
+            <img class="img-responsive" src="<?= base_url("/assets/images/schepmans_logo.jpg ")?>" id="scheplogo" title="Logo">
             </div> 
         </div>
 
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 sociaux">
+    <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 sociaux">
         <!-- réseaux sociaux -->
         <ul class="nav navbar-nav navbar-right" id="nav_icontop">
             <li id="nav_icontope" class="hovernav" class="facebook_navtop">
@@ -47,28 +47,36 @@ href="http://localhost/schepmans/langchange/change/nl">NL</a>
 
 </nav>
 
-
 <nav class="navbar navbar-default navbar_top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--<a title="Aller vers la page d'accueil" accesskey="h" class="a_nav_top" href="<?= base_url("/index") ?>">HOME</a>-->
+    </div>
 
-    <ul id="nav_j" class="nav navbar-nav nav_haut">
-        
-  
-        <li class="hovernav">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul id="nav_j" class="nav navbar-nav nav_haut">
+           <li class="hovernav">
             <a title="Aller vers la page d'accueil" accesskey="h" class="a_nav_top" href="<?= base_url("/index") ?>">HOME</a>
-        </li>
-        <li class="hovernav">
+           </li>
+            <li class="hovernav">
             <a title="En savoir d\'avantage sur Françoise Schepmans" accesskey="q" class="a_nav_top" href="<?= base_url("/about") ?>"><?php echo lang('nav_a_href_whoim');?></a>
-        </li>
-        <li class="hovernav">
+            </li>
+            <li class="hovernav">
             <a title="Découvrir oute les actualités de la bourgmestre" accesskey="a" class="a_nav_top" href="<?= base_url("/actualite") ?>"><?php echo lang('nav_a_href_actu');?></a>
-        </li>
-        
-        <li class="hovernav">
+            </li>
+            <li class="hovernav">
             <a title="Actions en faveur de Molenbeek-Sain-Jean" accesskey="m" class="a_nav_top" href="<?= base_url("/molenbeek") ?>">MOLENBEEK</a>
-        </li>
-        <li class="hovernav">
-            <a title="Contacter Françoise Schepmans" accesskey="c" class="a_nav_top" href="<?= base_url("/contact") ?>"><?php echo lang('nav_a_href_contact');?></a>
-        </li>
-      
-    </ul>
+            </li>
+           <li class="hovernav">
+           <a title="Contacter Françoise Schepmans" accesskey="c" class="a_nav_top" href="<?= base_url("/contact") ?>"><?php echo lang('nav_a_href_contact');?></a>
+           </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
 </nav>
