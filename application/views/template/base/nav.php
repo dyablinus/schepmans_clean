@@ -7,46 +7,51 @@
             </div> 
         </div>
 
-    <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 sociaux">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 sociaux">
         <!-- réseaux sociaux -->
-        <ul class="nav navbar-nav navbar-right" id="nav_icontop">
-            <li id="nav_icontope" class="hovernav" class="facebook_navtop">
+        <ul class="nav navbar-nav " id="nav_icontop">
+            <li id="nav_icontope" class="hovernav col-xs-3 col-sm-3 facebook_navtop">
                 <a href="#" accesskey="f" title="Facebook">
                     <i class="icon_top fa fa-facebook-official" id="fb" aria-hidden="true"></i>
                 </a>
             </li>
-            <li class="hovernav" class="twitter_navtop">
+            <li class="hovernav twitter_navtop col-xs-3 col-sm-3">
                 <a href="#" accesskey="t" title="Twitter">
                     <i class="icon_top fa fa-twitter" id="twit" aria-hidden="true"></i>
                 </a>
             </li>
-            <li class="youtube_navtop">
+            <li class="youtube_navtop col-xs-3 col-sm-3">
                 <a href="#" accesskey="y" title="Youtube">
                     <i class="icon_top fa fa-youtube" aria-hidden="true"></i>
                 </a>
             </li>
-            <li class="actu_navtop">
+            <li class="actu_navtop col-xs-3 col-sm-3">
                 <a href="#" accesskey="a" title="Actualité">
                     <i class="icon_top fa fa-rss" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </div>
-<div class="lang_fr">
 
-<a class="btn_nav_lang_fr" href="http://localhost/schepmans/langchange/change/fr">FR</a>
-</div>
-<div class="lang_en">
 
-<a class="btn_nav_lang_en" href="http://localhost/schepmans/langchange/change/en">EN</a>
-</div>
-<div class="lang_nl">
-<a class="btn_nav_lang_nl"
-href="http://localhost/schepmans/langchange/change/nl">NL</a>
-</div>
+
+<!--<div id="menu_langue">
+
+  <div class="lang_fr">
+     <a class="btn_nav_lang_fr" href="http://localhost/schepmans/langchange/change/fr">FR</a>
+  </div>
+
+  <div class="lang_en">
+    <a class="btn_nav_lang_en" href="http://localhost/schepmans/langchange/change/en">EN</a>
+  </div>
+
+  <div class="lang_nl">
+     <a class="btn_nav_lang_nl"href="http://localhost/schepmans/langchange/change/nl">NL</a>
+   </div>
+
+</div>-->
 
 </nav>
-
 <nav class="navbar navbar-default navbar_top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -80,3 +85,5 @@ href="http://localhost/schepmans/langchange/change/nl">NL</a>
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
+
+
