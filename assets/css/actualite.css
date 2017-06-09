@@ -49,3 +49,22 @@
 .title_article {
     color: #175079;
 }
+
+@media only screen and (max-width: 768px) {
+.hidden_actu{
+    display:none;
+}
+.img_actu{
+    height: 70px;
+}
+.box_actu .title_article{
+    font-size: 115%;
+}
+.btn_actu_page{
+    width: 42%;
+    font-size: 9px;
+}
+.titre, .fa-rss-actu {
+    font-size: 240%;
+}
+}
