@@ -23,22 +23,38 @@
 }
 .title_molen {
  font-size: 75px;
- text-align: center;
- padding: 3% 0;
+ margin: 0;
  color: #175079;
- margin-left: 58px;
- 
+
 }
 .img_logo_molenbeek {
     width: 82px;
-    margin-bottom: -180px;
-    margin-left: 125px;
+    padding-bottom: 10%;
+
 
 }
 #barre_molen{
- border-bottom: 1px solid #175079;   
+ border-bottom: 1px solid #175079;
+ margin: 5% 0;   
 }
 
 @media only screen and (max-width: 768px) {
+.title_molen{
+    font-size: 37px;
+    margin: 0;
 
+}
+.img_logo_molenbeek {
+    margin: 0;
+   width: 50px;
+}
+.no_padding {
+    padding: 0;
+}
+.molenbeek_title{
+    font-size: 32px;
+}
+#molenbeek{
+    padding: 5% 0 0 5%;
+}
 }

@@ -1,9 +1,20 @@
 <div class="col-md-8 molenbeek_col">
-<div class="logo_molen">
+    
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"  id="barre_molen">
+          
+<div class="logo_molen col-xs-3 col-sm-3 no_padding">
     <img class="img_logo_molenbeek img-responsive" src="<?= base_url("assets/images/logo_molenbeek.png ")?>" alt="">
-    <h1 class="title_molen">Molenbeek</h1>
 </div>
-<div id="barre_molen"></div>
+
+<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" id="molenbeek">
+    <h1 class="title_molen">Molenbeek</h1>
+    
+</div>
+
+
+</div>
+
+
 
     <h2 class="molenbeek_title"><?php echo lang('h2_molen_logement');?></h2>
     <p class="p_molenbeek">
@@ -31,3 +42,5 @@
        <?php echo lang('p_molen_gardien');?>.</p>
     <img class="img_molenbeek img-responsive" src="<?= base_url("assets/images/medaille.jpg ")?>" alt="">
 </div>
+
+
