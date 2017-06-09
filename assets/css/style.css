@@ -66,30 +66,7 @@
 #menu_langue {
     margin: 2% 0 0 0;
 }
-@media only screen and (min-width: 768px) {
-#nav_icontop {
-    padding: 0 0 0 20%;
-}
-}
-@media only screen and (max-width: 768px) {
-   .sociaux #nav_icontop .icon_top {
-        font-size: 10px;
-    }
-    .sociaux #nav_icontop li  a {
-        padding: 10px 0;
 
-    }
-   #menu_langue > div > a {
-       font-size: 7px;
-       margin: 5% 7%;
-   }
-   #logo_schep{
-       padding: 16% 0 0 0;
-   }
-   #menu_langue {
-    margin: 5% 0 0 0;
-}
-}
 /*END NAVBARRE*/
 
 /*Page About*/
@@ -102,7 +79,9 @@
     padding: 0 5% 0 15%;
 }
 
-
+.margin_bottom_about{
+    margin-bottom: 5%;
+}
 .p_about {
     color : #666161;
     line-height: 25px;
@@ -126,7 +105,7 @@
     text-align: center;
 }
 
-#bannière {
+#banniere {
     margin-left: -15px;
     width: 1170px;
     margin-top: 10px;
@@ -138,9 +117,9 @@
 }
 .barre
 {
-   margin: 100px 165px 100px 0px;
+   margin: 55px 0px 69px 0px;
    border-bottom: 1px solid black;
-   background-color: lightgrey;
+   padding-bottom: 5%;
 }
 
 /*END ABOUT*/
@@ -211,7 +190,42 @@ a#back-top{
     
 }
 
+/*FIN FOOTER*/
+
+/*MEDIA QUERY*/
+
+@media only screen and (min-width: 768px) {
+#nav_icontop {
+    padding: 0 0 0 20%;
+}
+}
 @media only screen and (max-width: 768px) {
+
+    /*Navbar top*/
+
+
+   .sociaux #nav_icontop .icon_top {
+        font-size: 10px;
+    }
+    .sociaux #nav_icontop li  a {
+        padding: 10px 0;
+
+    }
+   #menu_langue > div > a {
+       font-size: 7px;
+       margin: 5% 7%;
+   }
+   #logo_schep{
+       padding: 16% 0 0 0;
+   }
+   #menu_langue {
+    margin: 5% 0 0 0;
+}
+
+/*END NAVBAR TOP*/
+
+/*FOOTER*/
+
 #copyright > p > span, #subscrite > p{
     font-size: 9px;
 }
@@ -225,5 +239,22 @@ display:none;
 #footerarnault{
     padding: 1% 0 28% 0;
 }
+
+/*END FOOTER*/
+
+/*ABOUT*/
+#banniere{
+width: 111%;
 }
-/*FIN FOOTER*/
+.barre{
+    padding-bottom: 10%;
+    margin: 55px 0px 44px 0px;
+}
+#portraitschepmans {
+    width: 105%;
+}
+#size_h1 {
+    font-size: 60px;
+}
+/*END ABOUT*/
+}
