@@ -1,17 +1,6 @@
 
 /* DEBUT NAVBARRE*/
-@media only screen and (max-width: 768px) {
-   .sociaux #nav_icontop .icon_top {
-        font-size: 15px;
-    }
-    .sociaux #nav_icontop li  a {
-        padding: 10px 0;
 
-        
-    }
-
-  
-}
 .btn_nav_lang_en {
     right: 40px;
     float: right;
@@ -41,13 +30,12 @@
     padding-top: 8px;
 }
 .sociaux {
-    padding-top: 2%;
     padding-bottom: 1%;
     text-align: center;
 
 }
 #nav_icontop .icon_top{
-    font-size: 25px;
+    font-size: 30px;
     border: 1px solid lightblue;
     border-radius: 40px;
     padding: 8px;
@@ -75,8 +63,33 @@
     text-decoration: none;
     padding: 20px 30px;
 }
+#menu_langue {
+    margin: 2% 0 0 0;
+}
+@media only screen and (min-width: 768px) {
+#nav_icontop {
+    padding: 0 0 0 20%;
+}
+}
+@media only screen and (max-width: 768px) {
+   .sociaux #nav_icontop .icon_top {
+        font-size: 10px;
+    }
+    .sociaux #nav_icontop li  a {
+        padding: 10px 0;
 
-
+    }
+   #menu_langue > div > a {
+       font-size: 7px;
+       margin: 5% 7%;
+   }
+   #logo_schep{
+       padding: 16% 0 0 0;
+   }
+   #menu_langue {
+    margin: 5% 0 0 0;
+}
+}
 /*END NAVBARRE*/
 
 /*Page About*/
@@ -133,6 +146,9 @@
 /*END ABOUT*/
 
 /*DEBUT FOOTER*/
+.nav_footer {
+    margin: 2% 0 0 0;
+}
 .nav_footer .fa{
     font-size: 25px;
     border: 1px solid lightblue;
@@ -159,9 +175,7 @@
 #footerarnault{
     background-color: #175079;
     color: white;
-
-  
-    padding: 4% 0;
+    padding: 2% 0 8% 0;
     
 }
 .nav_footer > li > a{
@@ -178,12 +192,10 @@
     display:inline-block;
 }
 #subscrite {
-    margin: 0 5%;
+
     font-size: 20px;
 }
-#copyright {
-    margin-left: 15%;
-}
+
 #text_footer {
     display: inline-block;
     margin: 0 0 0 5%;
@@ -197,5 +209,21 @@ a#back-top{
 #footer_padding{
     padding: initial;
     
+}
+
+@media only screen and (max-width: 768px) {
+#copyright > p > span, #subscrite > p{
+    font-size: 9px;
+}
+.nav_footer > li > a {
+display:none;
+}
+.btncontact{
+    width: 55%;
+    font-size: 9px;
+}
+#footerarnault{
+    padding: 1% 0 28% 0;
+}
 }
 /*FIN FOOTER*/

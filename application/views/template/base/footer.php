@@ -1,23 +1,27 @@
 <div id="footer_padding" class="container">
 
     <footer id="footerarnault">
+        
+        <div class="col-xs-4 col-sm-4 col-md-4 ">
+            
         <ul class="nav navbar-nav navbar-left nav_footer">
-            <li class="facebook"><a href="#" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <li class=" col-xs-3 col-sm-3 facebook"><a href="#" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>
                 <span></span></a></li>
-            <li class="twitter"><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
+            <li class="col-xs-3 col-sm-3 twitter"><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
                 <span></span></a></li>
-            <li class="youtube"><a href="#" title="Youtube"><i class="fa fa-youtube" aria-hidden="true"></i>
+            <li class="col-xs-3 col-sm-3 youtube"><a href="#" title="Youtube"><i class="fa fa-youtube" aria-hidden="true"></i>
                 <span></span></a></li>
-            <li class="actu_footer"><a href="#" title="Actu"><i class="fa fa-rss" aria-hidden="true"></i>
+            <li class="col-xs-3 col-sm-3 actu_footer"><a href="#" title="Actu"><i class="fa fa-rss" aria-hidden="true"></i>
                 <span></span></a></li>
         </ul>
 
+      </div>
 
       
-            <div id="copyright" itemscope itemtype="http://schema.org/Person">
+            <div class="col-xs-6 col-sm-6  col-md-4 " id="copyright" itemscope itemtype="http://schema.org/Person">
                 <p><span itemprop="copyrightHolder">Copyright Molengeek 2017</span></p>
             </div>
-            <div id="subscrite" class="pull-right">
+            <div id="subscrite" class="pull-right col-xs-6 col-sm-6 col-md-4 ">
                 <p><?php echo lang('footer_p_sub');?></p>
         <button type="button" class="btn btncontact" title="Suivre la newsletter" accesskey="n" id="buttonfoot" data-toggle="modal" data-target="#myModal"><?php echo lang('footer_inscris');?></button>
                 

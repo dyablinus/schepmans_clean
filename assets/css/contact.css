@@ -79,3 +79,9 @@ text-align: center;
     font-size: 55px;
     border-bottom: 1px solid #eee;
 }
+
+@media only screen and (max-width: 768px) {
+.first-box{
+    margin: 9% 0 2% 0;
+}
+}

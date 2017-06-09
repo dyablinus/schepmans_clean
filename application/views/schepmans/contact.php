@@ -6,7 +6,7 @@
         ?>
     <div class="row">
         <div class="container" id="contain_contact">
-            <div class="col-xs-7 col-sm-7 col-lg-7 box_form_contact">
+            <div class="col-xs-12 col-sm-12 col-lg-7 box_form_contact">
                 <h1 class="contact_titre"><?php echo lang('contact_h2_form');?></h1>
                 <form action="<?php echo base_url('user/contact_post'); ?>" method="POST" class="contact-form" role="form" id="contact-form">
                     <div class="form-group">
@@ -34,22 +34,22 @@
 
 
             <div class="contact">
-                <div class="col-sm-4 col-xs-4 first-box" itemscope itemtype="http://schema.org/Person">
+                <div class="col-xs-12 col-sm-12 col-md-4  first-box" itemscope itemtype="http://schema.org/Person">
 
 
-                    <div id="contact_box" class="box_phone">
+                    <div id="contact_box" class="box_phone col-xs-12 col-sm-12">
                         <i class="contact_icon fa fa-phone" aria-hidden="true"></i>
                         <h3 class="inline_block contact_categorie">Phone</h3>
                         <p class="contact_categorie"><span itemprop="telephone"> +880-1700-987654</span></p><br>
                     </div>
 
-                    <div id="contact_box" class="box_phone">
+                    <div id="contact_box" class="box_phone col-xs-12 col-sm-12">
                         <i class="contact_icon fa fa-map" aria-hidden="true"></i>
                         <h3 class="inline_block contact_categorie">Location</h3>
                         <p class="contact_categorie"><span itemprop="adress">1036 Gulshan Road</span></p><br>
                     </div>
 
-                    <div id="contact_box" class="box_phone">
+                    <div id="contact_box" class="box_phone col-xs-12 col-sm-12">
                         <i class="contact_icon fa fa-envelope" aria-hidden="true"></i>
                         <h3 class="inline_block contact_categorie">E-mail</h3>
                         <p class="contact_categorie"><span itemprop="email">info@yourdomain.com</span></p><br>
