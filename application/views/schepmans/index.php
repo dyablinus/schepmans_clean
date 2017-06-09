@@ -121,43 +121,56 @@
         </div>
     </div>
 </div>
+    
+
+
 <!--/ #slider-->
 <div style="margin-left: -15px; margin-right: -15px; border-radius: 0;"class="jumbotron">
-    <div style="padding-left: 90px;" class="container">
+    <div class="container">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="row fafa">
-            <div class="col-xs-1"><i class="syl fa fa-users" aria-hidden="true"></i>
+
+        <div class="col-xs-4 col-sm-4 col-md-4 ">
+
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-users" aria-hidden="true"></i>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-10 col-sm-10 col-md-10 padding_left_10">
                 <a target="_blank" title="Liste des membres constituant l\'équipe" accesskey="e" href="<?= base_url("/equipe") ?>"><h3 class="jumbofont"><?php echo lang('index_h3_equipe');?></h3></a>
                 
-                <p class="jumbopara">Apendum pupum</p>
+                <p class="jumbopara hidden_actu">Apendum pupum</p>
             </div>
-            <div class="col-xs-1"><i class="syl fa fa-thumbs-up" aria-hidden="true"></i>
+        
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4 col-xs-push-4 col-sm-push-4">
+
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-thumbs-up" aria-hidden="true"></i>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-10 col-sm-10 col-md-10 padding_left_10 ">
                 <a title="partie politique du mr" accesskey="p" href="http://www.mr.be/" target="_blank"><h3 class="jumbofont"><?php echo lang('index_h3_partie_poli');?></h3></a>
+                <p class="jumbopara hidden_actu">Apendum pupum</p>
+            </div>
 
-                
- 
-                <p class="jumbopara">Apendum pupum</p>
-            </div>
-            <div class="col-xs-1"><i class="syl fa fa-calendar" aria-hidden="true"></i>
-            </div>
-            <div class="col-xs-3">
- 
-                <a target="_blank" title="retrouvez la liste des évènements" accesskey="s" href="<?= base_url("/calendrier") ?>"><h3 class="jumbofont"><?php echo lang('index_h3_calendrier');?></h3></a>
+        </div>
 
-                
- 
-                <p class="jumbopara">Apendum pupum</p>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-xs-pull-4 col-sm-pull-4">
+
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-calendar" aria-hidden="true"></i>
+              </div>
+              <div class="col-xs-10 col-sm-10 col-md-10 padding_left_10">
+                <a target="_blank" title="retrouvez la liste des évènements" accesskey="s" href="<?= base_url("/calendrier") ?>"><h3 class="jumbofont"><?php echo lang('index_h3_calendrier');?></h3></a> 
+                <p class="jumbopara hidden_actu">Apendum pupum</p>
+              </div>
+
             </div>
+  </div>
         </div>
     </div>
 </div>
 
 
 
-<div class="col-xs-8 col-sm-8 col-md-8" id="marginpourfooter">
+<div class="col-xs-12 col-sm-12 col-md-8" id="marginpourfooter">
 <div class="row">
     <div class="col-md-12 textdeco">
  
@@ -180,7 +193,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_pierre');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
-        <img class="taille" src="<?= base_url ("/assets/images/schep4.jpg") ?>" alt="Relate les derniers évènements sur la vice députée">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep4.jpg") ?>" alt="Relate les derniers évènements sur la vice députée">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
@@ -192,7 +205,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_michel');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
-        <img class="taille" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="Présentation des actions en faveur de ">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="Présentation des actions en faveur de ">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
@@ -207,7 +220,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_aimarre');?></h2>
         <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
-        <img class="taille" src="<?= base_url ("/assets/images/schep3.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep3.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
@@ -218,7 +231,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_relou');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
-        <img class="taille" src="<?= base_url ("/assets/images/schep7.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep7.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 

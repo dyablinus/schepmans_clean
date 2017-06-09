@@ -81,12 +81,15 @@ div.jumbotron{
 .slides li img{
     width: 100%;
 }
+.padding_left_10{
+    padding-left: 10%;
+}
 @media screen and (max-width: 550px) {
     .fafa .fa{
     font-size: 15px;
     }
-    .jumbotron .jumbopara{
-    font-size: 9px;
+    .jumbotron{
+       padding-top: 10px;
     }
     .jumbotron .jumbofont{
         font-size: 11px;

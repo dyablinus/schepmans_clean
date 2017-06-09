@@ -13,7 +13,7 @@
 
 
  
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <h1 style="color:#175079;">Facebook</h1>
               <div id="text-2" class="widget-container widget_text">
 				<!--Bouton Facebook à ajouter si besoin-->
@@ -29,7 +29,7 @@
 			</div>
     
          <h1 style="color:#175079;">Twitter</h1>
-    <div  style="overflow:scroll; height:300px; overflow-x:hidden; width:100%;" class=" col-xs-4 col-sm-4 col-md-4">
+    <div  style="overflow:scroll; height:300px; overflow-x:hidden; width:100%;" class=" col-xs-12 col-sm-12 col-md-4">
     <a  class="twitter-timeline" href="https://twitter.com/fschepmans">Tweets by fschepmans</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
  
     </div>

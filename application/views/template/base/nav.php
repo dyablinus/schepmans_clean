@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default" id="background-blank" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
   
-        <div class="col-xs-4 col-sm-4 col-md-4  schep">
+        <div class="col-xs-12 col-sm-12 col-md-4  schep">
             <div id="logo_schep">  
             <img class="img-responsive" src="<?= base_url("/assets/images/schepmans_logo.jpg ")?>" id="scheplogo" title="Logo">
             </div> 
@@ -34,7 +34,7 @@
     </div>
 
 
-<div class="col-xs-2 col-sm-2 col-md-2" id="menu_langue">
+<div class="col-xs-6 col-sm-6 col-md-2" id="menu_langue">
 
   <div class="lang_fr">
      <a class="btn_nav_lang_fr" href="http://localhost/schepmans/langchange/change/fr">FR</a>
