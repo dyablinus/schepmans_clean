@@ -34,7 +34,7 @@
     </div>
 
 
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 last_team_people">
 
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/3.jpg ") ?>" alt="">
@@ -88,7 +88,7 @@
     </div>
 
 
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 last_team_people">
 
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/6.jpg ") ?>" alt="">
@@ -142,7 +142,7 @@
     </div>
 
 
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 last_team_people">
 
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/9.jpg ") ?>" alt="">
@@ -182,28 +182,28 @@
 
     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/15.jpg ") ?>" alt="">
+            <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/12.jpg ") ?>" alt=""> 
 
         </div>
 
         <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 block_equipe">
-            <div class="elue_equipe">Naïma Benbelkheir</div>
-            <div class="role_equipe">Consellère CPAS </div>
-            <div class="email_equipe"><i class="fa fa-paper-plane plane_equipe" aria-hidden="true"></i>benbelkheir.naima@gmail.com</div>
+            <div class="elue_equipe">Laurie Carême - Palanga</div>
+            <div class="role_equipe">Conseillère communale </div>
+            <div class="email_equipe"><i class="fa fa-paper-plane plane_equipe" aria-hidden="true"></i>loredana1955@scarlet.be</div>
         </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 last_team_people">
 
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/12.jpg ") ?>" alt="">
+            <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/15.jpg ") ?>" alt="">
 
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 block_equipe block_equipe_last">
-            <div class="elue_equipe">Laurie Carême - Palanga</div>
-            <div class="role_equipe">Conseillère communale </div>
-            <div class="email_equipe"><i class="fa fa-paper-plane plane_equipe" aria-hidden="true"></i>loredana1955@scarlet.be</div>
+            <div class="elue_equipe">Naïma Benbelkheir</div>
+            <div class="role_equipe">Consellère CPAS </div>
+            <div class="email_equipe"><i class="fa fa-paper-plane plane_equipe" aria-hidden="true"></i>benbelkheir.naima@gmail.com</div>            
         </div>
 
     </div>
@@ -245,7 +245,7 @@
 
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 last_team_people">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/17.jpg ") ?>" alt="">
 
@@ -295,7 +295,7 @@
 
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 last_team_people">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/14.jpg ") ?>" alt="">
 
@@ -313,8 +313,3 @@
     <!--END ROW 4-->
 </div>
 
- <p><br /> Françoise Schepmans est une femme politique belge, députée mr. Elle actuellement bourgemestre de Molenbeek-Saint-Jean <br />
-                                 <h2>Françoise Schepmans prochaine élection</h2>
-                            </div><br />
-                            <p><br /> Durant les prochaines élections à Bruxelles, Françoise Schepmans sera opposée à Joelle Milquet, Yvan Mayeur et Catherine Moureaux la fille
-                             de l'ancine bourgmestre Philippe Moureaux.<br />

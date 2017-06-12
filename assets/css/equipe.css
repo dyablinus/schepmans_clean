@@ -45,7 +45,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+#titre_equipe{
+    font-size: 45px;
+    margin: 0 0 8% 0;
+}
 .elue_equipe{
     font-size: 16px;
 } 
@@ -69,5 +72,8 @@
 }
 .block_equipe_last{
     margin: 0 0 0 28%;
+}
+.last_team_people{
+    margin: 8% 0 0 0;
 }
 }

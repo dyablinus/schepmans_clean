@@ -1,54 +1,33 @@
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-7174574-22']);
-	_gaq.push(['_trackPageview']);
-
-	(function () {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-
-</script>
-<script>
-	(function (d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-
-</script>
 
 <div id="carousel-id" class="carousel slide" data-ride="carousel">
     
     <div class="carousel-inner">
         <div class="item">
-            <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
+            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
             <div class="container">
                 <div class="carousel-caption" id="captions">
-                    <h1>Example headline.</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    <h2 class="carousel_titre">Françoise Schepmans</h2>
+                    <p>Françoise Schepmans est une femme politique belge, députée mr. Elle actuellement bourgemestre de Molenbeek-Saint-Jean </p>
                  
                 </div>
             </div>
         </div>
         <div class="item">
-            <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg">
+            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg">
             <div class="container">
                 <div class="carousel-caption" id="captions">
-                    <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h2 class="carousel_titre">Françoise Schepmans prochaine élection</h2>
+                    <p>Durant les prochaines élections à Bruxelles, Françoise Schepmans sera opposée à Joelle Milquet, Yvan Mayeur et Catherine Moureaux la fille
+                    de l'ancine bourgmestre Philippe Moureaux.</p>
                  
                 </div>
             </div>
         </div>
         <div class="item active">
-            <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
+            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
             <div class="container">
                 <div class="carousel-caption" id="captions">
-                    <h1>One more for good measure.</h1>
+                    <h2 class="carousel_titre">Françoise Schepmans</h2>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                    
                 </div>

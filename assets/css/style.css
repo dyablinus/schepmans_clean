@@ -226,6 +226,13 @@ a#back-top{
 
 /*FOOTER*/
 
+#copyright{
+    float:right;
+}
+
+#subscrite {
+    margin-top: 2%;
+}
 #copyright > p > span, #subscrite > p{
     font-size: 9px;
 }
@@ -244,7 +251,7 @@ display:none;
 
 /*ABOUT*/
 #banniere{
-width: 111%;
+width: 110%;
 }
 .barre{
     padding-bottom: 10%;
