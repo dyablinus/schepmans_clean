@@ -62,8 +62,12 @@
 }
 .block_equipe {
     width: 100px;
+    margin: 0 0 0 13%;
 }
 .row_equipe .col-sm-6{
     padding-left: 0;
+}
+.block_equipe_last{
+    margin: 0 0 0 28%;
 }
 }

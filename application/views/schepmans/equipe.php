@@ -34,14 +34,14 @@
     </div>
 
 
-    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/3.jpg ") ?>" alt="">
 
         </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 block_equipe">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 block_equipe block_equipe_last">
             <div class="elue_equipe">Olivier Mahy</div>
             <div class="role_equipe">Echevin</div>
             <div class="email_equipe"><i class="fa fa-paper-plane plane_equipe" aria-hidden="true"></i>oliviermahy2012@gmail.com</div>
@@ -88,14 +88,14 @@
     </div>
 
 
-    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/6.jpg ") ?>" alt="">
 
         </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 block_equipe">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 block_equipe block_equipe_last">
             <div class="elue_equipe">Michel Eylenbosh</div>
             <div class="role_equipe">Président du Conseil communal</div>
             <div class="email_equipe"><i class="fa fa-paper-plane plane_equipe" aria-hidden="true"></i>michel.eylenbosh@skynet.be</div>
@@ -142,14 +142,14 @@
     </div>
 
 
-    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/9.jpg ") ?>" alt="">
 
         </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 block_equipe">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 block_equipe block_equipe_last">
             <div class="elue_equipe">Georges Van Leeckwyck</div>
             <div class="role_equipe">Conseiller communal </div>
             <div class="email_equipe"><i class="fa fa-paper-plane plane_equipe" aria-hidden="true"></i>g.vanleeckwyck@skynet.be</div>
@@ -193,14 +193,14 @@
         </div>
     </div>
 
-    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/12.jpg ") ?>" alt="">
 
         </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 block_equipe">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 block_equipe block_equipe_last">
             <div class="elue_equipe">Laurie Carême - Palanga</div>
             <div class="role_equipe">Conseillère communale </div>
             <div class="email_equipe"><i class="fa fa-paper-plane plane_equipe" aria-hidden="true"></i>loredana1955@scarlet.be</div>
@@ -245,13 +245,13 @@
 
     </div>
 
-    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/17.jpg ") ?>" alt="">
 
         </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 block_equipe">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 block_equipe block_equipe_last">
             <div class="elue_equipe">Arlette De Backer</div>
             <div class="role_equipe">Conseillère CPAS </div>
             <div class="email_equipe"></div>
@@ -295,13 +295,13 @@
 
     </div>
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/14.jpg ") ?>" alt="">
 
         </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 block_equipe">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 block_equipe block_equipe_last">
             <div class="elue_equipe">Pascal Gardinal</div>
             <div class="role_equipe">Conseiller CPAS - Secrétaire et trésorier de la section MR de Molenbeek-Saint-Jean </div>
             <div class="email_equipe"><i class="fa fa-paper-plane plane_equipe" aria-hidden="true"></i>pascal.gardinal@skynet.be</div>
