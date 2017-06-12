@@ -2,7 +2,7 @@
 
 <div class="row row_equipe text-center">
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/1.jpg ") ?>" alt="">
@@ -18,7 +18,7 @@
     </div>
 
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/2.jpg ") ?>" alt="">
@@ -34,7 +34,7 @@
     </div>
 
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/3.jpg ") ?>" alt="">
@@ -56,7 +56,7 @@
 <!--DEBUT ROW-->
 <div class="row row_equipe text-center">
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/4.jpg ") ?>" alt="">
@@ -72,7 +72,7 @@
     </div>
 
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/5.jpg ") ?>" alt="">
@@ -88,7 +88,7 @@
     </div>
 
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/6.jpg ") ?>" alt="">
@@ -110,7 +110,7 @@
 <!--DEBUT ROW-->
 <div class="row row_equipe text-center">
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/7.jpg ") ?>" alt="">
@@ -126,7 +126,7 @@
     </div>
 
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/8.jpg ") ?>" alt="">
@@ -142,7 +142,7 @@
     </div>
 
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/9.jpg ") ?>" alt="">
@@ -164,7 +164,7 @@
 <!--DEBUT ROW-->
 <div class="row row_equipe text-center">
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/10.jpg ") ?>" alt="">
@@ -180,7 +180,7 @@
     </div>
 
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/15.jpg ") ?>" alt="">
 
@@ -193,7 +193,7 @@
         </div>
     </div>
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/12.jpg ") ?>" alt="">
@@ -215,7 +215,7 @@
 <!--DEBUT ROW-->
 <div class="row row_equipe text-center">
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/13.jpg ") ?>" alt="">
@@ -231,7 +231,7 @@
     </div>
 
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/18.jpg ") ?>" alt="">
 
@@ -245,7 +245,7 @@
 
     </div>
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/17.jpg ") ?>" alt="">
 
@@ -266,7 +266,7 @@
 <!--DEBUT ROW-->
 <div class="row row_equipe text-center">
 
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <img class=" portrait_equipe" src="<?= base_url("assets/images/equipe/16.jpg ") ?>" alt="">
 
@@ -312,3 +312,4 @@
 
     <!--END ROW 4-->
 </div>
+
