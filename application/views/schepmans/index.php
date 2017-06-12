@@ -21,105 +21,42 @@
 
 </script>
 
-<div class="box_carousel">
-
-    <div class="row">
-
-        <div id="slider" class="flexslider">
-            <ul class="slides">
-                <li>
-                    <img src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg" alt="Françoise Schepmans image de présentation" />
-                    <div class="caption">
-                        <div class="caption-entry">
-                            <div class="caption-title">
-                                <h2>Schepmans</h2>
-                            </div><br />
-                            <p><br /> Françoise Schepmans est une femme politique belge, députée mr. Elle actuellement bourgemestre de Molenbeek-Saint-Jean <br />
-                            </p>
-                        </div>
-                        <!--/ .caption-entry-->
-                    </div>
-                    <!--/ .caption-->
-                </li>
-
-
-
-                <li>
-                    <img src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg" alt="Dernier article sur Françoise Schepmans" />
-                    <div class="caption">
-                        <div class="caption-entry">
-                            <div class="caption-title">
-                                <h2>Françoise Schepmans prochaine élection</h2>
-                            </div><br />
-                            <p><br /> Durant les prochaines élections à Bruxelles, Françoise Schepmans sera opposée à Joelle Milquet, Yvan Mayeur et Catherine Moureaux la fille
-                             de l'ancine bourgmestre Philippe Moureaux.<br />
-                            </p>
-                        </div>
-                        <!--/ .caption-entry-->
-                    </div>
-                    <!--/ .caption-->
-                </li>
-
-
-
-                <li>
-                    <img src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg" alt="Un récent article sur la bourgmestre" />
-                    <div class="caption">
-                        <div class="caption-entry">
-                            <div class="caption-title">
-                                <h2>Schepmans</h2>
-                            </div><br />
-                            <p><br /> Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros
-                                est euismod turpis, id tincidunt sapien risus a quam. <br />
-                            </p>
-                        </div>
-                        <!--/ .caption-entry-->
-                    </div>
-                    <!--/ .caption-->
-                </li>
-
-
-
-                <li>
-                    <img src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg" alt="Action  pour la ville à l'initiative de Françoise Schepmans'" />
-                    <div class="caption">
-                        <div class="caption-entry">
-                            <div class="caption-title">
-                                <h2>Schepmans</h2>
-                            </div><br />
-                            <p><br /> Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl,
-                                mollis quis, molestie eu, feugiat in, orci risus a guam.<br />
-                            </p>
-                        </div>
-                        <!--/ .caption-entry-->
-                    </div>
-                    <!--/ .caption-->
-                </li>
-
-
-
-                <li>
-                    <img src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg" alt="Une Bourgmestre accomplie" />
-                    <div class="caption">
-                        <div class="caption-entry">
-                            <div class="caption-title">
-                                <h2>Schepmans</h2>
-                            </div><br />
-                            <p><br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                ea commodo consequat. Duis aute irure dolor in.<br />
-                            </p>
-                        </div>
-                        <!--/ .caption-entry-->
-                    </div>
-                    <!--/ .caption-->
-                </li>
-
-
-            </ul>
-
-
+<div id="carousel-id" class="carousel slide" data-ride="carousel">
+    
+    <div class="carousel-inner">
+        <div class="item">
+            <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
+            <div class="container">
+                <div class="carousel-caption" id="captions">
+                    <h1>Example headline.</h1>
+                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                 
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg">
+            <div class="container">
+                <div class="carousel-caption" id="captions">
+                    <h1>Another example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                 
+                </div>
+            </div>
+        </div>
+        <div class="item active">
+            <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
+            <div class="container">
+                <div class="carousel-caption" id="captions">
+                    <h1>One more for good measure.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                   
+                </div>
+            </div>
         </div>
     </div>
+    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
     
 
