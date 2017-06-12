@@ -30,7 +30,7 @@
 
 
 </head>
-<body style="background-image: linear-gradient(rgba(156, 156, 255, 0.19), white);">
+<body style="background-image: linear-gradient(rgba(0, 0, 255, 0.22), white);">
 
 <div style="background-color: white; box-shadow: -1em 0 125px black, 1em 0 125px black;" class="container">
 <?php  $this->load->view('template/base/nav'); ?> 

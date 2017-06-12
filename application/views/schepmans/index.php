@@ -62,41 +62,42 @@
 
 
 <!--/ #slider-->
-<div style="margin-left: -15px; margin-right: -15px; border-radius: 0;"class="jumbotron">
+<div style="margin-left: -15px; margin-right: -15px; border-radius: 0; background-color: rgb(25, 80, 119);
+"class="jumbotron">
     <div class="container">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="row fafa">
 
-        <div class="col-xs-4 col-sm-4 col-md-4 ">
+        <div class="col-xs-4 col-sm-4 col-md-4 "> 
 
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-users" aria-hidden="true"></i>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-users" style="color:white";  aria-hidden="true"></i>
             </div>
             <div class="col-xs-10 col-sm-10 col-md-10 padding_left_10">
-                <a target="_blank" title="Liste des membres constituant l\'équipe" accesskey="e" href="<?= base_url("/equipe") ?>"><h3 class="jumbofont"><?php echo lang('index_h3_equipe');?></h3></a>
+                <a target="_blank" title="Liste des membres constituant l\'équipe" accesskey="e" href="<?= base_url("/equipe") ?>"><h3 class="jumbofont" style="color:white";><?php echo lang('index_h3_equipe');?></h3></a>
                 
-                <p class="jumbopara hidden_actu">Apendum pupum</p>
+                <p class="jumbopara hidden_actu" style="color:white";>Apendum pupum</p>
             </div>
         
         </div>
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-xs-push-4 col-sm-push-4">
 
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-thumbs-up" aria-hidden="true"></i>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-thumbs-up" style="color:white"; aria-hidden="true"></i>
             </div>
             <div class="col-xs-10 col-sm-10 col-md-10 padding_left_10 ">
-                <a title="partie politique du mr" accesskey="p" href="http://www.mr.be/" target="_blank"><h3 class="jumbofont"><?php echo lang('index_h3_partie_poli');?></h3></a>
-                <p class="jumbopara hidden_actu">Apendum pupum</p>
+                <a title="partie politique du mr" accesskey="p" href="http://www.mr.be/" target="_blank"><h3 class="jumbofont" style="color:white";><?php echo lang('index_h3_partie_poli');?></h3></a>
+                <p class="jumbopara hidden_actu" style="color:white";>Apendum pupum</p>
             </div>
 
         </div>
 
             <div class="col-xs-4 col-sm-4 col-md-4 col-xs-pull-4 col-sm-pull-4">
 
-              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-calendar" aria-hidden="true"></i>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-calendar" style="color:white"; aria-hidden="true"></i>
               </div>
               <div class="col-xs-10 col-sm-10 col-md-10 padding_left_10">
-                <a target="_blank" title="retrouvez la liste des évènements" accesskey="s" href="<?= base_url("/calendrier") ?>"><h3 class="jumbofont"><?php echo lang('index_h3_calendrier');?></h3></a> 
-                <p class="jumbopara hidden_actu">Apendum pupum</p>
+                <a target="_blank" title="retrouvez la liste des évènements" accesskey="s" href="<?= base_url("/calendrier") ?>"><h3 class="jumbofont" style="color:white";><?php echo lang('index_h3_calendrier');?></h3></a> 
+                <p class="jumbopara hidden_actu" style="color:white";>Apendum pupum</p>
               </div>
 
             </div>

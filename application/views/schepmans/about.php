@@ -22,10 +22,10 @@
     </div>
 
 
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 barre">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 barre">
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-    
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
             <article>
                 <p class="p_about"> Françoise A.M. Schepmans (née le 18 juin 1960 à Berchem-Sainte-Agathe) est une femme politique belge, fille
                     de Jacques Schepmans, dernier directeur général de l'hebdomadaire Pourquoi Pas ?.</p>
@@ -40,9 +40,9 @@
                 </p>
             </article>
 
-     </div>
+        </div>
 
-</div>
+    </div>
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margin_bottom_about">
 
@@ -53,19 +53,28 @@
             <p class="p_about">
                 <?php echo $this->lang->line('aboutp3');?>.
             </p>
-            <p class="p_about">
-                <?php echo $this->lang->line('aboutp4');?>.
-            </p>
-            <br>
-            <p class="p_about">
-                <?php echo $this->lang->line('aboutp5');?>.
-            </p>
-            <p class="p_about">
-                <?php echo $this->lang->line('aboutp6');?>
-            </p>
-            <p class="p_about">
-                <?php echo $this->lang->line('aboutp7');?>
-            </p>
+            <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  ...
+</a>
+
+            <div class="collapse" id="collapseExample">
+                <div class="well">
+                    <p class="p_about">
+                        <?php echo $this->lang->line('aboutp4');?>.
+                    </p>
+                    <br>
+                    <p class="p_about">
+                        <?php echo $this->lang->line('aboutp5');?>.
+                    </p>
+                    <p class="p_about">
+                        <?php echo $this->lang->line('aboutp6');?>
+                    </p>
+                    <p class="p_about">
+                        <?php echo $this->lang->line('aboutp7');?>
+                    </p>
+                </div>
+            </div>
+
         </article>
     </div>
     <!--end box_about-->
