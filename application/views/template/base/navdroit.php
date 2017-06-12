@@ -30,7 +30,7 @@
     
          <h1 style="color:#175079;">Twitter</h1>
     <div  style="overflow:scroll; height:300px; overflow-x:hidden; width:100%;" class=" col-xs-12 col-sm-12 col-md-4">
-    <a  class="twitter-timeline" href="https://twitter.com/fschepmans">Tweets by fschepmans</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a  class="twitter-timeline" href="https://twitter.com/fschepmans">Tweets by fschepmans</a><script id="twitter-wjs" type="text/javascript" async defer src="https://platform.twitter.com/widgets.js"></script>
  
     </div>
  </div>
