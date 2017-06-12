@@ -55,4 +55,15 @@
 .role_equipe {
     font-size: 14px;
 }
+.portrait_equipe {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+.block_equipe {
+    width: 100px;
+}
+.row_equipe .col-sm-6{
+    padding-left: 0;
+}
 }
