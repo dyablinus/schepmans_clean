@@ -124,6 +124,19 @@
 
 /*END ABOUT*/
 
+
+/*DEBUT CALENDAR*/
+
+
+#calendar{
+    margin: 5% auto 9% auto;
+    max-width: 900px;
+}
+
+
+/*FIN CALENDAR*/
+
+
 /*DEBUT FOOTER*/
 .nav_footer {
     margin: 2% 0 0 0;

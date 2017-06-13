@@ -51,7 +51,7 @@
 
  <script src="<?= base_url ("/node_modules/jquery/dist/jquery.js") ?>"></script>
  <script src="<?= base_url ("/node_modules/bootstrap/dist/js/bootstrap.min.js") ?>"></script>
- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+ <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
 
 
 
