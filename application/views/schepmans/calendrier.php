@@ -1,34 +1,41 @@
-	<script>
-    
-    $(document).ready(function() {
 
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
-			},
-			defaultDate: '2017-06-12',
-			navLinks: true, // can click day/week names to navigate views
-			selectable: true,
-			selectHelper: true,
-			select: function(start, end) {
-				var title = prompt('Event Title:');
-				var eventData;
-				if (title) {
-					eventData = {
-						title: title,
-						start: start,
-						end: end
-					};
-					$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
-				}
-				$('#calendar').fullCalendar('unselect');
-			},
-		    businessHours: true, // display business hours
-			editable: true,
-			eventLimit: true, // allow "more" link when too many events
-			events: [
+<script>
+
+	$(document).ready(function() {
+		
+		$.post('<?php echo base_url();?>calendrier/getEvent',
+			function(data){
+				//alert(data);
+
+				$('#calendar').fullCalendar({
+					header: {
+						left: 'prev,next today',
+						center: 'title',
+						right: 'month,basicWeek,basicDay'
+					},
+					defaultDate: new Date(),
+       			   selectable: true,
+			       selectHelper: true,
+			       select: function(start, end) {
+				       var title = prompt('Event Title:');
+				       var eventData;
+					   if (title) {
+						   eventData = {
+							   title: title,
+							   start: start,
+						       end: end
+							};
+							$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+						}
+						$('#calendar').fullCalendar('unselect');
+					},					
+					navLinks: true, // can click day/week names to navigate views
+					editable: true,
+					businessHours: true,
+					eventLimit: true, // allow "more" link when too many events
+					editable: true,
+					// events: $.parseJSON(data),
+								events: [
 				{
 					title: 'Business Lunch',
 					start: '2017-06-03T13:00:00',
@@ -79,27 +86,127 @@
 					rendering: 'background',
 					color: '#ff9f89'
 				}
-			]
-		});
+			],
+					eventDrop: function(event, delta, revertFunc){
+						var id = event.id;
+						var fi = event.start.format();
+						var ff = event.end.format();
+
+						if (!confirm("Esta seguro??")) {
+							revertFunc();
+						}else{
+							$.post("<?php echo base_url();?>calendrier/updEvent",
+							{
+								id:id,
+								fecini:fi,
+								fecfin:ff
+							},
+							function(data){
+								if (data == 1) {
+									alert('Se actualizo correctamente');
+								}else{
+									alert('ERROR.');
+								}
+							});
+						}
+					},
+					eventResize: function(event, delta, revertFunc) {
+				        var id = event.id;
+						var fi = event.start.format();
+						var ff = event.end.format();
+
+						if (!confirm("Esta seguro de cambiar la fecha?")) {
+							revertFunc();
+						}else{
+							$.post("<?php echo base_url();?>calendrier/updEvent",
+							{
+								id:id,
+								fecini:fi,
+								fecfin:ff
+							},
+							function(data){
+								if (data == 1) {
+									alert('Se cambio correctamente');
+								}else{
+									alert('ERROR.');
+								}
+							});
+						}
+				    },
+				    eventClick: function(event, jsEvent, view) {
+
+				    	// alert(event.title);
+				    	$('#mhdnIdEvento').val(event.id);
+				    	$('#mtitulo').html(event.title);
+				    	$('#txtBandaRP').val(event.title);
+				    	$('#modalEvento').modal();
+
+				    	if (event.url) {
+				    		window.open(event.url);
+				    		return false;
+				    	}
+
+				    },
+				    eventRender: function(event, element) {
+				        var el = element.html();
+				        element.html("<div style='width:90%;float:left;'>" + el + "</div>" + 
+						        	"<div style='color:red;text-align:right;' class='closeE'>" +
+						        		"<i class='fa fa-trash'></i>" +
+						        	"</div>");
+
+				        element.find('.closeE').click(function(){
+				        	if (!confirm("Voulez-vous supprimer cet évènement?")) {
+								return false;
+							}else{
+								var id = event.id;
+								$.post("<?php echo base_url();?>calendrier/deleteEvent",
+								{
+									id:id
+								},
+								function(data){
+									alert(data);
+									if (data == 1) {
+										$('#calendar').fullCalendar( 'removeEvents', event.id);
+										alert('Évènement supprimé');
+									}else{
+										alert('ERROR.');
+									}
+								});
+					        	
+					        }
+
+				        });
+				    }
+					
+				});
+			});
+
+		
 		
 	});
 
 </script>
-<style>
 
-	body {
-		margin: 40px 10px;
-		padding: 0;
-		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-		font-size: 14px;
-	}
+<script type="text/javascript">
+	$('#btnUpdEvent').click(function(){
+		var nome = $('#txtBandaRP').val();
+		var web = $('#txtWeb').val();
+		var ide = $('#mhdnIdEvento').val();
 
-
-</style>
-</head>
-<body>
+		$.post("<?php echo base_url();?>calendrier/updEvent2",
+		{
+			nom: nome,
+			web: web,
+			id: ide
+		},
+		function(data){
+			if (data == 1) {
+				$('#btnCerrarModal').click();
+			}
+		})
+	})
+</script>
 
 	<div id='calendar'></div>
-
 
 

@@ -28,7 +28,7 @@ class Calendrier extends MY_Controller {
 
 	public function deleteEvent(){
 		$id = $this->input->post('id');
-		$r = $this->calendrier_model->deleteEvento($id);
+		$r = $this->calendrier_model->deleteEvent($id);
 		echo $r;
 	}
 
