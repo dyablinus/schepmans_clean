@@ -23,14 +23,14 @@ $lang ['footer_inscris'] ="Je m'inscris";
 
 //index
 //jumbotron 
-$lang ['index_h3_equipe'] = "ÉQUIPE";
+$lang ['index_h3_equipe'] = "COLLÈGE DES ECHEVINS";
 $lang ['index_h3_partie_poli'] = "PARTIE POLITIQUE";
 $lang ['index_h3_calendrier'] = "CALENDRIER";
 $lang ['index_h2_padactu'] = "DERNIÈRES ACTUALITÉS";
 $lang ['index_a_voir_plus'] = "Voir plus";
-$lang ['index_h2_articlfont_pierre'] = "Françoise Schepmans candidate pour le MR";
-$lang ['index_h2_articlfont_michel'] = "Politique en faveur des jeunes de la commune"; 
 $lang ['index_h2_articlfont_aimarre'] = "Les principaux opposants pour les prochaines élections";
+$lang ['index_h2_articlfont_pierre'] = "L'Italie était à l'honneur au Château du Karreveld";
+$lang ['index_h2_articlfont_michel'] = "Inauguration d'un potager bio derrière l'hôtel Belvue"; 
 $lang ['index_h2_articlfont_relou'] = "Françoise Schepmans en visite à Molengeek";
 //actualité
 $lang ['actu_h6'] = "ACTUALITÉS";

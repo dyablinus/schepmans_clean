@@ -110,7 +110,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_pierre');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
-        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep4.jpg") ?>" alt="Relate les derniers évènements sur la vice députée">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/art1.jpg") ?>" alt="Relate les derniers évènements sur la vice députée">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
@@ -122,7 +122,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_michel');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
-        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="Présentation des actions en faveur de ">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/art2.jpg") ?>" alt="Présentation des actions en faveur de ">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
@@ -137,7 +137,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_aimarre');?></h2>
         <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
-        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep3.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
@@ -148,7 +148,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_relou');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
-        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep7.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/art3.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
