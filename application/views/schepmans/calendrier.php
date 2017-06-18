@@ -1,105 +1,204 @@
 
-<script>
+    <div id="calendar">
 
-	$(document).ready(function() {
-		
-		$.post('<?php echo base_url();?>calendrier/getEvent',
-			function(data){
-				//alert(data);
+    </div>
 
-				$('#calendar').fullCalendar({
-					header: {
-						left: 'prev,next today',
-						center: 'title',
-						right: 'month,basicWeek,basicDay'
+    </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Add Calendar Event</h4>
+      </div>
+      <div class="modal-body">
+      <?php echo form_open(site_url("calendrier/add_event"), array("class" => "form-horizontal")) ?>
+      <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">Event Name</label>
+                <div class="col-md-8 ui-front">
+                    <input type="text" class="form-control" name="name" value="">
+                </div>
+        </div>
+        <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">Description</label>
+                <div class="col-md-8 ui-front">
+                    <input type="text" class="form-control" name="description">
+                </div>
+        </div>
+        <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">Start Date</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" name="start_date" id="datepicker">
+              
+                   <script>
+                   $( function() {
+                   $( "#datepicker" ).datetimepicker();
+                    } );
+                 </script>
+                
+                </div>
+        </div>
+        <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">End Date</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" name="end_date" id="datepicker2">
+
+                   <script>
+                   $( function() {
+                   $( "#datepicker2" ).datetimepicker();
+                    } );
+                 </script>
+
+                </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-primary" value="Add Event">
+        <?php echo form_close() ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Calendar Event</h4>
+      </div>
+      <div class="modal-body">
+      <?php echo form_open(site_url("calendrier/edit_event"), array("class" => "form-horizontal")) ?>
+      <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">Event Name</label>
+                <div class="col-md-8 ui-front">
+                    <input type="text" class="form-control" name="name" value="" id="name">
+                </div>
+        </div>
+        <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">Description</label>
+                <div class="col-md-8 ui-front">
+                    <input type="text" class="form-control" name="description" id="description">
+                </div>
+        </div>
+        <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">Start Date</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" name="start_date" id="start_date">
+
+                   <script>
+                   $( function() {
+                   $( "#start_date" ).datetimepicker();
+                    } );
+                 </script>
+
+                </div>
+        </div>
+        <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">End Date</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" name="end_date" id="end_date">
+
+                   <script>
+                   $( function() {
+                   $( "#end_date" ).datetimepicker();
+                    } );
+                 </script>
+                    
+                </div>
+        </div>
+        <div class="form-group">
+                    <label for="p-in" class="col-md-4 label-heading">Delete Event</label>
+                    <div class="col-md-8">
+                        <input type="checkbox" name="delete" value="1">
+                    </div>
+            </div>
+            <input type="hidden" name="eventid" id="event_id" value="0" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-primary" value="Update Event">
+        <?php echo form_close() ?>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<script type="text/javascript">
+$(document).ready(function() {
+var data;
+    var date_last_clicked = null;
+
+    $('#calendar').fullCalendar({
+				header: {
+				left: 'prev,next today',
+				center: 'title',					
+                right: 'month,basicWeek,basicDay'
 					},
-					defaultDate: new Date(),
-       			   selectable: true,
-			       selectHelper: true,
-			       select: function(start, end) {
-				       var title = prompt('Event Title:');
-				       var eventData;
-					   if (title) {
-						   eventData = {
-							   title: title,
-							   start: start,
-						       end: end
-							};
-							$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
-						}
-						$('#calendar').fullCalendar('unselect');
-					},					
 					navLinks: true, // can click day/week names to navigate views
 					editable: true,
 					businessHours: true,
 					eventLimit: true, // allow "more" link when too many events
 					editable: true,
-					// events: $.parseJSON(data),
-								events: [
-				{
-					title: 'Business Lunch',
-					start: '2017-06-03T13:00:00',
-					constraint: 'businessHours'
-				},
-				{
-					title: 'Meeting',
-					start: '2017-06-13T11:00:00',
-					constraint: 'availableForMeeting', // defined below
-					color: '#257e4a'
-				},
-				{
-					title: 'Conference',
-					start: '2017-06-18',
-					end: '2017-06-20'
-				},
-				{
-					title: 'Party',
-					start: '2017-06-29T20:00:00'
-				},
+       	            selectable: true,
+		            selectHelper: true,               
+        eventSources: [
+           {
+           events: function(start, end, timezone, callback) {
+                $.ajax({
+                    url: '<?php echo base_url() ?>calendrier/get_events',
+                    dataType: 'json',
+                    data: {
+                        // our hypothetical feed requires UNIX timestamps
+                        start: start.unix(),
+                        end: end.unix()
+                    },
+                    success: function(msg) {
+                       
+                        data = msg.events;
+                        
+                        callback(data);
+                    }
+                });
+              }
+            },
+        ],
+        dayClick: function(date, jsEvent, view) {
+            date_last_clicked = $(this);
+            $(this).css('background-color', '#bed7f3');
+            $('#addModal').modal();
+        },
+       eventClick: function(event, jsEvent, view) {
+          $('#name').val(event.title);
+          $('#description').val(event.description);
+          $('#start_date').val(moment(event.start).format('YYYY/MM/DD HH:mm'));
+          if(event.end) {
+            $('#end_date').val(moment(event.end).format('YYYY/MM/DD HH:mm'));
+          } else {
+            $('#end_date').val(moment(event.start).format('YYYY/MM/DD HH:mm'));
+          }
+          $('#event_id').val(event.id);
+          $('#editModal').modal();
+       },
 
-				// areas where "Meeting" must be dropped
-				{
-					id: 'availableForMeeting',
-					start: '2017-06-11T10:00:00',
-					end: '2017-06-11T16:00:00',
-					rendering: 'background'
-				},
-				{
-					id: 'availableForMeeting',
-					start: '2017-06-13T10:00:00',
-					end: '2017-06-13T16:00:00',
-					rendering: 'background'
-				},
-
-				// red areas where no events can be dropped
-				{
-					start: '2017-06-24',
-					end: '2017-06-28',
-					overlap: false,
-					rendering: 'background',
-					color: '#ff9f89'
-				},
-				{
-					start: '2017-06-06',
-					end: '2017-06-08',
-					overlap: false,
-					rendering: 'background',
-					color: '#ff9f89'
-				}
-			],
 					eventDrop: function(event, delta, revertFunc){
+                        console.log(event);
 						var id = event.id;
 						var fi = event.start.format();
 						var ff = event.end.format();
 
-						if (!confirm("Esta seguro??")) {
+						if (!confirm("La nouvelle date est correcte?")) {
 							revertFunc();
 						}else{
 							$.post("<?php echo base_url();?>calendrier/updEvent",
 							{
 								id:id,
-								fecini:fi,
-								fecfin:ff
+								start_date:fi,
+								end_date:ff
 							},
 							function(data){
 								if (data == 1) {
@@ -121,8 +220,8 @@
 							$.post("<?php echo base_url();?>calendrier/updEvent",
 							{
 								id:id,
-								fecini:fi,
-								fecfin:ff
+								start_date:fi,
+								end_date:ff
 							},
 							function(data){
 								if (data == 1) {
@@ -133,80 +232,6 @@
 							});
 						}
 				    },
-				    eventClick: function(event, jsEvent, view) {
-
-				    	// alert(event.title);
-				    	$('#mhdnIdEvento').val(event.id);
-				    	$('#mtitulo').html(event.title);
-				    	$('#txtBandaRP').val(event.title);
-				    	$('#modalEvento').modal();
-
-				    	if (event.url) {
-				    		window.open(event.url);
-				    		return false;
-				    	}
-
-				    },
-				    eventRender: function(event, element) {
-				        var el = element.html();
-				        element.html("<div style='width:90%;float:left;'>" + el + "</div>" + 
-						        	"<div style='color:red;text-align:right;' class='closeE'>" +
-						        		"<i class='fa fa-trash'></i>" +
-						        	"</div>");
-
-				        element.find('.closeE').click(function(){
-				        	if (!confirm("Voulez-vous supprimer cet évènement?")) {
-								return false;
-							}else{
-								var id = event.id;
-								$.post("<?php echo base_url();?>calendrier/deleteEvent",
-								{
-									id:id
-								},
-								function(data){
-									alert(data);
-									if (data == 1) {
-										$('#calendar').fullCalendar( 'removeEvents', event.id);
-										alert('Évènement supprimé');
-									}else{
-										alert('ERROR.');
-									}
-								});
-					        	
-					        }
-
-				        });
-				    }
-					
-				});
-			});
-
-		
-		
-	});
-
+    });
+});
 </script>
-
-<script type="text/javascript">
-	$('#btnUpdEvent').click(function(){
-		var nome = $('#txtBandaRP').val();
-		var web = $('#txtWeb').val();
-		var ide = $('#mhdnIdEvento').val();
-
-		$.post("<?php echo base_url();?>calendrier/updEvent2",
-		{
-			nom: nome,
-			web: web,
-			id: ide
-		},
-		function(data){
-			if (data == 1) {
-				$('#btnCerrarModal').click();
-			}
-		})
-	})
-</script>
-
-	<div id='calendar'></div>
-
-

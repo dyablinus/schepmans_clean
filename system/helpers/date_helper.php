@@ -1,702 +1,692 @@
 <?php
-/**
- * CodeIgniter
- *
- * An open source application development framework for PHP
- *
- * This content is released under the MIT License (MIT)
- *
- * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
- * @package	CodeIgniter
- * @author	EllisLab Dev Team
- * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
- * @link	https://codeigniter.com
- * @since	Version 1.0.0
- * @filesource
+if (! function_exists ( 'validateDate' )) {
+	function validateDate($date, $format = 'Y-m-d H:i:s') {
+		$d = DateTime::createFromFormat ( $format, $date );
+		return $d && $d->format ( $format ) == $date;
+	}
+}
+if (! function_exists ( 'listMonth' )) {
+	function listMonth($start_date, $end_date) {
+		$tab_date = array ();
+		if (strtotime ( $start_date ) <= strtotime ( $end_date )) {
+			$start_temp = strtotime ( $start_date );
+			$end_temp = strtotime ( $end_date );
+			while ( $start_temp <= $end_temp || (date ( "Y m", $start_temp ) <= date ( "Y m", $end_temp )) ) {
+				$data = array (
+						'nummonth' => date ( "m", $start_temp ),
+						'numyear' => date ( "Y", $start_temp ) 
+				);
+				array_push ( $tab_date, $data );
+				$start_temp = strtotime ( "+1 month", $start_temp );
+			}
+		}
+		return $tab_date;
+	}
+}
+if (! function_exists ( 'makeTime' )) {
+	function makeTime($date) {
+		$day = "day";
+		$days = "days";
+		$month = "month";
+		$months = "months";
+		$hour = "hour";
+		$hours = "hours";
+		$left = "left";
+		
+		$timestamp = strtotime ( $date );
+		$format = date ( "Y/m/d H:i", $timestamp );
+		$d = new DateTime ( $format );
+		$result = $d->diff ( new DateTime () );
+		
+		$msg = "";
+		if ($timestamp <= time ()) {
+			$msg = "Closed";
+		} else {
+			if ($result->m > 0 || $result->d > 0) {
+				if ($result->m == 1)
+					$msg .= "$result->m $month ";
+				else if ($result->m > 1)
+					$msg .= "$result->m $months ";
+				if ($result->d == 1)
+					$msg .= "$result->d $day ";
+				else if ($result->d > 1)
+					$msg .= "$result->d $days ";
+				$msg .= "$left";
+			} else {
+				if ($result->h > 0 || $result->m > 0) {
+					if ($result->h > 0)
+						$msg .= sprintf ( "%02d", $result->h ) . ":";
+					else
+						$msg .= "00:";
+					if ($result->i > 0)
+						$msg .= sprintf ( "%02d", $result->i ) . " ";
+					else
+						$msg .= "00 ";
+					$msg .= "$left";
+				}
+			}
+		}
+		// var_dump($result);
+		return $msg;
+	}
+}
+if (! function_exists ( 'weekBetwenDate' )) {
+	function weekBetwenDate($pdate1, $pdate2) {
+		$tab_week = array ();
+		$semaine_date_deb = date ( "Y-m-d", strtotime ( $pdate1 ) );
+		$semaine_date_fin = date ( "Y-m-d", strtotime ( $pdate2 ) );
+		$date1 = explode ( '-', $semaine_date_deb );
+		$semaine_date_deb = mktime ( 0, 0, 0, $date1 [1], $date1 [2], $date1 [0] );
+		$date2 = explode ( '-', $semaine_date_fin );
+		$semaine_date_fin = mktime ( 0, 0, 0, $date2 [1], $date2 [2], $date2 [0] );
+		$semaine = 7 * 24 * 60 * 60;
+		
+		$i = $semaine_date_deb;
+		
+		// si le jour est different de dimanche on ajoute 1 semaine sinon le calandrier n'affiche pas la derniere date
+		if (date ( 'w', strtotime ( $pdate2 ) ) != 0)
+			$semaine_date_fin = $semaine_date_fin + $semaine;
+		
+		while ( $i < ($semaine_date_fin) ) {
+			$week = date ( 'W', $i );
+			$year = date ( 'Y', $i );
+			
+			$temp = array (
+					"timesheet_numweek" => $week,
+					"timesheet_numyear" => $year 
+			);
+			array_push ( $tab_week, $temp );
+			$i = $i + $semaine;
+		}
+		return $tab_week;
+	}
+}
+if (! function_exists ( 'addDay' )) {
+	function addDay($date, $nbrJours) {
+		$dateTime = explode ( ' ', trim ( $date ) );
+		if (count ( $dateTime ) == 1) {
+			$newDate = date ( "Y-m-d", strtotime ( "+" . $nbrJours . " days" ) );
+		} else {
+			$date = $dateTime [0];
+			$time = $dateTime [1];
+			$newDate = Date::addDay ( $date, $nbrJours ) . ' ' . $time;
+		}
+		return $newDate;
+	}
+}
+if (! function_exists ( 'add' )) {
+	function add($date, $nbr, $temp = 'd') {
+		$dateTime = explode ( ' ', trim ( $date ) );
+		if (count ( $dateTime ) == 1) {
+			switch ($temp) {
+				case "d" :
+					$newDate = date ( "d/m/Y", strtotime ( "+" . $nbr . " days" ) );
+					break;
+				case "m" :
+					$newDate = date ( "d/m/Y", strtotime ( "+" . $nbr . " month" ) );
+					break;
+				case "y" :
+					$newDate = date ( "d/m/Y", strtotime ( "+" . $nbr . " year" ) );
+					break;
+				default :
+					return "00/00/0000";
+					break;
+			}
+		} else {
+			$date = $dateTime [0];
+			$time = $dateTime [1];
+			$newDate = Date::addDay ( $date, $nbrJours ) . ' ' . $time;
+		}
+		return $newDate;
+	}
+}
+if (! function_exists ( 'difDate' )) {
+	function difDate($date1, $date2) {
+		$date1 = strtotime ( $date1 );
+		$date2 = strtotime ( $date2 );
+		$dif = $date1 - $date2;
+		return $dif;
+	}
+}
+// -------------------------------- formatDate('2011-08-23 23:54:25','-','/',true,false) ---
+// -------------------------------- $reg1 : séparateur initial ---
+// -------------------------------- $reg1 : séparateur de sortie ---
+// -------------------------------- $reverse : reverse la date (sans bouger aux heures) ---
+// -------------------------------- $time : affiche les heures ---
+// -------------------------------- ---
+// -------------------------------- resultat : 23/08/2011 ---
+if (! function_exists ( 'formatDate' )) {
+	function formatDate($date, $reg1, $reg2, $reverse = true, $_time = true) {
+		$dateTime = explode ( ' ', trim ( $date ) );
+		if (count ( $dateTime ) == 1) {
+			if ($reverse) {
+				$newDate = implode ( $reg2, array_reverse ( explode ( $reg1, trim ( $date ) ) ) );
+			} else {
+				$newDate = implode ( $reg2, explode ( $reg1, trim ( $date ) ) );
+			}
+		} else {
+			$date = $dateTime [0];
+			$time = $dateTime [1];
+			if ($_time) {
+				$newDate = formatDate ( $date, $reg1, $reg2, $reverse, $time ) . ' ' . $time;
+			} else {
+				$newDate = formatDate ( $date, $reg1, $reg2, $reverse, $time );
+			}
+		}
+		return $newDate;
+	}
+}
+// -------------------------------- selectTime('2011-08-23 23:54:25','(H)(:)(M)(:)(S)') ---
+// -------------------------------- '()' : rend l'information facultative ---
+// -------------------------------- ':' : etant un séparateur obligatoire ---
+// -------------------------------- ---
+// -------------------------------- resultat : 23:54:25 ---
+if (! function_exists ( 'selectTime' )) {
+	function selectTime($date, $format = 'H:M:S') {
+		$dateTime = explode ( ' ', trim ( $date ) );
+		if (count ( $dateTime ) == 1) {
+			throw new RuntimeException ( '<strong>ERREUR : Aucune heure est disponible pour la selection</strong>' );
+		} else {
+			$tempTime = explode ( ':', $dateTime [1] );
+			if (count ( $tempTime ) != 3)
+				throw new RuntimeException ( "<strong>ERREUR : Le format de l'heure est incorrecte</strong>" );
+			if (! is_numeric ( $tempTime [0] ) || ! is_numeric ( $tempTime [1] ) || ! is_numeric ( $tempTime [2] ))
+				throw new RuntimeException ( "<strong>ERREUR : Le format de l'heure est incorrecte, le bon format est 00:00(:00)</strong>" );
+			
+			$H = $tempTime [0];
+			$M = $tempTime [1];
+			$S = $tempTime [2];
+			
+			$format = explode ( ':', $format );
+			$format = array_unique ( $format );
+			
+			$tab_time = array ();
+			if (in_array ( "H", $format ))
+				array_push ( $tab_time, $H );
+			if (in_array ( "M", $format ))
+				array_push ( $tab_time, $M );
+			if (in_array ( "S", $format ))
+				array_push ( $tab_time, $S );
+			
+			$time = implode ( ':', $tab_time );
+		}
+		return $time;
+	}
+}
+// -------------------------------- duree(temps en seconde en unix entre 2 dates) ---
+// -------------------------------- ---
+// -------------------------------- resultat : durée en jour heure minute seconde entre ces 2 dates ---
+if (! function_exists ( 'duree' )) {
+	function duree($time) {
+		$tabTemps = array (
+				"j" => 86400,
+				"h" => 3600,
+				"m" => 60,
+				"s" => 1 
+		);
+		
+		$result = "";
+		
+		foreach ( $tabTemps as $uniteTemps => $nombreSecondesDansUnite ) {
+			$$uniteTemps = floor ( $time / $nombreSecondesDansUnite );
+			$time = $time % $nombreSecondesDansUnite;
+			
+			if ($$uniteTemps > 0 || ! empty ( $result )) {
+				if ($uniteTemps == "j") {
+					$result .= $$uniteTemps . " j ";
+				}
+				if ($uniteTemps == "h" || $uniteTemps == "m") {
+					if ($$uniteTemps < 10) {
+						$result .= "0" . $$uniteTemps . ":";
+					} else {
+						$result .= $$uniteTemps . ":";
+					}
+				}
+				if ($uniteTemps == "s") {
+					if ($$uniteTemps < 10) {
+						$result .= "0" . $$uniteTemps;
+					} else {
+						$result .= $$uniteTemps;
+					}
+				}
+				// $result .= $$uniteTemps." $uniteTemps ";
+			}
+		}
+		return $result;
+	}
+}
+// -------------------------------- changeTime('2011-08-23 23:54:25','15:33(:22)') ---
+// -------------------------------- '()' : rend l'information facultative ---
+// -------------------------------- ':' : etant un séparateur obligatoire ---
+// -------------------------------- si pas de seconde, seconde vaut '00' ---
+// -------------------------------- ---
+// -------------------------------- resultat : 2011-08-23 15:33:22 ---
+if (! function_exists ( 'changeTime' )) {
+	function changeTime($date, $newTime) {
+		$dateTime = explode ( ' ', trim ( $date ) );
+		if (count ( $dateTime ) == 1) {
+			throw new RuntimeException ( '<strong>ERREUR : Aucune heure est disponible pour la selection</strong>' );
+		} else {
+			$tempTime = explode ( ':', $newTime );
+			$count = count ( $tempTime );
+			if ($count < 2 || $count > 3)
+				throw new RuntimeException ( "<strong>ERREUR : Le format de la nouvelle heure est incorrecte</strong>" );
+			if ($count == 2) {
+				if (! is_numeric ( $tempTime [0] ) || ! is_numeric ( $tempTime [1] ))
+					throw new RuntimeException ( "<strong>ERREUR : Le format de l'heure est incorrecte, le bon format est 00:00(:00)</strong>" );
+				
+				$tab_time = array ();
+				array_push ( $tab_time, $tempTime [0] );
+				array_push ( $tab_time, $tempTime [1] );
+				array_push ( $tab_time, '00' );
+				
+				$newTime = implode ( ':', $tab_time );
+			} else if ($count == 3) {
+				if (! is_numeric ( $tempTime [0] ) || ! is_numeric ( $tempTime [1] ) || ! is_numeric ( $tempTime [2] ))
+					throw new RuntimeException ( "<strong>ERREUR : Le format de l'heure est incorrecte, le bon format est 00:00(:00)</strong>" );
+				
+				$tab_time = array ();
+				array_push ( $tab_time, $tempTime [0] );
+				array_push ( $tab_time, $tempTime [1] );
+				array_push ( $tab_time, $tempTime [2] );
+				
+				$newTime = implode ( ':', $tab_time );
+			}
+		}
+		return $dateTime [1] . ' ' . $newTime;
+	}
+}
+/*
+ * if ( ! function_exists('week_dates'))
+ * {
+ * function week_dates($week,$year) {
+ * $week_dates = array();
+ * // Get timestamp of first week of the year
+ * $first_day = mktime(12,0,0,1,1,$year);
+ * $first_week = date("W",$first_day);
+ * if ($first_week > 1) {
+ * $first_day = strtotime("+1 week",$first_day); // skip to next if year does not begin with week 1
+ * }
+ * // Get timestamp of the week
+ * $timestamp = strtotime(+$week." week",$first_day);
+ * // Adjust to Monday of that week
+ * $what_day = date("w",$timestamp); // I wanted to do "N" but only version 4.3.9 is installed :-(
+ * if ($what_day==0) {
+ * // actually Sunday, last day of the week. FIX;
+ * $timestamp = strtotime("-6 days",$timestamp);
+ * } elseif ($what_day > 1) {
+ * $what_day--;
+ * $timestamp = strtotime("-$what_day days",$timestamp);
+ * }
+ * $week_dates[1] = date("Y-m-d",$timestamp); // Monday
+ * $week_dates[2] = date("Y-m-d",strtotime("+1 day",$timestamp)); // Tuesday
+ * $week_dates[3] = date("Y-m-d",strtotime("+2 day",$timestamp)); // Wednesday
+ * $week_dates[4] = date("Y-m-d",strtotime("+3 day",$timestamp)); // Thursday
+ * $week_dates[5] = date("Y-m-d",strtotime("+4 day",$timestamp)); // Friday
+ * $week_dates[6] = date("Y-m-d",strtotime("+5 day",$timestamp)); // Saturday
+ * $week_dates[7] = date("Y-m-d",strtotime("+6 day",$timestamp)); // Sunday
+ * return($week_dates);
+ * }
+ * }
  */
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-/**
- * CodeIgniter Date Helpers
- *
- * @package		CodeIgniter
- * @subpackage	Helpers
- * @category	Helpers
- * @author		EllisLab Dev Team
- * @link		https://codeigniter.com/user_guide/helpers/date_helper.html
- */
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('now'))
-{
-	/**
-	 * Get "now" time
-	 *
-	 * Returns time() based on the timezone parameter or on the
-	 * "time_reference" setting
-	 *
-	 * @param	string
-	 * @return	int
-	 */
-	function now($timezone = NULL)
-	{
-		if (empty($timezone))
-		{
-			$timezone = config_item('time_reference');
+if (! function_exists ( 'week_dates' )) {
+	function week_dates($week, $year) {
+		$week_dates = array ();
+		// on recupere le 1er jour de l'année
+		$first_day = mktime ( 12, 0, 0, 1, 1, $year );
+		// on récupere la semaine de ce dernier
+		$first_week = date ( "W", $first_day );
+		// si le numéro de semaine de ce 1er jour est plus grand que 1 (comme 52) l'on rajoute une semaine au premier jour pour pouvoir calculer
+		// depuis la semaine 1
+		// ex : pour 2012, le calcul ne se fera pas sur le 1er, mais le 8
+		if ($first_week > 1) {
+			$first_day = strtotime ( "+1 week", $first_day ); // skip to next if year does not begin with week 1
 		}
-
-		if ($timezone === 'local' OR $timezone === date_default_timezone_get())
-		{
-			return time();
+		// on rajoute les semaines à la 1ere semaine récupérée
+		// comme l'on se trouve à la semaine 1 on soustrait de 1 sinon
+		// on récupèrer la semaine suivante
+		// ex: je veux la semaine 52 = 1+52-1
+		$timestamp = strtotime ( + ($week - 1) . " week", $first_day );
+		// Adjust to Monday of that week
+		$what_day = date ( "w", $timestamp ); // I wanted to do "N" but only version 4.3.9 is installed :-(
+		                                  
+		// trouver la date du lundi de la semaine
+		                                  // si dimanche...
+		if ($what_day == 0) {
+			// on retire 6jour pour arriver a lundi
+			$timestamp = strtotime ( "-6 days", $timestamp );
+		} elseif ($what_day > 1) {
+			// sinon on soustrait le resultat de $what_day au jour courrant
+			$what_day --; // on soustrait de 1 car le premier jour est dimanche
+			$timestamp = strtotime ( "-$what_day days", $timestamp );
 		}
-
-		$datetime = new DateTime('now', new DateTimeZone($timezone));
-		sscanf($datetime->format('j-n-Y G:i:s'), '%d-%d-%d %d:%d:%d', $day, $month, $year, $hour, $minute, $second);
-
-		return mktime($hour, $minute, $second, $month, $day, $year);
+		
+		// recuperation des jours a partir
+		$week_dates [1] = date ( "Y-m-d", $timestamp ); // Monday
+		$week_dates [2] = date ( "Y-m-d", strtotime ( "+1 day", $timestamp ) ); // Tuesday
+		$week_dates [3] = date ( "Y-m-d", strtotime ( "+2 day", $timestamp ) ); // Wednesday
+		$week_dates [4] = date ( "Y-m-d", strtotime ( "+3 day", $timestamp ) ); // Thursday
+		$week_dates [5] = date ( "Y-m-d", strtotime ( "+4 day", $timestamp ) ); // Friday
+		$week_dates [6] = date ( "Y-m-d", strtotime ( "+5 day", $timestamp ) ); // Saturday
+		$week_dates [7] = date ( "Y-m-d", strtotime ( "+6 day", $timestamp ) ); // Sunday
+		return ($week_dates);
+	}
+}
+if (! function_exists ( 'difheure' )) {
+	function difheure($heuredeb, $heurefin) {
+		$hd = explode ( ":", $heuredeb );
+		$hf = explode ( ":", $heurefin );
+		$hd [0] = ( int ) ($hd [0]);
+		$hd [1] = ( int ) ($hd [1]);
+		$hf [0] = ( int ) ($hf [0]);
+		$hf [1] = ( int ) ($hf [1]);
+		if ($hf [1] < $hd [1]) {
+			$hf [0] = $hf [0] - 1;
+			$hf [1] = $hf [1] + 60;
+		}
+		if ($hf [0] < $hd [0]) {
+			$hf [0] = $hf [0] + 24;
+		}
+		
+		$newHeure = ($hf [0] - $hd [0]);
+		$newMinute = ($hf [1] - $hd [1]);
+		
+		if (count ( $newHeure ) == 1)
+			$newHeure = '0' . $newHeure;
+		if (count ( $newMinute ) == 1)
+			$newMinute = '0' . $newMinute;
+		
+		$result = $newHeure . ":" . $newMinute;
+		
+		return $result;
+	}
+}
+if (! function_exists ( 'heureToInt' )) {
+	function heureToInt($heure) {
+		$heure = explode ( ":", $heure );
+		$minute = ($heure [1] / 60) * 100;
+		$result = ( int ) $heure [0] . '.' . ( int ) ($minute);
+		return $result;
+	}
+}
+if (! function_exists ( 'intToHeure' )) {
+	function intToHeure($int, $separateur) {
+		$int = explode ( $separateur, $int );
+		$minute = ($heure [1] / 100) * 60;
+		$result = $heure [0] . ':' . ($minute);
+		return $result;
+	}
+}
+if (! function_exists ( 'retireAnnee' )) {
+	function retireAnnee($date) {
+		$date = explode ( "/", $date );
+		return $date [0] . '/' . $date [1];
 	}
 }
 
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('mdate'))
-{
-	/**
-	 * Convert MySQL Style Datecodes
-	 *
-	 * This function is identical to PHPs date() function,
-	 * except that it allows date codes to be formatted using
-	 * the MySQL style, where each code letter is preceded
-	 * with a percent sign:  %Y %m %d etc...
-	 *
-	 * The benefit of doing dates this way is that you don't
-	 * have to worry about escaping your text letters that
-	 * match the date codes.
-	 *
-	 * @param	string
-	 * @param	int
-	 * @return	int
-	 */
-	function mdate($datestr = '', $time = '')
-	{
-		if ($datestr === '')
-		{
-			return '';
+// -------------------------------- changeTime(strtotime('2011-11-02'),strtotime('2011-11-29')) ---
+// -------------------------------- ---
+// -------------------------------- resultat : 1 ---
+if (! function_exists ( 'get_nb_open_days' )) {
+	function get_nb_open_days($date_start, $date_stop) {
+		$date_start = strtotime ( $date_start );
+		$date_stop = strtotime ( $date_stop );
+		
+		$arr_bank_holidays = array (); // Tableau des jours feriés
+		                              // On boucle dans le cas où l'année de départ serait différente de l'année d'arrivée
+		$diff_year = date ( 'Y', $date_stop ) - date ( 'Y', $date_start );
+		for($i = 0; $i <= $diff_year; $i ++) {
+			$year = ( int ) date ( 'Y', $date_start ) + $i;
+			// Liste des jours feriés
+			$arr_bank_holidays [] = '1_1_' . $year; // Jour de l'an
+			$arr_bank_holidays [] = '1_5_' . $year; // Fete du travail
+			$arr_bank_holidays [] = '8_5_' . $year; // Victoire 1945
+			$arr_bank_holidays [] = '14_7_' . $year; // Fete nationale
+			$arr_bank_holidays [] = '15_8_' . $year; // Assomption
+			$arr_bank_holidays [] = '1_11_' . $year; // Toussaint
+			$arr_bank_holidays [] = '11_11_' . $year; // Armistice 1918
+			$arr_bank_holidays [] = '25_12_' . $year; // Noel
+			                                       // Récupération de paques. Permet ensuite d'obtenir le jour de l'ascension et celui de la pentecote
+			$easter = easter_date ( $year );
+			$arr_bank_holidays [] = date ( 'j_n_' . $year, $easter + 86400 ); // Paques
+			$arr_bank_holidays [] = date ( 'j_n_' . $year, $easter + (86400 * 39) ); // Ascension
+			$arr_bank_holidays [] = date ( 'j_n_' . $year, $easter + (86400 * 50) ); // Pentecote
 		}
-		elseif (empty($time))
-		{
-			$time = now();
-		}
-
-		$datestr = str_replace(
-			'%\\',
-			'',
-			preg_replace('/([a-z]+?){1}/i', '\\\\\\1', $datestr)
-		);
-
-		return date($datestr, $time);
-	}
-}
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('timespan'))
-{
-	/**
-	 * Timespan
-	 *
-	 * Returns a span of seconds in this format:
-	 *	10 days 14 hours 36 minutes 47 seconds
-	 *
-	 * @param	int	a number of seconds
-	 * @param	int	Unix timestamp
-	 * @param	int	a number of display units
-	 * @return	string
-	 */
-	function timespan($seconds = 1, $time = '', $units = 7)
-	{
-		$CI =& get_instance();
-		$CI->lang->load('date');
-
-		is_numeric($seconds) OR $seconds = 1;
-		is_numeric($time) OR $time = time();
-		is_numeric($units) OR $units = 7;
-
-		$seconds = ($time <= $seconds) ? 1 : $time - $seconds;
-
-		$str = array();
-		$years = floor($seconds / 31557600);
-
-		if ($years > 0)
-		{
-			$str[] = $years.' '.$CI->lang->line($years > 1 ? 'date_years' : 'date_year');
-		}
-
-		$seconds -= $years * 31557600;
-		$months = floor($seconds / 2629743);
-
-		if (count($str) < $units && ($years > 0 OR $months > 0))
-		{
-			if ($months > 0)
-			{
-				$str[] = $months.' '.$CI->lang->line($months > 1 ? 'date_months' : 'date_month');
+		// print_r($arr_bank_holidays);
+		$nb_days_open = 0;
+		// Mettre <= si on souhaite prendre en compte le dernier jour dans le décompte
+		while ( $date_start < $date_stop ) {
+			// Si le jour suivant n'est ni un dimanche (0) ou un samedi (6), ni un jour férié, on incrémente les jours ouvrés
+			if (! in_array ( date ( 'w', $date_start ), array (
+					0,
+					6 
+			) ) && ! in_array ( date ( 'j_n_' . date ( 'Y', $date_start ), $date_start ), $arr_bank_holidays )) {
+				$nb_days_open ++;
 			}
-
-			$seconds -= $months * 2629743;
+			$date_start = mktime ( date ( 'H', $date_start ), date ( 'i', $date_start ), date ( 's', $date_start ), date ( 'm', $date_start ), date ( 'd', $date_start ) + 1, date ( 'Y', $date_start ) );
 		}
-
-		$weeks = floor($seconds / 604800);
-
-		if (count($str) < $units && ($years > 0 OR $months > 0 OR $weeks > 0))
-		{
-			if ($weeks > 0)
-			{
-				$str[] = $weeks.' '.$CI->lang->line($weeks > 1 ? 'date_weeks' : 'date_week');
-			}
-
-			$seconds -= $weeks * 604800;
-		}
-
-		$days = floor($seconds / 86400);
-
-		if (count($str) < $units && ($months > 0 OR $weeks > 0 OR $days > 0))
-		{
-			if ($days > 0)
-			{
-				$str[] = $days.' '.$CI->lang->line($days > 1 ? 'date_days' : 'date_day');
-			}
-
-			$seconds -= $days * 86400;
-		}
-
-		$hours = floor($seconds / 3600);
-
-		if (count($str) < $units && ($days > 0 OR $hours > 0))
-		{
-			if ($hours > 0)
-			{
-				$str[] = $hours.' '.$CI->lang->line($hours > 1 ? 'date_hours' : 'date_hour');
-			}
-
-			$seconds -= $hours * 3600;
-		}
-
-		$minutes = floor($seconds / 60);
-
-		if (count($str) < $units && ($days > 0 OR $hours > 0 OR $minutes > 0))
-		{
-			if ($minutes > 0)
-			{
-				$str[] = $minutes.' '.$CI->lang->line($minutes > 1 ? 'date_minutes' : 'date_minute');
-			}
-
-			$seconds -= $minutes * 60;
-		}
-
-		if (count($str) === 0)
-		{
-			$str[] = $seconds.' '.$CI->lang->line($seconds > 1 ? 'date_seconds' : 'date_second');
-		}
-
-		return implode(', ', $str);
+		return $nb_days_open;
 	}
 }
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('days_in_month'))
-{
-	/**
-	 * Number of days in a month
-	 *
-	 * Takes a month/year as input and returns the number of days
-	 * for the given month/year. Takes leap years into consideration.
-	 *
-	 * @param	int	a numeric month
-	 * @param	int	a numeric year
-	 * @return	int
-	 */
-	function days_in_month($month = 0, $year = '')
-	{
-		if ($month < 1 OR $month > 12)
-		{
-			return 0;
+if (! function_exists ( 'get_nb_days' )) {
+	function get_nb_days($date_start, $date_stop) {
+		$date_start = strtotime ( $date_start );
+		$date_stop = strtotime ( $date_stop );
+		
+		$nb_days_open = 0;
+		// Mettre <= si on souhaite prendre en compte le dernier jour dans le décompte
+		while ( $date_start < $date_stop ) {
+			$nb_days_open ++;
+			$date_start = mktime ( date ( 'H', $date_start ), date ( 'i', $date_start ), date ( 's', $date_start ), date ( 'm', $date_start ), date ( 'd', $date_start ) + 1, date ( 'Y', $date_start ) );
 		}
-		elseif ( ! is_numeric($year) OR strlen($year) !== 4)
-		{
-			$year = date('Y');
-		}
-
-		if (defined('CAL_GREGORIAN'))
-		{
-			return cal_days_in_month(CAL_GREGORIAN, $month, $year);
-		}
-
-		if ($year >= 1970)
-		{
-			return (int) date('t', mktime(12, 0, 0, $month, 1, $year));
-		}
-
-		if ($month == 2)
-		{
-			if ($year % 400 === 0 OR ($year % 4 === 0 && $year % 100 !== 0))
-			{
-				return 29;
-			}
-		}
-
-		$days_in_month	= array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-		return $days_in_month[$month - 1];
+		return $nb_days_open;
 	}
 }
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('local_to_gmt'))
-{
-	/**
-	 * Converts a local Unix timestamp to GMT
-	 *
-	 * @param	int	Unix timestamp
-	 * @return	int
-	 */
-	function local_to_gmt($time = '')
-	{
-		if ($time === '')
-		{
-			$time = time();
-		}
-
-		return mktime(
-			gmdate('G', $time),
-			gmdate('i', $time),
-			gmdate('s', $time),
-			gmdate('n', $time),
-			gmdate('j', $time),
-			gmdate('Y', $time)
-		);
-	}
-}
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('gmt_to_local'))
-{
-	/**
-	 * Converts GMT time to a localized value
-	 *
-	 * Takes a Unix timestamp (in GMT) as input, and returns
-	 * at the local value based on the timezone and DST setting
-	 * submitted
-	 *
-	 * @param	int	Unix timestamp
-	 * @param	string	timezone
-	 * @param	bool	whether DST is active
-	 * @return	int
-	 */
-	function gmt_to_local($time = '', $timezone = 'UTC', $dst = FALSE)
-	{
-		if ($time === '')
-		{
-			return now();
-		}
-
-		$time += timezones($timezone) * 3600;
-
-		return ($dst === TRUE) ? $time + 3600 : $time;
-	}
-}
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('mysql_to_unix'))
-{
-	/**
-	 * Converts a MySQL Timestamp to Unix
-	 *
-	 * @param	int	MySQL timestamp YYYY-MM-DD HH:MM:SS
-	 * @return	int	Unix timstamp
-	 */
-	function mysql_to_unix($time = '')
-	{
-		// We'll remove certain characters for backward compatibility
-		// since the formatting changed with MySQL 4.1
-		// YYYY-MM-DD HH:MM:SS
-
-		$time = str_replace(array('-', ':', ' '), '', $time);
-
-		// YYYYMMDDHHMMSS
-		return mktime(
-			substr($time, 8, 2),
-			substr($time, 10, 2),
-			substr($time, 12, 2),
-			substr($time, 4, 2),
-			substr($time, 6, 2),
-			substr($time, 0, 4)
-		);
-	}
-}
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('unix_to_human'))
-{
-	/**
-	 * Unix to "Human"
-	 *
-	 * Formats Unix timestamp to the following prototype: 2006-08-21 11:35 PM
-	 *
-	 * @param	int	Unix timestamp
-	 * @param	bool	whether to show seconds
-	 * @param	string	format: us or euro
-	 * @return	string
-	 */
-	function unix_to_human($time = '', $seconds = FALSE, $fmt = 'us')
-	{
-		$r = date('Y', $time).'-'.date('m', $time).'-'.date('d', $time).' ';
-
-		if ($fmt === 'us')
-		{
-			$r .= date('h', $time).':'.date('i', $time);
-		}
-		else
-		{
-			$r .= date('H', $time).':'.date('i', $time);
-		}
-
-		if ($seconds)
-		{
-			$r .= ':'.date('s', $time);
-		}
-
-		if ($fmt === 'us')
-		{
-			return $r.' '.date('A', $time);
-		}
-
-		return $r;
-	}
-}
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('human_to_unix'))
-{
-	/**
-	 * Convert "human" date to GMT
-	 *
-	 * Reverses the above process
-	 *
-	 * @param	string	format: us or euro
-	 * @return	int
-	 */
-	function human_to_unix($datestr = '')
-	{
-		if ($datestr === '')
-		{
-			return FALSE;
-		}
-
-		$datestr = preg_replace('/\040+/', ' ', trim($datestr));
-
-		if ( ! preg_match('/^(\d{2}|\d{4})\-[0-9]{1,2}\-[0-9]{1,2}\s[0-9]{1,2}:[0-9]{1,2}(?::[0-9]{1,2})?(?:\s[AP]M)?$/i', $datestr))
-		{
-			return FALSE;
-		}
-
-		sscanf($datestr, '%d-%d-%d %s %s', $year, $month, $day, $time, $ampm);
-		sscanf($time, '%d:%d:%d', $hour, $min, $sec);
-		isset($sec) OR $sec = 0;
-
-		if (isset($ampm))
-		{
-			$ampm = strtolower($ampm);
-
-			if ($ampm[0] === 'p' && $hour < 12)
-			{
-				$hour += 12;
-			}
-			elseif ($ampm[0] === 'a' && $hour === 12)
-			{
-				$hour = 0;
-			}
-		}
-
-		return mktime($hour, $min, $sec, $month, $day, $year);
-	}
-}
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('nice_date'))
-{
-	/**
-	 * Turns many "reasonably-date-like" strings into something
-	 * that is actually useful. This only works for dates after unix epoch.
-	 *
-	 * @deprecated	3.1.3	Use DateTime::createFromFormat($input_format, $input)->format($output_format);
-	 * @param	string	The terribly formatted date-like string
-	 * @param	string	Date format to return (same as php date function)
-	 * @return	string
-	 */
-	function nice_date($bad_date = '', $format = FALSE)
-	{
-		if (empty($bad_date))
-		{
-			return 'Unknown';
-		}
-		elseif (empty($format))
-		{
-			$format = 'U';
-		}
-
-		// Date like: YYYYMM
-		if (preg_match('/^\d{6}$/i', $bad_date))
-		{
-			if (in_array(substr($bad_date, 0, 2), array('19', '20')))
-			{
-				$year  = substr($bad_date, 0, 4);
-				$month = substr($bad_date, 4, 2);
-			}
-			else
-			{
-				$month  = substr($bad_date, 0, 2);
-				$year   = substr($bad_date, 2, 4);
-			}
-
-			return date($format, strtotime($year.'-'.$month.'-01'));
-		}
-
-		// Date Like: YYYYMMDD
-		if (preg_match('/^\d{8}$/i', $bad_date, $matches))
-		{
-			return DateTime::createFromFormat('Ymd', $bad_date)->format($format);
-		}
-
-		// Date Like: MM-DD-YYYY __or__ M-D-YYYY (or anything in between)
-		if (preg_match('/^(\d{1,2})-(\d{1,2})-(\d{4})$/i', $bad_date, $matches))
-		{
-			return date($format, strtotime($matches[3].'-'.$matches[1].'-'.$matches[2]));
-		}
-
-		// Any other kind of string, when converted into UNIX time,
-		// produces "0 seconds after epoc..." is probably bad...
-		// return "Invalid Date".
-		if (date('U', strtotime($bad_date)) === '0')
-		{
-			return 'Invalid Date';
-		}
-
-		// It's probably a valid-ish date format already
-		return date($format, strtotime($bad_date));
-	}
-}
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('timezone_menu'))
-{
-	/**
-	 * Timezone Menu
-	 *
-	 * Generates a drop-down menu of timezones.
-	 *
-	 * @param	string	timezone
-	 * @param	string	classname
-	 * @param	string	menu name
-	 * @param	mixed	attributes
-	 * @return	string
-	 */
-	function timezone_menu($default = 'UTC', $class = '', $name = 'timezones', $attributes = '')
-	{
-		$CI =& get_instance();
-		$CI->lang->load('date');
-
-		$default = ($default === 'GMT') ? 'UTC' : $default;
-
-		$menu = '<select name="'.$name.'"';
-
-		if ($class !== '')
-		{
-			$menu .= ' class="'.$class.'"';
-		}
-
-		$menu .= _stringify_attributes($attributes).">\n";
-
-		foreach (timezones() as $key => $val)
-		{
-			$selected = ($default === $key) ? ' selected="selected"' : '';
-			$menu .= '<option value="'.$key.'"'.$selected.'>'.$CI->lang->line($key)."</option>\n";
-		}
-
-		return $menu.'</select>';
-	}
-}
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('timezones'))
-{
-	/**
-	 * Timezones
-	 *
-	 * Returns an array of timezones. This is a helper function
-	 * for various other ones in this library
-	 *
-	 * @param	string	timezone
-	 * @return	string
-	 */
-	function timezones($tz = '')
-	{
-		// Note: Don't change the order of these even though
-		// some items appear to be in the wrong order
-
-		$zones = array(
-			'UM12'		=> -12,
-			'UM11'		=> -11,
-			'UM10'		=> -10,
-			'UM95'		=> -9.5,
-			'UM9'		=> -9,
-			'UM8'		=> -8,
-			'UM7'		=> -7,
-			'UM6'		=> -6,
-			'UM5'		=> -5,
-			'UM45'		=> -4.5,
-			'UM4'		=> -4,
-			'UM35'		=> -3.5,
-			'UM3'		=> -3,
-			'UM2'		=> -2,
-			'UM1'		=> -1,
-			'UTC'		=> 0,
-			'UP1'		=> +1,
-			'UP2'		=> +2,
-			'UP3'		=> +3,
-			'UP35'		=> +3.5,
-			'UP4'		=> +4,
-			'UP45'		=> +4.5,
-			'UP5'		=> +5,
-			'UP55'		=> +5.5,
-			'UP575'		=> +5.75,
-			'UP6'		=> +6,
-			'UP65'		=> +6.5,
-			'UP7'		=> +7,
-			'UP8'		=> +8,
-			'UP875'		=> +8.75,
-			'UP9'		=> +9,
-			'UP95'		=> +9.5,
-			'UP10'		=> +10,
-			'UP105'		=> +10.5,
-			'UP11'		=> +11,
-			'UP115'		=> +11.5,
-			'UP12'		=> +12,
-			'UP1275'	=> +12.75,
-			'UP13'		=> +13,
-			'UP14'		=> +14
-		);
-
-		if ($tz === '')
-		{
-			return $zones;
-		}
-
-		return isset($zones[$tz]) ? $zones[$tz] : 0;
-	}
-}
-
-// ------------------------------------------------------------------------
-
-if ( ! function_exists('date_range'))
-{
-	/**
-	 * Date range
-	 *
-	 * Returns a list of dates within a specified period.
-	 *
-	 * @param	int	unix_start	UNIX timestamp of period start date
-	 * @param	int	unix_end|days	UNIX timestamp of period end date
-	 *					or interval in days.
-	 * @param	mixed	is_unix		Specifies whether the second parameter
-	 *					is a UNIX timestamp or a day interval
-	 *					 - TRUE or 'unix' for a timestamp
-	 *					 - FALSE or 'days' for an interval
-	 * @param	string  date_format	Output date format, same as in date()
-	 * @return	array
-	 */
-	function date_range($unix_start = '', $mixed = '', $is_unix = TRUE, $format = 'Y-m-d')
-	{
-		if ($unix_start == '' OR $mixed == '' OR $format == '')
-		{
-			return FALSE;
-		}
-
-		$is_unix = ! ( ! $is_unix OR $is_unix === 'days');
-
-		// Validate input and try strtotime() on invalid timestamps/intervals, just in case
-		if ( ( ! ctype_digit((string) $unix_start) && ($unix_start = @strtotime($unix_start)) === FALSE)
-			OR ( ! ctype_digit((string) $mixed) && ($is_unix === FALSE OR ($mixed = @strtotime($mixed)) === FALSE))
-			OR ($is_unix === TRUE && $mixed < $unix_start))
-		{
-			return FALSE;
-		}
-
-		if ($is_unix && ($unix_start == $mixed OR date($format, $unix_start) === date($format, $mixed)))
-		{
-			return array(date($format, $unix_start));
-		}
-
-		$range = array();
-
-		$from = new DateTime();
-		$from->setTimestamp($unix_start);
-
-		if ($is_unix)
-		{
-			$arg = new DateTime();
-			$arg->setTimestamp($mixed);
-		}
-		else
-		{
-			$arg = (int) $mixed;
-		}
-
-		$period = new DatePeriod($from, new DateInterval('P1D'), $arg);
-		foreach ($period as $date)
-		{
-			$range[] = $date->format($format);
-		}
-
-		/* If a period end date was passed to the DatePeriod constructor, it might not
-		 * be in our results. Not sure if this is a bug or it's just possible because
-		 * the end date might actually be less than 24 hours away from the previously
-		 * generated DateTime object, but either way - we have to append it manually.
+if (! function_exists ( 'dateW' )) {
+	function dateW($date) { // format de la date yyyy-mm-dd
+		/*
+		 * //si le format est jj/mm/aaaa
+		 * $dateFormat = Date::formatDate($date,'/','-',true,false);
+		 * //si pas
+		 * if($dateFormat.length == 0)
+		 * //on retire les minutes existantes tout en gardant le formatage actuel
+		 * $dateFormat = Date::formatDate($date,'-','-',false,false);
 		 */
-		if ( ! is_int($arg) && $range[count($range) - 1] !== $arg->format($format))
-		{
-			$range[] = $arg->format($format);
+		$dateTemp = explode ( '-', $date );
+		// recupération des jour, mois, annee recupérés dans la date passée en paramettre
+		$year = ( int ) $dateTemp [0];
+		$month = ( int ) $dateTemp [1];
+		$day = ( int ) $dateTemp [2];
+		
+		// definition du nombre de jours contenu dans chaque mois
+		$tab_dayOfMonth = array (
+				31,
+				28,
+				31,
+				30,
+				31,
+				30,
+				31,
+				31,
+				30,
+				31,
+				30,
+				31 
+		);
+		// si l'annee est bisextile, fevrier vaut 29
+		if ($year % 4 == 0 && $year % 100 != 0 || $year % 400 == 0)
+			$tab_dayOfMonth [1] = 29;
+			
+			// premier jour de l'annee recupérée dans la date passée en paramettre
+		$firstday = date ( "N", mktime ( 0, 0, 0, 1, 1, $year ) );
+		// nombre de jours superflux de l'année précedente
+		$nbrDayPrev = $firstday - 1;
+		// nombre total de jour écouler depuis le 1er jour de l'an
+		$nbrDay = 0;
+		// pour chaque mois précedant le mois en cours,
+		// ajouter le nombre de jour correspondant à ce mois
+		for($i = 0; $i < $month - 1; $i ++) {
+			$nbrDay += $tab_dayOfMonth [$i];
 		}
-
-		return $range;
+		// on ajoute le nombre de jour
+		$nbrDay += $day;
+		// on calcule le numéro de la semaine
+		// on arrondi le resultat à l'entier supérieur
+		$nbrWeek = ceil ( ($nbrDay + $nbrDayPrev) / 7 );
+		return $nbrWeek;
+	}
+}
+if (! function_exists ( 'getDayOfWeek' )) {
+	function getDayOfWeek($numWeek, $year, $concat) {
+		// concat relie la 53/54 eme semaine à la 1ere
+		// definition du nombre de jours contenu dans chaque mois
+		$tab_dayOfMonth = array (
+				31,
+				28,
+				31,
+				30,
+				31,
+				30,
+				31,
+				31,
+				30,
+				31,
+				30,
+				31 
+		);
+		// definition des numéro de mois
+		$tab_numOfMonth = array (
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12 
+		);
+		$count = count ( $tab_dayOfMonth );
+		// si l'annee est bisextile, fevrier vaut 29
+		if ($year % 4 == 0 && $year % 100 != 0 || $year % 400 == 0)
+			$tab_dayOfMonth [1] = 29;
+			// premier jour de l'annee recupérée dans la date passée en paramettre
+		$firstday = date ( "N", mktime ( 0, 0, 0, 1, 1, $year ) );
+		// nombre de jours superflux de l'année précedente (semaine 53)
+		$nbrDayPrev = $firstday - 1;
+		// nombre reel du 1er jour de la semaine à partir du 1er janvier
+		$firtDayOfWeek = (($numWeek - 1) * 7) - $nbrDayPrev;
+		
+		$dayOfWeek = array ();
+		$tempFirstDay = $firstday;
+		
+		$nbr_j = $firtDayOfWeek;
+		// valeur donnée au ca ou l'on ne rentre pas dans la boucle.
+		$num_mois = - 1;
+		for($j = 0; $j < $count; $j ++) {
+			if (($nbr_j - $tab_dayOfMonth [$j]) > 0) {
+				// on soustrait le noubre de jour du moi aux nombre total de jours
+				// à partir du 1er janvier.
+				// on récupère ainsi le mois et le numéro du jour de ce premier.
+				$nbr_j = $nbr_j - $tab_dayOfMonth [$j];
+				$num_mois = $j;
+			} else {
+				break;
+			}
+		}
+		$reste = $nbr_j + 1;
+		for($k = 1; $k <= 7; $k ++) {
+			// si reste vaut + que le nombre de jour contenu dans le mois...
+			if ($reste > $tab_dayOfMonth [$num_mois + 1]) {
+				// retour au premier jour
+				$reste = 1;
+				// du mois suivant
+				$num_mois ++;
+			}
+			// si le mois est decembre et que le reste est différent de 32...
+			if (($num_mois + 1) != 12 && $reste != 32) {
+				// si le reste est négatif ou égale à 0, on ajoute pas de date.
+				if ($reste > 0) {
+					$tempWeek = sprintf ( "%02d", $reste ) . '/' . sprintf ( "%02d", $tab_numOfMonth [$num_mois + 1] ) . '/' . $year;
+					array_push ( $dayOfWeek, $tempWeek );
+					// echo $tempWeek.'<br/>';
+				} else {
+					if ($concat) {
+						$sem53 = getDayOfWeek ( numberOfWeek ( $year - 1 ), $year - 1, true );
+						$dayOfWeek = $sem53;
+					}
+					// print_r($sem53);
+				}
+				$reste ++;
+			} else {
+				break;
+			}
+		}
+		return $dayOfWeek;
+	}
+}
+if (! function_exists ( 'numberOfWeek' )) {
+	function numberOfWeek($year) {
+		// definition du nombre de jours contenu dans chaque mois
+		$tab_dayOfMonth = array (
+				31,
+				28,
+				31,
+				30,
+				31,
+				30,
+				31,
+				31,
+				30,
+				31,
+				30,
+				31 
+		);
+		// si l'annee est bisextile, fevrier vaut 29
+		if (($year % 4 == 0 && $year % 100 != 0) || $year % 400 == 0)
+			$tab_dayOfMonth [1] = 29;
+			
+			// premier jour de l'annee recupérée dans la date passée en paramettre
+		$firstday = date ( "N", mktime ( 0, 0, 0, 1, 1, $year ) );
+		// nombre de jours superflux de l'année précedente(semaine 53)
+		$nbrDayPrev = $firstday - 1;
+		// nombre total de jour écouler depuis le 1er jour de l'an
+		$nbrDay = 0;
+		// pour chaque mois précedant le mois en cours,
+		// ajouter le nombre de jour correspondant à ce mois
+		for($i = 0; $i < count ( $tab_dayOfMonth ); $i ++) {
+			$nbrDay += $tab_dayOfMonth [$i];
+		}
+		// on calcule le numéro de la semaine
+		// on arrondi le resultat à l'entier supérieur
+		$numWeek = ceil ( ($nbrDay + $nbrDayPrev) / 7 );
+		return $numWeek;
+	}
+}
+if (! function_exists ( 'dateDiff' )) {
+	function dateDiff($date1, $date2, $out = "d") {
+		$diff = abs ( strtotime ( $date2 ) - strtotime ( $date1 ) );
+		
+		$years = floor ( $diff / (365 * 60 * 60 * 24) );
+		$months = floor ( ($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24) );
+		$days = floor ( ($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24) );
+		
+		switch ($out) {
+			case "y" :
+				return $years;
+				break;
+			case "m" :
+				return $months;
+				break;
+			case "d" :
+				return $days;
+				break;
+			default :
+				return $days;
+				break;
+		}
 	}
 }

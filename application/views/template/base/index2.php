@@ -14,7 +14,9 @@ Ses evenements, Les membres de son équipes, ses actions de député et bourgmes
     <meta name="robot" content="index, follow">
     <link rel="stylesheet" media="screen" href="<?= base_url ("/node_modules/bootstrap/dist/css/bootstrap.min.css") ?>">
     <link rel="stylesheet" href="<?= base_url("node_modules/font-awesome/css/font-awesome.min.css") ?>">
-  
+
+    <link rel="stylesheet" href="<?= base_url("/assets/timepicker/dist/jquery-ui-timepicker-addon.css")?>">
+
     <link rel="stylesheet" href="<?= base_url("/assets/css/actualite.css")?>">
 
     <link rel="stylesheet" href="<?= base_url("/assets/css/contact.css")?>">
@@ -22,10 +24,13 @@ Ses evenements, Les membres de son équipes, ses actions de député et bourgmes
     <link rel="stylesheet" href="<?= base_url("/assets/css/equipe.css")?>">
 
     <link rel="stylesheet" href="<?= base_url("/assets/fullcalendar/fullcalendar.css")?>">
+    
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <link rel="stylesheet" href="<?= base_url("/assets/css/style.css")?>">
 
- <script src="<?php echo base_url();?>assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="<?php echo base_url();?>assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <title>Françoise Schepmans femme politique belge, retrouvez toutes ses informations et contact</title>
 
@@ -52,6 +57,9 @@ Ses evenements, Les membres de son équipes, ses actions de député et bourgmes
 <script src='<?php echo base_url();?>assets/fullcalendar/lib/moment.min.js'></script>
 <script src='<?php echo base_url();?>assets/fullcalendar/fullcalendar.min.js'></script>
 <script src='<?php echo base_url();?>assets/fullcalendar/locale/fr.js'></script>
+<script src='<?php echo base_url();?>assets/timepicker/dist/jquery-ui-timepicker-addon.js'></script>
+<script src='<?php echo base_url();?>assets/timepicker/dist/i18n/jquery-ui-timepicker-addon-i18n.min.js'></script>
+<script src='<?php echo base_url();?>assets/timepicker/dist/jquery-ui-sliderAccess.js'></script>
 
 </body>
 </html>

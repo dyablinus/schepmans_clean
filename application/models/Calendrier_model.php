@@ -8,7 +8,7 @@ class Calendrier_model extends CI_Model {
     $this->load->database();
   }
 	public function getEvent(){
-        // var_dump($this);
+    
 		$this->db->select('idEvent id, nombre title, datedebut start, datefin end');
 		$this->db->from('event');
 
