@@ -42,7 +42,7 @@
 
 <!--/ #slider-->
 <div style="margin-left: -15px; margin-right: -15px; border-radius: 0; background-color: rgb(25, 80, 119);
-"class="jumbotron">
+"class="jumbotron" id="ban_undercarousel">
     <div class="container">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="row fafa">
