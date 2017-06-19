@@ -9,7 +9,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/7.jpg")?>" alt="">
+    <img class="img_actu img-responsive" src="<?= base_url("assets/images/art1_carre.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
@@ -19,14 +19,13 @@
          <h6><?php echo lang('actu_h6_mai');?></h6>
     </div>
     <p class="hidden_actu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia numquam iusto soluta,
-     nulla nobis odit impedit quasi dolores aliquid, repudiandae sapiente voluptas maxime cum
-      libero consectetur quod? Quis enim, totam!</p>
+     nulla nobis odit impedit quasi dolores aliquid.</p>
       
           <a href="#" type="button" class="btn btn-primary btn_actu_page"><?php echo lang('actu_a_voir_plus');?></a>
 </div>
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/schep4.jpg")?>" alt="">
+    <img class="img_actu img-responsive" src="<?= base_url("assets/images/art2_carre.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">
@@ -36,13 +35,12 @@
         <h6>11 mai 2017</h6> 
      </div>
     <p class="hidden_actu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia numquam iusto soluta,
-     nulla nobis odit impedit quasi dolores aliquid, repudiandae sapiente voluptas maxime cum
-      libero consectetur quod? Quis enim, totam!</p>
+     nulla nobis odit impedit quasi dolores aliquid.</p>
     <a href="#" type="button" class="btn btn-primary btn_actu_page"><?php echo lang('actu_a_voir_plus');?></a>
 </div>
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/9.jpg")?>" alt="">
+    <img class="img_actu img-responsive" src="<?= base_url("assets/images/schep5_carre.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">
@@ -52,13 +50,12 @@
          <h6><?php echo lang('actu_h6_mai');?></h6>
      </div>
     <p class="hidden_actu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia numquam iusto soluta,
-     nulla nobis odit impedit quasi dolores aliquid, repudiandae sapiente voluptas maxime cum
-      libero consectetur quod? Quis enim, totam!</p>
+     nulla nobis odit impedit quasi dolores aliquid.!</p>
       <a href="#" type="button" class="btn btn-primary btn_actu_page"><?php echo lang('actu_a_voir_plus');?></a>
 </div>
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/11.jpg")?>" alt="">
+    <img class="img_actu img-responsive" src="<?= base_url("assets/images/art3_carre.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">
@@ -68,8 +65,7 @@
         <h6><?php echo lang('actu_h6_mai');?></h6>
     </div>
     <p class="hidden_actu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia numquam iusto soluta,
-     nulla nobis odit impedit quasi dolores aliquid, repudiandae sapiente voluptas maxime cum
-      libero consectetur quod? Quis enim, totam!</p>
+     nulla nobis odit impedit quasi dolores aliquid.</p>
       <a href="#" type="button" class="btn btn-primary btn_actu_page"><?php echo lang('actu_a_voir_plus');?></a>
 </div>
 

@@ -5,11 +5,11 @@
         <div class="col-xs-4 col-sm-4 col-md-4 ">
             
         <ul class="nav navbar-nav navbar-left nav_footer">
-            <li class=" col-xs-3 col-sm-3 facebook"><a href="#" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <li class=" col-xs-3 col-sm-3 facebook"><a href="https://www.facebook.com/schepmansfrancoise/" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>
                 <span></span></a></li>
-            <li class="col-xs-3 col-sm-3 twitter"><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
+            <li class="col-xs-3 col-sm-3 twitter"><a href="https://twitter.com/fschepmans?lang=fr" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
                 <span></span></a></li>
-            <li class="col-xs-3 col-sm-3 youtube"><a href="#" title="Youtube"><i class="fa fa-youtube" aria-hidden="true"></i>
+            <li class="col-xs-3 col-sm-3 youtube"><a href="#" title="Linkedin"><i class="fa fa-linkedin-square" id="link" aria-hidden="true"></i>
                 <span></span></a></li>
             <li class="col-xs-3 col-sm-3 actu_footer"><a href="#" title="Actu"><i class="fa fa-rss" aria-hidden="true"></i>
                 <span></span></a></li>

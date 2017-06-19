@@ -11,18 +11,18 @@
         <!-- réseaux sociaux -->
         <ul class="nav navbar-nav " id="nav_icontop">
             <li id="nav_icontope" class="hovernav col-xs-3 col-sm-3 facebook_navtop">
-                <a href="#" accesskey="f" title="Facebook">
+                <a href="https://www.facebook.com/schepmansfrancoise/" accesskey="f" title="Facebook">
                     <i class="icon_top fa fa-facebook-official" id="fb" aria-hidden="true"></i>
                 </a>
             </li>
             <li class="hovernav twitter_navtop col-xs-3 col-sm-3">
-                <a href="#" accesskey="t" title="Twitter">
+                <a href="https://twitter.com/fschepmans?lang=fr" accesskey="t" title="Twitter">
                     <i class="icon_top fa fa-twitter" id="twit" aria-hidden="true"></i>
                 </a>
             </li>
             <li class="youtube_navtop col-xs-3 col-sm-3">
-                <a href="#" accesskey="y" title="Youtube">
-                    <i class="icon_top fa fa-youtube" aria-hidden="true"></i>
+                <a href="#" accesskey="y" title="Linkedin">
+                    <i class="icon_top fa fa-linkedin-square" id="link" aria-hidden="true"></i>
                 </a>
             </li>
             <li class="actu_navtop col-xs-3 col-sm-3">

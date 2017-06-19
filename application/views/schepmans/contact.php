@@ -40,19 +40,19 @@
                     <div id="contact_box" class="box_phone col-xs-12 col-sm-12">
                         <i class="contact_icon fa fa-phone" aria-hidden="true"></i>
                         <h3 class="inline_block contact_categorie">Phone</h3>
-                        <p class="contact_categorie"><span itemprop="telephone"> +880-1700-987654</span></p><br>
+                        <p class="contact_categorie"><span itemprop="telephone"> 02 / 412 37 40 - 02</span></p><br>
                     </div>
 
                     <div id="contact_box" class="box_phone col-xs-12 col-sm-12">
                         <i class="contact_icon fa fa-map" aria-hidden="true"></i>
                         <h3 class="inline_block contact_categorie">Location</h3>
-                        <p class="contact_categorie"><span itemprop="adress">1036 Gulshan Road</span></p><br>
+                        <p class="contact_categorie"><span itemprop="adress">Rue du Comte de Flandre, 20 - 1080 Bxl</span></p><br>
                     </div>
 
                     <div id="contact_box" class="box_phone col-xs-12 col-sm-12">
                         <i class="contact_icon fa fa-envelope" aria-hidden="true"></i>
                         <h3 class="inline_block contact_categorie">E-mail</h3>
-                        <p class="contact_categorie"><span itemprop="email">info@yourdomain.com</span></p><br>
+                        <p class="contact_categorie"><span itemprop="email">fschepmans@molenbeek.irisnet.be</span></p><br>
                     </div>
 
                 </div>

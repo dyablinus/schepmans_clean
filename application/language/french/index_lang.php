@@ -34,12 +34,12 @@ $lang ['index_h2_articlfont_michel'] = "Inauguration d'un potager bio derrière 
 $lang ['index_h2_articlfont_relou'] = "Françoise Schepmans en visite à Molengeek";
 //actualité
 $lang ['actu_h6'] = "ACTUALITÉS";
-$lang ['actu_h4_article1'] = "Article 1";
+$lang ['actu_h4_article1'] = "Les principaux opposants pour les prochaines élections";
 $lang ['actu_a_voir_plus'] = "Voir plus";
-$lang ['actu_h4_article2'] = "Article 2";
+$lang ['actu_h4_article2'] = "L'Italie était à l'honneur au Château du Karreveld";
 $lang ['actu_h6_mai'] = "11 mai 2017";
-$lang ['actu_h4_article3'] = "Article 3";
-$lang ['actu_h4_article4'] = "Article 4";
+$lang ['actu_h4_article3'] = "Inauguration d'un potager bio derrière l'hôtel Belvue";
+$lang ['actu_h4_article4'] = "Françoise Schepmans en visite à Molengeek";
 
 
 

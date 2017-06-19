@@ -42,14 +42,14 @@
     color: lightblue;
 }
 
-#nav_icontop .youtube_navtop>a>.fa-youtube:hover{
-    color: red;
+#nav_icontop #link:hover{
+    color: #175079;
 }
 #fb:hover{
-    color: blue;
+    color: #175079;
 }
 #twit:hover{
-    color: blue;
+    color: #175079;
 }
 #nav_icontop .actu_navtop>a>.fa-rss:hover{
     color: black;
@@ -154,8 +154,8 @@
     text-decoration: none;
     background-color: #175079;
 }
-.fa.fa-youtube:hover{
-    color: red;
+.fa.fa-linkedin-square:hover{
+    color: blue;
 }
 .fa.fa-facebook-official:hover{
     color: blue;
