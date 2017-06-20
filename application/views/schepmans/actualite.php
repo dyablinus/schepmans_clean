@@ -9,7 +9,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/art1_carre.jpg")?>" alt="">
+    <img class="img_actu img-responsive" src="<?= base_url("assets/images/schep5_carre.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
@@ -25,7 +25,7 @@
 </div>
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/art2_carre.jpg")?>" alt="">
+    <img class="img_actu img-responsive" src="<?= base_url("assets/images/art1_carre.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">
@@ -40,7 +40,7 @@
 </div>
 
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/schep5_carre.jpg")?>" alt="">
+    <img class="img_actu img-responsive" src="<?= base_url("assets/images/art2_carre.jpg")?>" alt="">
 </div>
     
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">

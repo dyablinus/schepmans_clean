@@ -4,12 +4,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Calendrier extends MY_Controller {
 		 public function __construct(){
 			 parent::__construct();
-		$this->load->model('cal_model');
-        $this->load->helper('form');
-		 }
+             $this->load->model('cal_model');
+             $this->load->helper('form');
+             }
 
 	public function index(){
-		$this->render1('schepmans/calendrier');
+        if($this->session->userdata('login') || $this->session->userdata('logged')){
+            $this->render1('auth/calendrier');
+            } else {
+                redirect('auth/login', 'refresh');
+            }
 	}
 
     public function get_events() 
