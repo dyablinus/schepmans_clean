@@ -28,6 +28,10 @@
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="<?= base_url("/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")?>">
 
+  <link rel="stylesheet" href="<?= base_url("/assets/fullcalendar/fullcalendar.css")?>">
+
+      <script src="<?php echo base_url();?>assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -81,7 +85,7 @@
                   <!--<a href="<?= base_url("#")?>" class="btn btn-default btn-flat">Profile</a>-->
                 </div>
                 <div class="pull-right">
-                  <a href="<?= base_url("#")?>" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?= base_url("/auth/logout")?>" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -116,28 +120,27 @@
         </li>
         
         <li>
-          <a href="<?= base_url("/assets/pages/mailbox/mailbox.html")?>">
-            <i class="fa fa-envelope"></i> <span>Mailbox</span>
+          <a href="<?= base_url("/auth/pages/newsletter")?>">
+            <i class="fa fa-envelope"></i> <span>Newsletter</span>
           </a>
         </li>
 
         <li class="treeview">
           <a href="<?= base_url("#")?>">
-            <i class="fa fa-files-o"></i> <span>Examples</span>
+            <i class="fa fa-files-o"></i> <span>Pages web</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?= base_url("/assets/pages/examples/invoice.html")?>"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="<?= base_url("/assets/pages/examples/profile.html")?>"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="<?= base_url("/assets/pages/examples/invoice.html")?>"><i class="fa fa-circle-o"></i> Slider</a></li>
+            <li><a href="<?= base_url("/assets/pages/examples/profile.html")?>"><i class="fa fa-circle-o"></i> Homme</a></li>
+            <li><a href="<?= base_url("/assets/pages/examples/404.html")?>"><i class="fa fa-circle-o"></i> Actualités</a></li>
+            <li><a href="<?= base_url("/assets/pages/examples/500.html")?>"><i class="fa fa-circle-o"></i> Molenbeek</a></li>
             <li><a href="<?= base_url("/assets/pages/examples/login.html")?>"><i class="fa fa-circle-o"></i> Login</a></li>
             <li><a href="<?= base_url("/assets/pages/examples/register.html")?>"><i class="fa fa-circle-o"></i> Register</a></li>
             <li><a href="<?= base_url("/assets/pages/examples/lockscreen.html")?>"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="<?= base_url("/assets/pages/examples/404.html")?>"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="<?= base_url("/assets/pages/examples/500.html")?>"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="<?= base_url("/assets/pages/examples/blank.html")?>"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="<?= base_url("/assets/pages/examples/pace.html")?>"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+
           </ul>
         </li>
 
@@ -310,86 +313,112 @@
         <section class="col-lg-6 connectedSortable">
 
           <!-- Calendar -->
-          <div class="box box-solid bg-green-gradient">
-            <div class="box-header">
-              <i class="fa fa-calendar"></i>
 
-              <h3 class="box-title">Calendar</h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <!-- button with a dropdown -->
-                <div class="btn-group">
-                  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-bars"></i></button>
-                  <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="<?= base_url("#")?>">>Add new event</a></li>
-                    <li><a href="<?= base_url("#")?>">>Clear events</a></li>
-                    <li class="divider"></li>
-                    <li><a href="<?= base_url("#")?>">>View calendar</a></li>
-                  </ul>
-                </div>
-                <button type="button" class="btn btn-success btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i>
-                </button>
-              </div>
-              <!-- /. tools -->
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <!--The calendar -->
-              <div id="calendar" style="width: 100%"></div>
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer text-black">
-              <div class="row">
-                <div class="col-sm-6">
-                  <!-- Progress bars -->
-                  <div class="clearfix">
-                    <span class="pull-left">Task #1</span>
-                    <small class="pull-right">90%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
-                  </div>
+        <div id="calendrier">
 
-                  <div class="clearfix">
-                    <span class="pull-left">Task #2</span>
-                    <small class="pull-right">70%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
-                  </div>
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-6">
-                  <div class="clearfix">
-                    <span class="pull-left">Task #3</span>
-                    <small class="pull-right">60%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 60%;"></div>
-                  </div>
+       </div>
 
-                  <div class="clearfix">
-                    <span class="pull-left">Task #4</span>
-                    <small class="pull-right">40%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 40%;"></div>
-                  </div>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-            </div>
-          </div>
-          <!-- /.box -->
-
-        </section>
-        <!-- right col -->
+          <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="eventModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="eventModal">Update Calendar Event</h4>
       </div>
-      <!-- /.row (main row) -->
+      <div class="modal-body">
+      <?php echo form_open(site_url("calendrier/edit_event"), array("class" => "form-horizontal")) ?>
+      <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">Event Name</label>
+                <div class="col-md-8 ui-front">
+                    <input type="text" class="form-control" name="name" value="" id="name">
+                </div>
+        </div>
+        <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">Description</label>
+                <div class="col-md-8 ui-front">
+                    <input type="text" class="form-control" name="description" id="description">
+                </div>
+        </div>
+        <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">Start Date</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" name="start_date" id="start_date">
+                </div>
+        </div>
+        <div class="form-group">
+                <label for="p-in" class="col-md-4 label-heading">End Date</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" name="end_date" id="end_date">
+                </div>
+        </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <?php echo form_close() ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+var data;
+    var date_last_clicked = null;
+
+    $('#calendrier').fullCalendar({
+				header: {
+				left: 'prev,next today',
+				center: 'title',					
+                right: 'month,basicWeek,basicDay'
+					},
+					navLinks: true, // can click day/week names to navigate views
+					editable: true,
+					businessHours: true,
+					eventLimit: true, // allow "more" link when too many events
+					editable: true,
+       	            selectable: true,
+		            selectHelper: true,               
+        eventSources: [
+           {
+           events: function(start, end, timezone, callback) {
+                $.ajax({
+                    url: '<?php echo base_url() ?>evenement/get_events',
+                    dataType: 'json',
+                    data: {
+                        // our hypothetical feed requires UNIX timestamps
+                        start: start.unix(),
+                        end: end.unix()
+                    },
+                    success: function(msg) {
+                       
+                        data = msg.events;
+                        
+                        callback(data);
+                    }
+                });
+              }
+            },
+        ],
+
+       eventClick: function(event, jsEvent, view) {
+          $('#name').val(event.title);
+          $('#description').val(event.description);
+          $('#start_date').val(moment(event.start).format('YYYY/MM/DD HH:mm'));
+          if(event.end) {
+            $('#end_date').val(moment(event.end).format('YYYY/MM/DD HH:mm'));
+          } else {
+            $('#end_date').val(moment(event.start).format('YYYY/MM/DD HH:mm'));
+          }
+          $('#event_id').val(event.id);
+          $('#viewModal').modal();
+       },
+
+
+    });
+});
+</script>
+
+
 
     </section>
     <!-- /.content -->
@@ -399,7 +428,7 @@
     <div class="pull-right hidden-xs">
       <b>Design by </b>
     </div>
-    <strong>Copyright &copy; 2017<a href="https://http://molengeek.com/">Molengeek</a>.</strong> All rights
+    <strong>Copyright &copy; 2017<a href="https://molengeek.com/">Molengeek</a>.</strong> All rights
     reserved.
   </footer>
 
@@ -450,5 +479,10 @@
 <script src="<?= base_url ("/assets/dist/js/pages/dashboard.js")?>"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url ("/assets/dist/js/demo.js")?>"></script>
+
+
+<script src='<?php echo base_url();?>assets/fullcalendar/lib/moment.min.js'></script>
+<script src='<?php echo base_url();?>assets/fullcalendar/fullcalendar.min.js'></script>
+<script src='<?php echo base_url();?>assets/fullcalendar/locale/fr.js'></script>
 </body>
 </html>

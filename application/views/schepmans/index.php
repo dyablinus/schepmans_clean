@@ -75,7 +75,7 @@
               <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-calendar" style="color:white"; aria-hidden="true"></i>
               </div>
               <div class="col-xs-10 col-sm-10 col-md-10 padding_left_10">
-                <a target="_blank" title="retrouvez la liste des évènements" accesskey="s" href="<?= base_url("/calendrier") ?>"><h3 class="jumbofont" style="color:white";><?php echo lang('index_h3_calendrier');?></h3></a> 
+                <a target="_blank" title="retrouvez la liste des évènements" accesskey="s" href="<?= base_url("/evenement") ?>"><h3 class="jumbofont" style="color:white";><?php echo lang('index_h3_calendrier');?></h3></a> 
                 <p class="jumbopara hidden_actu" style="color:white";>Apendum pupum</p>
               </div>
 

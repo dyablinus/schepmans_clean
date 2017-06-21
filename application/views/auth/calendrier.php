@@ -185,53 +185,7 @@ var data;
           $('#editModal').modal();
        },
 
-					eventDrop: function(event, delta, revertFunc){
-                        console.log(event);
-						var id = event.id;
-						var fi = event.start.format();
-						var ff = event.end.format();
 
-						if (!confirm("La nouvelle date est correcte?")) {
-							revertFunc();
-						}else{
-							$.post("<?php echo base_url();?>calendrier/updEvent",
-							{
-								id:id,
-								start_date:fi,
-								end_date:ff
-							},
-							function(data){
-								if (data == 1) {
-									alert('Se actualizo correctamente');
-								}else{
-									alert('ERROR.');
-								}
-							});
-						}
-					},
-					eventResize: function(event, delta, revertFunc) {
-				        var id = event.id;
-						var fi = event.start.format();
-						var ff = event.end.format();
-
-						if (!confirm("Esta seguro de cambiar la fecha?")) {
-							revertFunc();
-						}else{
-							$.post("<?php echo base_url();?>calendrier/updEvent",
-							{
-								id:id,
-								start_date:fi,
-								end_date:ff
-							},
-							function(data){
-								if (data == 1) {
-									alert('Se cambio correctamente');
-								}else{
-									alert('ERROR.');
-								}
-							});
-						}
-				    },
     });
 });
 </script>
