@@ -1,14 +1,10 @@
 
 <!-- Left col -->
-<section class="col-lg-12 connectedSortable">
+<section class="col-lg-10 col-lg-offset-1 connectedSortable">
 
 
     <div id="calendar">
 
-    </div>
-
-    </div>
-    </div>
     </div>
 
     <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

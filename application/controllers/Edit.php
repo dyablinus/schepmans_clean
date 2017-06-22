@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Calendrier extends MY_Controller {
+class Edit extends MY_Controller {
 		 public function __construct(){
 			 parent::__construct();
-             $this->load->model('cal_model');
+             $this->load->model('edit_model');
 		     $this->load->model('Ion_auth_model');
              $this->load->helper('form');
              $this->load->library('ion_auth');

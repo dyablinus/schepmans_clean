@@ -138,7 +138,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="<?= base_url("/assets/pages/examples/invoice.html")?>"><i class="fa fa-circle-o"></i> Slider</a></li>
-            <li><a href="<?= base_url("/assets/pages/examples/profile.html")?>"><i class="fa fa-circle-o"></i> Homme</a></li>
+            <li><a href="<?= base_url("/edit")?>"><i class="fa fa-circle-o"></i> Home</a></li>
             <li><a href="<?= base_url("/assets/pages/examples/404.html")?>"><i class="fa fa-circle-o"></i> Actualités</a></li>
             <li><a href="<?= base_url("/assets/pages/examples/500.html")?>"><i class="fa fa-circle-o"></i> Molenbeek</a></li>
 
@@ -198,13 +198,7 @@
   </div>
   <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Design by </b>
-    </div>
-    <strong>Copyright &copy; 2017<a href="https://molengeek.com/">Molengeek</a>.</strong> All rights
-    reserved.
-  </footer>
+
 
 
 
@@ -216,7 +210,13 @@
 </div>
 <!-- ./wrapper -->
 
-
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Design by </b>
+    </div>
+    <strong>Copyright &copy; 2017<a href="https://molengeek.com/">Molengeek</a>.</strong> All rights
+    reserved.
+  </footer>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
