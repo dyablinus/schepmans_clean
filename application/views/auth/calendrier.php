@@ -1,4 +1,8 @@
 
+<!-- Left col -->
+<section class="col-lg-12 connectedSortable">
+
+
     <div id="calendar">
 
     </div>
@@ -189,3 +193,7 @@ var data;
     });
 });
 </script>
+
+
+ </section>
+ <!-- /.content -->

@@ -23,7 +23,7 @@ class Calendrier extends MY_Controller {
 		elseif ($this->ion_auth->is_admin()) // remove this elseif if you want to enable this for non-admins
 		{
 			// redirect them to the home page because they must be an administrator to view this
-            $this->render1('auth/calendrier');
+            $this->authrender('auth/calendrier');
 			
 		}
 	}

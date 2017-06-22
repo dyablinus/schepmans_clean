@@ -19,6 +19,13 @@ class MY_Controller extends CI_Controller {
 			$this->data["view_content"] = $this->load->view($view ,$this->data, TRUE);
 			$this->load->view($template, $this->data);
     }
+        
+		
+		public function authrender($view, $template = 'template/base/auth_dash'){
+			$this->data["view_content"] = $this->load->view($view ,$this->data, TRUE);
+			$this->load->view($template, $this->data);
+
+    }
 
 		protected function set_lang(){
 		$this->tab_language = $this->config->item ( 'lang_uri_abbr' );

@@ -13,7 +13,7 @@ class Index_model extends CI_Model {
 
   public function get_where($where=array()){
     $this->db->where('deleted',0);
-    // va chercher dans db table
+    // va chercher dans db dans table pb_user element ou deleted =0 et stock dans result
     $result = $this->db->get_where($this->table,$where);
     return $result;
 }

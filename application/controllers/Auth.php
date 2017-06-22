@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Auth extends CI_Controller {
+class Auth extends MY_Controller{
 
 	public function __construct()
 	{
@@ -41,7 +41,7 @@ class Auth extends CI_Controller {
 				$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 			}
 
-			$this->load->view('auth/dashboard', $this->data);
+			$this->authrender('auth/dashboard');
 		}
 	}
 
