@@ -17,9 +17,9 @@
      <?php foreach($result->result() as $rows){ ?>
     <tr>
       <th scope="row"></th>
-      <td><?= $rows->email ?></td>
-      <td><?= $rows->name; ?></td>
-      <td><?= $rows->surname; ?></td>
+      <td><?php echo $rows->email ?></td>
+      <td><?php echo $rows->name; ?></td>
+      <td><?php echo $rows->surname; ?></td>
     </tr>
    <?php } ?>
 

@@ -13,27 +13,31 @@ class Edit_model extends CI_Model {
 
 
 public function get_where($where=array()){
-    $this->db->where('deleted', NULL);
+    $this->db->where('deleted',0);
     // va chercher dans db table
     $result = $this->db->get_where($this->table,$where);
     return $result;
 }
 
 // créer un tableau avec le post et son message
-public function create($title,$message){
+public function create($title,$texte,$date,$link){
     $data = array(
         'title'  => $title,
-        'message' => $message
+        'texte' => $texte,
+        'date' => $date,
+        'link' => $link
         //'id' => $id
 );
 $this->db->insert($this->table, $data);
 }
 
  //modifie le commentaire
- public function update($title,$message,$id){
+ public function update($title,$texte,$date,$link,$id){
      $data = array(
-          'title' => $title,
-         'message' => $message
+        'title'  => $title,
+        'texte' => $texte,
+        'date' => $date,
+        'link' => $link
      );
 
      $this->db->where('id', $id);

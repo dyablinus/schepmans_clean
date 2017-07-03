@@ -4,7 +4,7 @@
                 <h1>Nouvel article</h1>
 
                 <!-- defini vers quel metjode envoyer le form -->
-               <?= form_open('post/create_post'); ?>
+               <?= form_open('edit/create_post'); ?>
                <?php
 
                $data_title = array(
@@ -28,7 +28,9 @@
                $data_image = array(
                'image'  => 'image',
                'Class'   => 'form-control',
-               'name'   => 'image'
+               'name'   => 'image',
+               'size' => 20,
+               'type' => 'file'
                );
 
                $data_link = array(
@@ -48,8 +50,10 @@
                 <?php echo form_label('Texte d\'introduction de l\'article', 'texte'); ?>
                 <?= form_textarea($data_texte); ?>
                 
-                <?php echo form_label('Image d\'illustration', 'image'); ?>
+                                <?php echo form_label('Image d\'illustration', 'image'); ?>
+                <!--<?php echo form_multipart('edit/do_upload');?>-->
                 <?= form_input($data_image); ?>
+
 
                 <?php echo form_label('Lien vers le site de l\'article', 'link'); ?>
                 <?= form_input($data_link); ?>
@@ -59,6 +63,10 @@
                 <?php echo form_submit('mysubmit', 'Publish', array('class' => 'btn btn-primary')); ?>
 
                 <?= form_close() ?>
+
+
+              
+
 
   
 

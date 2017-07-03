@@ -124,7 +124,7 @@
         </li>
         
         <li>
-          <a href="<?= base_url("/newsletter/listnews")?>">
+          <a href="<?= base_url("/newsletter/listutilisateurs")?>">
             <i class="fa fa-envelope"></i> <span>Newsletter</span>
           </a>
         </li>

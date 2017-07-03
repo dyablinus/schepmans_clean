@@ -24,10 +24,10 @@ class Newsletter extends MY_Controller {
 		{
 			// redirect them to the home page because they must be an administrator to view this
             //$this->load->view('auth/newsletter');
-			$this->listnews();
+			$this->listutilisateurs();
 		}
 	}
-	public function listnews(){
+	public function listutilisateurs(){
 		 $this->data["result"] = $this->index_model->get_where();
 		//  var_dump($this->index_model->get_where()->result());
        $this->authrender('auth/newsletter');
