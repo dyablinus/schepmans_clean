@@ -4,7 +4,9 @@
                 <h1>Nouvel article</h1>
 
                 <!-- defini vers quel metjode envoyer le form -->
-               <?= form_open('edit/create_post'); ?>
+               <?php 
+               $link=base_url('index.php/Edit/index');
+               echo form_open_multipart($link); ?>
                <?php
 
                $data_title = array(
@@ -25,18 +27,18 @@
                'name'   => 'texte'
                );
 
-               $data_image = array(
-               'image'  => 'image',
-               'Class'   => 'form-control',
-               'name'   => 'image',
-               'size' => 20,
-               'type' => 'file'
-               );
+               
 
                $data_link = array(
                'link'  => 'link',
                'Class'   => 'form-control',
                'name'   => 'link'
+               );
+
+                $data_image = array(
+               'type'  => 'file',
+               'Size'   => '20',
+               'name'   => 'file'
                );
                
                ?>
@@ -50,24 +52,28 @@
                 <?php echo form_label('Texte d\'introduction de l\'article', 'texte'); ?>
                 <?= form_textarea($data_texte); ?>
                 
-                                <?php echo form_label('Image d\'illustration', 'image'); ?>
-                <!--<?php echo form_multipart('edit/do_upload');?>-->
-                <?= form_input($data_image); ?>
-
-
                 <?php echo form_label('Lien vers le site de l\'article', 'link'); ?>
                 <?= form_input($data_link); ?>
                 
-                
+                <?php echo form_label('Image de l\'article', 'link'); ?>
+                <?= form_input($data_image); ?>
                 
                 <?php echo form_submit('mysubmit', 'Publish', array('class' => 'btn btn-primary')); ?>
 
-                <?= form_close() ?>
+                <?php echo form_close() ?>
 
 
               
 
+                <!--<?php echo form_open_multipart('edit/upload_files');?>
 
+                <input type="file" name="file_element_name" size="20" />
+
+                <br /><br />
+
+                <input type="submit" value="upload" />
+
+                  <?php echo form_close() ?>-->
   
 
         </section>

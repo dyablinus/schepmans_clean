@@ -23,7 +23,7 @@ class Teste extends MY_Controller {
 		elseif ($this->ion_auth->is_admin()) // remove this elseif if you want to enable this for non-admins
 		{
 			// redirect them to the home page because they must be an administrator to view this
-            $this->render('auth/edit');
+            $this->authrender('auth/edit');
 			
 		}
      
@@ -75,18 +75,18 @@ public function show($id=FALSE){
        $this->render('post/show');
 }
 
-//    public function create_post(){
-//        // recup info
-//       $title = $_POST['title'];
-//       $texte = $_POST['texte'];
-//       $date = $_POST['date'];
-// 	  $link = $_POST['link'];
+   public function create_post(){
+       // recup info
+      $title = $_POST['title'];
+      $texte = $_POST['texte'];
+      $date = $_POST['date'];
+	  $link = $_POST['link'];
 
-//        // stock in db
-//        $this->edit_model->create($title,$texte,$date,$link);
-//        // resend msg
-//        $this->authrender('auth/edit');
-//    }
+       // stock in db
+       $this->edit_model->create($title,$texte,$date,$link);
+       // resend msg
+       $this->authrender('auth/edit');
+   }
 
 
 //                 public function do_upload()

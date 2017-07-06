@@ -25,10 +25,11 @@ public function create($title,$texte,$date,$link){
         'title'  => $title,
         'texte' => $texte,
         'date' => $date,
-        'link' => $link
-        //'id' => $id
+        'link' => $link,
+        'token' => $dir_name
 );
 $this->db->insert($this->table, $data);
+return $this->db->insert_id();
 }
 
  //modifie le commentaire
@@ -52,3 +53,6 @@ $this->db->insert($this->table, $data);
  }
 
 }
+
+
+inverser sec 1 -2

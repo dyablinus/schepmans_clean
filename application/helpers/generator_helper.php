@@ -9,12 +9,10 @@ if ( ! function_exists('generateToken'))
    function generateToken($char = 8,$timestamp = true){
 		$valid_chars = ['a','b','c','A','B',0,1];
 		$listAlpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-		
+		$token ='';
 		//random dans un foreach
 		if($timestamp === true){
-			$token = time ();
-		}else{
-			$token ='';
+			$token .= time ();
 		}
 		
 		for($i=0;$i<$char;$i++){
