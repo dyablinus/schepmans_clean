@@ -15,7 +15,6 @@
 .elue_equipe {
     font-size:20px;
     color: #175079;
-
     margin: 0 0 5% 0;
 }
 
@@ -24,14 +23,18 @@
     display: inline-block;
     margin: 0 0 5% 0;
 }
-
+.partie_equipe {
+    color: #175079;
+    margin: 0 0 5% 0;
+    font-size: 16px;
+}
 .portrait_equipe {
     width: 125px;
-    height: 125px;
-    margin: 0 0 20% 62%;
+    margin: 0 0 25% 66%;
 }
-.email_equipe {
+.email_equipe, .phone_equipe {
     margin: 0 0 5% 0;
+    font-size: 13px;
 }
 .block_equipe{
     margin: 0 0 0 5%;
@@ -45,11 +48,23 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+#titre_equipe{
+    font-size: 45px;
+    margin: 0 0 8% 0;
+}
 .elue_equipe{
     font-size: 16px;
 } 
+.partie_equipe{
+    font-size: 12px;
+} 
 .email_equipe {
+    font-size: 10px;
+    margin-right: -80%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.phone_equipe{
     font-size: 10px;
 }
 .role_equipe {
@@ -62,8 +77,15 @@
 }
 .block_equipe {
     width: 100px;
+    margin: 0 0 0 13%;
 }
 .row_equipe .col-sm-6{
     padding-left: 0;
+}
+.block_equipe_last{
+    margin: 0 0 0 28%;
+}
+.last_team_people{
+    margin: 8% 0 0 0;
 }
 }

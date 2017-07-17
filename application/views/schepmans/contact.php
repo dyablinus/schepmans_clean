@@ -4,11 +4,39 @@
         $email = isset($input_email)?$input_email:"";
         $message = isset($input_message)?$input_message:"";
         ?>
-    <div class="row">
-        <div class="container" id="contain_contact">
+    <div class="container" id="contain_contact">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-lg-7 box_form_contact">
+                        <?php 
+                            if(isset($_GET["mail"])){
+                                if($_GET["mail"] == 1){
+                        ?>
+                                    <div class="alert alert-success text-center" role="alert">
+                                    Your email has been send, we'll contact you as soon as possible.
+                                    </div>
+                            <?php
+                                }else{
+                            ?>
+                                    <div class="alert alert-danger text-center" role="alert">
+                                    Oups, something wrong happend, try again.
+                                    </div>
+                        <?php
+                                }
+                            }
+                        ?>
+                        <?php 
+                            if(isset($_GET["validation"])){
+                                if($_GET["validation"] == 0){
+                        ?>
+                                    <div class="alert alert-danger text-center" role="alert">
+                                    Please fill all the info.
+                                    </div>
+                        <?php
+                                }
+                            }
+                        ?>
                 <h1 class="contact_titre"><?php echo lang('contact_h2_form');?></h1>
-                <form action="<?php echo base_url('user/contact_post'); ?>" method="POST" class="contact-form" role="form" id="contact-form">
+                <form action="<?php echo base_url('contact/contact_post'); ?>" method="POST" class="contact-form" role="form" id="contact-form">
                     <div class="form-group">
                         <input id="author" title="Votre nom" type="text" name="nom" value="<?php echo $nom ?>" id="name" placeholder="Votre nom" class="form-control">
 
@@ -40,19 +68,19 @@
                     <div id="contact_box" class="box_phone col-xs-12 col-sm-12">
                         <i class="contact_icon fa fa-phone" aria-hidden="true"></i>
                         <h3 class="inline_block contact_categorie">Phone</h3>
-                        <p class="contact_categorie"><span itemprop="telephone"> +880-1700-987654</span></p><br>
+                        <p class="contact_categorie"><span itemprop="telephone"> 02 / 412 37 40 - 02</span></p><br>
                     </div>
 
                     <div id="contact_box" class="box_phone col-xs-12 col-sm-12">
                         <i class="contact_icon fa fa-map" aria-hidden="true"></i>
                         <h3 class="inline_block contact_categorie">Location</h3>
-                        <p class="contact_categorie"><span itemprop="adress">1036 Gulshan Road</span></p><br>
+                        <p class="contact_categorie"><span itemprop="adress">Rue du Comte de Flandre, 20 - 1080 Bxl</span></p><br>
                     </div>
 
                     <div id="contact_box" class="box_phone col-xs-12 col-sm-12">
                         <i class="contact_icon fa fa-envelope" aria-hidden="true"></i>
                         <h3 class="inline_block contact_categorie">E-mail</h3>
-                        <p class="contact_categorie"><span itemprop="email">info@yourdomain.com</span></p><br>
+                        <p class="contact_categorie"><span itemprop="email">fschepmans@molenbeek.irisnet.be</span></p><br>
                     </div>
 
                 </div>

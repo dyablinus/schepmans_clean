@@ -23,23 +23,23 @@ $lang ['footer_inscris'] ="Je m'inscris";
 
 //index
 //jumbotron 
-$lang ['index_h3_equipe'] = "ÉQUIPE";
+$lang ['index_h3_equipe'] = "COLLÈGE DES ECHEVINS";
 $lang ['index_h3_partie_poli'] = "PARTIE POLITIQUE";
 $lang ['index_h3_calendrier'] = "CALENDRIER";
 $lang ['index_h2_padactu'] = "DERNIÈRES ACTUALITÉS";
 $lang ['index_a_voir_plus'] = "Voir plus";
-$lang ['index_h2_articlfont_pierre'] = "Jean-Pierre achete une voiture à Molenbeek";
-$lang ['index_h2_articlfont_michel'] = "Jean-Michel le responsable de Molenbeek"; 
-$lang ['index_h2_articlfont_aimarre'] = "Jean-Aimarre en a marre de la marée haute";
-$lang ['index_h2_articlfont_relou'] = "Je sais plus quoi écrire comme titre c'est relou";
+$lang ['index_h2_articlfont_aimarre'] = "Les principaux opposants pour les prochaines élections";
+$lang ['index_h2_articlfont_pierre'] = "L'Italie était à l'honneur au Château du Karreveld";
+$lang ['index_h2_articlfont_michel'] = "Inauguration d'un potager bio derrière l'hôtel Belvue"; 
+$lang ['index_h2_articlfont_relou'] = "Françoise Schepmans en visite à Molengeek";
 //actualité
 $lang ['actu_h6'] = "ACTUALITÉS";
-$lang ['actu_h4_article1'] = "Article 1";
+$lang ['actu_h4_article1'] = "Les principaux opposants pour les prochaines élections";
 $lang ['actu_a_voir_plus'] = "Voir plus";
-$lang ['actu_h4_article2'] = "Article 2";
+$lang ['actu_h4_article2'] = "L'Italie était à l'honneur au Château du Karreveld";
 $lang ['actu_h6_mai'] = "11 mai 2017";
-$lang ['actu_h4_article3'] = "Article 3";
-$lang ['actu_h4_article4'] = "Article 4";
+$lang ['actu_h4_article3'] = "Inauguration d'un potager bio derrière l'hôtel Belvue";
+$lang ['actu_h4_article4'] = "Françoise Schepmans en visite à Molengeek";
 
 
 

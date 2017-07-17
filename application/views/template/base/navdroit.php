@@ -11,7 +11,7 @@
 
 
 
-<?php echo $this->uri->segment(1); ?>
+<!--<?php echo $this->uri->segment(1); ?>-->
  
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <h1 style="color:#175079;">Facebook</h1>

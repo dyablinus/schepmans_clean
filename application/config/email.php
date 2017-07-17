@@ -3,9 +3,8 @@
   'protocol' => 'smtp',
   'smtp_host' => 'smtp.mailtrap.io',
   'smtp_port' => 2525,
-  'smtp_user' => '823707c45920c1',
-  'smtp_pass' => '7b12fbd3933830',
+  'smtp_user' => '0944e145271b2d',
+  'smtp_pass' => '5d2281c78666fc',
   'crlf' => "\r\n",
   'newline' => "\r\n"
 );
-

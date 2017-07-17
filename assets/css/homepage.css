@@ -67,7 +67,7 @@ div.jumbotron{
 }
 .textdeco a.border:hover{
     background-color: lightblue;
-    color: black;
+    color: white;
 }
 .borduresepar{
     border-bottom: 3px solid #175979;
@@ -89,7 +89,10 @@ div.jumbotron{
     font-size: 15px;
     }
     .jumbotron{
-       padding-top: 10px;
+       padding: 1px 15px;
+    }
+    div.jumbotron{
+       margin-top: 10%;
     }
     .jumbotron .jumbofont{
         font-size: 11px;

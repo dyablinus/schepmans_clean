@@ -4,20 +4,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class MY_Controller extends CI_Controller {
 	public $tab_language = null;
 	public $current_language = null;
+	public $data =array();
 
-		public $data =array();
-		 	public function __construct() {
+		public function __construct() {
 			parent::__construct ();
 			$this->set_lang();
 		}
-        public function render($view, $template = 'template/base/index'){
-			$this->data["view_content"] = $this->load->view($view ,$this->data, TRUE);
-			$this->load->view($template, $this->data);
+	public function render($view, $template = 'template/base/index'){
+		$this->data["view_content"] = $this->load->view($view ,$this->data, TRUE);
+		$this->load->view($template, $this->data);
 
     }
         public function render1($view,  $template = 'template/base/index2'){
 			$this->data["view_content"] = $this->load->view($view ,$this->data, TRUE);
 			$this->load->view($template, $this->data);
+    }
+        
+		
+		public function authrender($view, $template = 'template/base/auth_dash'){
+			$this->data["view_content"] = $this->load->view($view ,$this->data, TRUE);
+			$this->load->view($template, $this->data);
+
     }
 
 		protected function set_lang(){

@@ -1,11 +1,12 @@
 #captions{
     position: absolute;
     top: 0;
-    left: 69%;
+    left: 78%;
     right: 0;
-    width: 31.5%;
+    width: 22.5%;
     height: 100%;
-    background-color: rgba(0,0,0,.5);
+    background-color: #195077;
+    padding: 4.5%;
 }
 .carousel-control.left{
     background-image: none;
@@ -13,7 +14,7 @@
 }
 .carousel-control.right{
     background-image: none;
-    right: 80px;
+    right: 7%;
 }
 .carousel-control{
     width: 0%;
@@ -22,5 +23,28 @@
 .carousel.slide{
     border: 8px solid #e0e1e3;
 }
+.img_carousel {
+    width: 890px;
+}
+.carousel_titre {
+    border-bottom: 1px solid white;
+    padding-bottom: 15%;
+    margin-bottom: 18%;
+}
 
+@media only screen and (max-width: 768px) {
+
+.carousel_titre {
+   font-size: 9px;
+}
+.glyphicon {
+    font-size: 13px;
+}
+#captions > p{
+    font-size: 7px;
+}
+.img_carousel {
+    width: 220px;
+}
+}
 

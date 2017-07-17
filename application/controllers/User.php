@@ -48,7 +48,7 @@ class User extends MY_Controller {
 			$msg = $this->load->view("mail/index",$data_msg,TRUE);
             $this->email->initialize();
             $this->email->from($email, 'Site name');
-            $this->email->to('ismailmahaj@gmail.com');
+            $this->email->to('jerem.negaret@gmail.com');
             $this->email->subject('Notification Mail');
             $this->email->message($msg);
             $this->email->send();

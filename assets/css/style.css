@@ -42,14 +42,14 @@
     color: lightblue;
 }
 
-#nav_icontop .youtube_navtop>a>.fa-youtube:hover{
-    color: red;
+#nav_icontop #link:hover{
+    color: #175079;
 }
 #fb:hover{
-    color: blue;
+    color: #175079;
 }
 #twit:hover{
-    color: blue;
+    color: #175079;
 }
 #nav_icontop .actu_navtop>a>.fa-rss:hover{
     color: black;
@@ -124,6 +124,21 @@
 
 /*END ABOUT*/
 
+
+/*DEBUT CALENDAR*/
+
+
+#calendar{
+    margin: 5% auto 9% auto;
+    max-width: 900px;
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 14px;
+}
+
+
+/*FIN CALENDAR*/
+
+
 /*DEBUT FOOTER*/
 .nav_footer {
     margin: 2% 0 0 0;
@@ -139,8 +154,8 @@
     text-decoration: none;
     background-color: #175079;
 }
-.fa.fa-youtube:hover{
-    color: red;
+.fa.fa-linkedin-square:hover{
+    color: blue;
 }
 .fa.fa-facebook-official:hover{
     color: blue;
@@ -226,6 +241,13 @@ a#back-top{
 
 /*FOOTER*/
 
+#copyright{
+    float:right;
+}
+
+#subscrite {
+    margin-top: 2%;
+}
 #copyright > p > span, #subscrite > p{
     font-size: 9px;
 }
@@ -244,7 +266,7 @@ display:none;
 
 /*ABOUT*/
 #banniere{
-width: 111%;
+width: 110%;
 }
 .barre{
     padding-bottom: 10%;
@@ -257,4 +279,28 @@ width: 111%;
     font-size: 60px;
 }
 /*END ABOUT*/
+
+/*DEBUT CALENDAR*/
+
+#calendar .fc-toolbar .fc-center h2 {
+    font-size: 17px;
+}
+#calendar .fc-left button{
+    width: 48%;
+}
+.fc-button-group button{
+    padding: 0%;
+    font-size: 7px;
+}
+
+#calendar .fc-toolbar .fc-left .fc-today-button{
+    font-size:10px;
+    width:57%;
+}
+
+/*FIN CALENDAR*/
+}
+
+.fc-time {
+    display:none;
 }

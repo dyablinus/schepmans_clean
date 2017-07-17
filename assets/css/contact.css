@@ -3,6 +3,8 @@
 }
 .box_form_contact {
     margin-top: 4%;
+    background-color: #f8f8f8;
+    padding-bottom: 2%;
 }
 
 .contact-form{ 
@@ -13,7 +15,9 @@
     min-height:220px; 
     resize:none;
 }
-
+#message {
+    height: 95px;
+}
 .form-control{ 
     box-shadow:none; 
     border-color:#eee; 
@@ -66,7 +70,7 @@ text-align: center;
 }
 .first-box {
     margin-top: 9%;
-    margin-left: 95px;
+    margin-left: 70px;
 }
 #contact_box>.contact_icon{
     color: white;
@@ -77,7 +81,7 @@ text-align: center;
     padding-bottom: 20px;
     text-align: center;
     font-size: 55px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #bbbbbb;
 }
 
 @media only screen and (max-width: 768px) {

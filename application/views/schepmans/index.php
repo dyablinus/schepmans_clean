@@ -1,54 +1,33 @@
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-7174574-22']);
-	_gaq.push(['_trackPageview']);
-
-	(function () {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-
-</script>
-<script>
-	(function (d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-
-</script>
 
 <div id="carousel-id" class="carousel slide" data-ride="carousel">
     
     <div class="carousel-inner">
         <div class="item">
-            <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
+            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
             <div class="container">
                 <div class="carousel-caption" id="captions">
-                    <h1>Example headline.</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    <h2 class="carousel_titre">Françoise Schepmans</h2>
+                    <p>Françoise Schepmans est une femme politique belge, députée mr. Elle actuellement bourgemestre de Molenbeek-Saint-Jean </p>
                  
                 </div>
             </div>
         </div>
         <div class="item">
-            <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg">
+            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="http://r2.ldh.be/image/57/58b99385cd704dd7c0b61357.jpg">
             <div class="container">
                 <div class="carousel-caption" id="captions">
-                    <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h2 class="carousel_titre">Françoise Schepmans prochaine élection</h2>
+                    <p>Durant les prochaines élections à Bruxelles, Françoise Schepmans sera opposée à Joelle Milquet, Yvan Mayeur et Catherine Moureaux la fille
+                    de l'ancine bourgmestre Philippe Moureaux.</p>
                  
                 </div>
             </div>
         </div>
         <div class="item active">
-            <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
+            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="http://r2.llb.be/image/41/582767f8cd70958a9d605d41.jpg">
             <div class="container">
                 <div class="carousel-caption" id="captions">
-                    <h1>One more for good measure.</h1>
+                    <h2 class="carousel_titre">Françoise Schepmans</h2>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                    
                 </div>
@@ -63,7 +42,7 @@
 
 <!--/ #slider-->
 <div style="margin-left: -15px; margin-right: -15px; border-radius: 0; background-color: rgb(25, 80, 119);
-"class="jumbotron">
+"class="jumbotron" id="ban_undercarousel">
     <div class="container">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="row fafa">
@@ -96,7 +75,7 @@
               <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="syl fa fa-calendar" style="color:white"; aria-hidden="true"></i>
               </div>
               <div class="col-xs-10 col-sm-10 col-md-10 padding_left_10">
-                <a target="_blank" title="retrouvez la liste des évènements" accesskey="s" href="<?= base_url("/calendrier") ?>"><h3 class="jumbofont" style="color:white";><?php echo lang('index_h3_calendrier');?></h3></a> 
+                <a target="_blank" title="retrouvez la liste des évènements" accesskey="s" href="<?= base_url("/evenement") ?>"><h3 class="jumbofont" style="color:white";><?php echo lang('index_h3_calendrier');?></h3></a> 
                 <p class="jumbopara hidden_actu" style="color:white";>Apendum pupum</p>
               </div>
 
@@ -131,7 +110,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_pierre');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
-        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep4.jpg") ?>" alt="Relate les derniers évènements sur la vice députée">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/art1.jpg") ?>" alt="Relate les derniers évènements sur la vice députée">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
@@ -143,7 +122,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_michel');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
         </p>
-        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="Présentation des actions en faveur de ">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/art2.jpg") ?>" alt="Présentation des actions en faveur de ">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
@@ -158,7 +137,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_aimarre');?></h2>
         <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
-        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep3.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 
@@ -169,7 +148,7 @@
         <h2 class="articlfont"><?php echo lang('index_h2_articlfont_relou');?></h2>
         <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
         </p>
-        <img class="taille img-responsive" src="<?= base_url ("/assets/images/schep7.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'">
+        <img class="taille img-responsive" src="<?= base_url ("/assets/images/art3.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'">
         <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
             facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.</p>
 

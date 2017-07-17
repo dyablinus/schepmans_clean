@@ -2,78 +2,35 @@
 
 <div id="titre_actu" class="text-center">
    <i class="fa fa-rss fa-rss-actu" aria-hidden="true"></i>
-   <h6 class="titre text-center"><?php echo lang('actu_h6');?></h6>
+   <h6 class="titre text-center"><?php echo $this->lang->line('actu_h6');?></h6>
 </div>
 
 <div id="barre_actu"></div>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/7.jpg")?>" alt="">
-</div>
-    
-<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
-    <h4 class="title_article"><?php echo lang('actu_h4_article1');?></h4> 
-    <div class="date hidden_actu">
-        <i class="fa fa-calendar-o" aria-hidden="true"></i>
-         <h6><?php echo lang('actu_h6_mai');?></h6>
+<?php foreach($result->result() as $rows){ ?>
+    <div class="row">   
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <img class="img_actu img-responsive" src="<?= base_url("assets/images/schep5_carre.jpg")?>" alt="">
+            </div>
+                
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
+                <a href="<?php echo $rows->link ?>" type="button"target="_blank">
+                    <h4 class="title_article"><?php echo $rows->title ?></h4> 
+                    <div class="date hidden_actu">
+                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                        <h6><?php echo $rows->date ?></h6>
+                    </div>
+                    <p class="hidden_actu"><?php echo $rows->texte ?>.</p>
+                </a>
+            </div>
+
+        <!--FIN COL 12 ACTU -->
+        </div>
     </div>
-    <p class="hidden_actu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia numquam iusto soluta,
-     nulla nobis odit impedit quasi dolores aliquid, repudiandae sapiente voluptas maxime cum
-      libero consectetur quod? Quis enim, totam!</p>
-      
-          <a href="#" type="button" class="btn btn-primary btn_actu_page"><?php echo lang('actu_a_voir_plus');?></a>
-</div>
+<?php } ?>
 
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/schep4.jpg")?>" alt="">
-</div>
-    
-<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">
-    <h4 class="title_article"><?php echo lang('actu_h4_article2');?></h4> 
-    <div class="date hidden_actu">
-        <i class="fa fa-calendar-o" aria-hidden="true"></i> 
-        <h6>11 mai 2017</h6> 
-     </div>
-    <p class="hidden_actu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia numquam iusto soluta,
-     nulla nobis odit impedit quasi dolores aliquid, repudiandae sapiente voluptas maxime cum
-      libero consectetur quod? Quis enim, totam!</p>
-    <a href="#" type="button" class="btn btn-primary btn_actu_page"><?php echo lang('actu_a_voir_plus');?></a>
-</div>
 
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/9.jpg")?>" alt="">
-</div>
-    
-<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">
-    <h4 class="title_article"><?php echo lang('actu_h4_article3');?></h4> 
-    <div class="date hidden_actu">
-        <i class="fa fa-calendar-o" aria-hidden="true"></i>
-         <h6><?php echo lang('actu_h6_mai');?></h6>
-     </div>
-    <p class="hidden_actu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia numquam iusto soluta,
-     nulla nobis odit impedit quasi dolores aliquid, repudiandae sapiente voluptas maxime cum
-      libero consectetur quod? Quis enim, totam!</p>
-      <a href="#" type="button" class="btn btn-primary btn_actu_page"><?php echo lang('actu_a_voir_plus');?></a>
-</div>
-
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img class="img_actu img-responsive" src="<?= base_url("assets/images/11.jpg")?>" alt="">
-</div>
-    
-<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">
-    <h4 class="title_article"><?php echo lang('actu_h4_article4');?></h4> 
-    <div class="date hidden_actu">
-        <i class="fa fa-calendar-o" aria-hidden="true"></i> 
-        <h6><?php echo lang('actu_h6_mai');?></h6>
-    </div>
-    <p class="hidden_actu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia numquam iusto soluta,
-     nulla nobis odit impedit quasi dolores aliquid, repudiandae sapiente voluptas maxime cum
-      libero consectetur quod? Quis enim, totam!</p>
-      <a href="#" type="button" class="btn btn-primary btn_actu_page"><?php echo lang('actu_a_voir_plus');?></a>
-</div>
-
-</div>
 
 <!--end col8 actu-->
 </div>
