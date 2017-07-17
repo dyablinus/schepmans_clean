@@ -3,9 +3,9 @@
 
                 <h1>Nouvel article</h1>
 
-                <!-- defini vers quel metjode envoyer le form -->
+                <!-- defini vers quelle methode envoyer le form -->
                <?php 
-               $link=base_url('index.php/Edit/index');
+               $link=base_url('edit/create_post');
                echo form_open_multipart($link); ?>
                <?php
 
@@ -42,20 +42,27 @@
                );
                
                ?>
-
+                
+                <?php echo form_error('title'); ?>
                 <?php echo form_label('Titre de l\'article', 'title'); ?>
                 <?= form_input($data_title); ?>
                 
+                <?php echo form_error('date'); ?>
                 <?php echo form_label('Date de publication', 'date'); ?>
                 <?= form_input($data_date); ?>
                 
+                <?php echo form_error('texte'); ?>
                 <?php echo form_label('Texte d\'introduction de l\'article', 'texte'); ?>
                 <?= form_textarea($data_texte); ?>
+                
+                <?php echo form_error('link'); ?>
                 
                 <?php echo form_label('Lien vers le site de l\'article', 'link'); ?>
                 <?= form_input($data_link); ?>
                 
-                <?php echo form_label('Image de l\'article', 'link'); ?>
+                <?php echo form_error('file'); ?>
+                
+                <?php echo form_label('Image de l\'article', 'file'); ?>
                 <?= form_input($data_image); ?>
                 
                 <?php echo form_submit('mysubmit', 'Publish', array('class' => 'btn btn-primary')); ?>
@@ -63,17 +70,7 @@
                 <?php echo form_close() ?>
 
 
-              
 
-                <!--<?php echo form_open_multipart('edit/upload_files');?>
-
-                <input type="file" name="file_element_name" size="20" />
-
-                <br /><br />
-
-                <input type="submit" value="upload" />
-
-                  <?php echo form_close() ?>-->
   
 
         </section>
