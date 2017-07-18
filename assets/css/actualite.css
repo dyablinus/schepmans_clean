@@ -20,7 +20,13 @@
 .actu .col-xs-4.col-sm-4.col-md-4.col-lg-4{
   padding-right: 0;
 }
-
+.img_actu{
+    width: 300px;
+    height: 250px;
+}
+#actu_margin_titre{
+    margin-top: -17px;
+}
 .date h6 {
     display: inline-block;
 }
@@ -28,7 +34,7 @@
     margin: 5% 0 0 0;
 }
 .box_actu {
-    border: 1px solid #666161;
+   
     padding: 0.9% 3%;
     margin: 0 0 4% 0;
 
@@ -52,7 +58,8 @@
     display:none;
 }
 .img_actu{
-    height: 70px;
+    height: 120px;
+    width: 140px;
 }
 .box_actu .title_article{
     font-size: 115%;
@@ -64,4 +71,5 @@
 .titre, .fa-rss-actu {
     font-size: 240%;
 }
+
 }

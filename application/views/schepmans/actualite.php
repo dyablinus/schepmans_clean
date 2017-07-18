@@ -10,168 +10,99 @@
 
     <div class="row">   
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <img class="img_actu img-responsive" src="<?= base_url("assets/images/bruxellons")?>" alt="">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img class="img_actu img-responsive" src="<?= base_url("assets/images/incivilités")?>" alt="">
             </div>
                 
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box_actu">  
                 <a href="" type="button"target="_blank">
                     <h4 class="title_article"></h4> 
+                    <p id="actu_margin_titre" class="hidden_actu"><h4>Lutter contre les incivilités</h4>
                     <div class="date hidden_actu">
                         <i class="fa fa-calendar-o" aria-hidden="true">17.07.17</i>
                         <h6></h6>
                     </div>
-                    <p class="hidden_actu"><h4>Festival Bruxellons à Karreveld</h4>
 
-Envie de fous rires ? Le festival Bruxellons joue la célèbre pièce « Bossemans et Coppenolle » au
+Les incivilités de quelques-uns empoisonnent la vie des habitants dans les logements sociaux.
 
-Château du Karreveld durant l’été. D’autres spectacles sont encore à l’affiche. Vous pouvez découvrir
+On le vit trop souvent dans certains immeubles. Pour lutter plus efficacement contre ces
 
-tout le programme sur le site www.bruxellons.be</p>
+incivilités, je trouve utile de renforcer le rôle des gardiens des logements sociaux. Dans l&#39;état
+
+actuel, ceux-ci ne peuvent pas sanctionner les comportements inciviques dans les parties
+
+communes des immeubles (parking, ascenseur, escaliers, caves, hall d&#39;entrée...). J&#39;ai interpellé
+
+le ministre de l&#39;Intérieur sur le sujet: il affirme qu&#39;un groupe de travail se penche sur
+
+l&#39;élargissement des compétences des gardiens. A suivre...
+
+Article dans La Capitale.</p>
                 </a>
             </div>
 
         <!--FIN COL 12 ACTU -->
         </div>
     </div>
+    <div id="barre_molen"></div>
 <div class="row">   
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <img class="img_actu img-responsive" src="<?= base_url("assets/images/Ecole")?>" alt="">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img class="img_actu img-responsive" src="<?= base_url("assets/images/coproprio")?>" alt="">
             </div>
                 
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box_actu">  
                 <a href="" type="button"target="_blank">
                     <h4 class="title_article"></h4> 
+                    <p id="actu_margin_titre" class="hidden_actu"><h4>Aider les copropriétaires</h4>
                     <div class="date hidden_actu">
                         <i class="fa fa-calendar-o" aria-hidden="true">17.07.17</i>
                         <h6></h6>
                     </div>
-                    <p class="hidden_actu"><h4>Deux nouvelles écoles secondaires à Molenbeek en 2017 !</h4>
 
-Pour le groupe libéral, l’éducation de nos jeunes est primordiale afin qu’ils puissent
 
-s’épanouir et se préparer à l’avenir avec les meilleurs atouts. Il faut répondre à cette priorité
+La bonne gestion des copropriétés est une problématique très importante à Bruxelles (il y en a
 
-avec rapidité car le boom démographique, jusqu’ici ressenti dans le réseau primaire, se
+33.600 !) et particulièrement dans les quartiers tels que le Machtens et le Mettewie. En effet,
 
-répercutera rapidement sur l’enseignement secondaire ... </p>
+les immeubles à appartements, qui datent des années 60-70, vieillissent parfois très mal. Des
+
+travaux, onéreux, sont nécessaires pour les remettre en bon état.
+
+Problème : pour entreprendre ces chantiers, il faut l’accord de 75% des copropriétaires pour
+
+lesquels la charge financière peut s’avérer trop élevée. Avec le député bruxellois Olivier de
+
+Clippele, je plaide pour l’octroi d’un crédit à 0% comme cela se pratique en France et des
+
+systèmes de primes plus efficaces pour les copropriétés. Olivier de Clippele a introduit en ce
+
+sens une proposition de résolution au Parlement bruxellois.
+
+Autre difficulté : pour mener à bien les travaux de rénovation, les copropriétaires doivent
+
+régulièrement supporter les quotes-parts impayées par certains copropriétaires défaillants. Or,
+
+lorsqu’un copropriétaire défaillant met en vente volontaire ou forcée son bien, le prix de vente
+
+ne permet pas toujours de rembourser ses créances auprès de l’association des propriétaires.
+
+Une grande part, voire la totalité, de la valeur du bien est absorbée par les créances
+
+privilégiées ou hypothécaires. J’ai déposé à la Chambre une modification de loi de manière à
+
+permettre à une copropriété d’exiger d’être payée avant tout autre créancier. Un tel
+
+mécanisme permettrait à la fois d’éviter les difficultés de financement des travaux mais aussi
+
+de clarifier les relations entre copropriétaires.</p>
                 </a>
             </div>
 
         <!--FIN COL 12 ACTU -->
         </div>
     </div>
-    <div class="row">   
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <img class="img_actu img-responsive" src="<?= base_url("assets/images/Batiment1")?>" alt="">
-            </div>
-                
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
-                <a href="" type="button"target="_blank">
-                    <h4 class="title_article"></h4> 
-                    <div class="date hidden_actu">
-                        <i class="fa fa-calendar-o" aria-hidden="true">17.07.17</i>
-                        <h6></h6>
-                    </div>
-                    <p class="hidden_actu"><h4>Au service des habitants !</h4>
-
-
-Afin d’accueillir les citoyens dans de bonnes conditions, un nouveau bâtiment administratif a été
-
-construit rue Sainte-Marie, à proximité de la Maison communale et de la station Comte de Flandre.
-
-Impossible de le manquer : le nom de Molenbeek est affiché en grandes lettres sur sa façade. </p>
-                </a>
-            </div>
-
-        <!--FIN COL 12 ACTU -->
-        </div>
-    </div>
-    <div class="row">   
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <img class="img_actu img-responsive" src="<?= base_url("assets/images/Plantu2")?>" alt="">
-            </div>
-                
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
-                <a href="" type="button"target="_blank">
-                    <h4 class="title_article"></h4> 
-                    <div class="date hidden_actu">
-                        <i class="fa fa-calendar-o" aria-hidden="true">17.07.17</i>
-                        <h6></h6>
-                    </div>
-                    <p class="hidden_actu"><h4>
-Plantu expose à Molenbeek</h4>
-
-
-
-Un bel événement en préparation: une exposition des dessins de Plantu, le célèbre caricaturiste
-
-français du journal Le Monde, se déroulera au mois de novembre au Château du Karreveld. Ce sera
-
-l’occasion aussi d’initier les jeunes à la caricature. A lire dans le journal La Capitale.</p>
-                </a>
-            </div>
-
-        <!--FIN COL 12 ACTU -->
-        </div>
-    </div>
-    <div class="row">   
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <img class="img_actu img-responsive" src="<?= base_url("assets/images/Lunch")?>" alt="">
-            </div>
-                
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
-                <a href="" type="button"target="_blank">
-                    <h4 class="title_article"></h4> 
-                    <div class="date hidden_actu">
-                        <i class="fa fa-calendar-o" aria-hidden="true">17.07.17</i>
-                        <h6></h6>
-                    </div>
-                    <p class="hidden_actu"><h4>Lunch original à la WAQ</h4>
-
-La commune a installé une antenne dans le quartier Liverpool qui s’appelle la WAQ. On y a déguste à
-
-midi un repas complet (entrée, plat, dessert)... pour 5 euros ! Une prouesse rendue possible grâce au
-
-partenariat avec l’association Collecmet qui récolte les produits invendus dans les marchés pour
-
-mitonner de bons plats.</p>
-                </a>
-            </div>
-
-        <!--FIN COL 12 ACTU -->
-        </div>
-    </div>
-    <div class="row">   
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <img class="img_actu img-responsive" src="<?= base_url("assets/images/cambriolage")?>" alt="">
-            </div>
-                
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box_actu">  
-                <a href="" type="button"target="_blank">
-                    <h4 class="title_article"></h4> 
-                    <div class="date hidden_actu">
-                        <i class="fa fa-calendar-o" aria-hidden="true">17.07.17</i>
-                        <h6></h6>
-                    </div>
-                    <p class="hidden_actu"><h4>Gare aux cambrioleurs</h4>
-
-Molenbeek n’est pas davantage touché par le problème des cambriolages dans les habitations que
-
-d’autres communes bruxelloises mais, malgré tout, il est important de prendre des mesures de
-
-prévention. Récemment, la commune a organisé une réunion avec les habitants afin de leur ...</p>
-                </a>
-            </div>
-
-        <!--FIN COL 12 ACTU -->
-        </div>
-    </div>
+    <div id="barre_molen"></div>
 
 
 
