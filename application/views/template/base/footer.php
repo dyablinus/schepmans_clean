@@ -85,15 +85,15 @@
 
                                          <?= form_close() ?>
 
-<<<<<<< HEAD
+
                                  <form style="padding:3px;text-align:center;" action="https://tinyletter.com/Schepmans" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/Schepmans', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:50%" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="S'abonner" /></form>
 
                             
                             
-=======
+
 
                             </div>
->>>>>>> 42e20c4d789dfde6310c4b38e99e7d8488d12bba
+
                         </div>
                         <div class="modal-footer">
 
