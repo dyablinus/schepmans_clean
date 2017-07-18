@@ -20,6 +20,9 @@
 
         <div class="col-xs-6 col-sm-6  col-md-4 " id="copyright" itemscope itemtype="http://schema.org/Person">
             <p><span itemprop="copyrightHolder">Copyright Molengeek 2017</span></p>
+            <p id="dev">Design and Develope by 
+                <a href="https://www.linkedin.com/in/sylwester-horczak-812478143/">Horczak</a>
+                &<a href="https://www.linkedin.com/in/jeremy-ruiz-326479143/">Ruiz</a></p>
         </div>
         <div id="subscrite" class="pull-right col-xs-6 col-sm-6 col-md-4 ">
             <p>

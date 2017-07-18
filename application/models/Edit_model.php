@@ -20,7 +20,7 @@ public function get_where($where=array()){
 }
 
 // créer un tableau avec le post et son message
-public function create($data){
+public function create($data_article){
 //     $data = array(
 //         'title'  => $title,
 //         'texte' => $texte,
@@ -28,7 +28,7 @@ public function create($data){
 //         'link' => $link,
 //         "file_path" => $name_photo_file
 // );
-$this->db->insert($this->table, $data);
+$this->db->insert($this->table, $data_article);
 return $this->db->insert_id();
 }
 
