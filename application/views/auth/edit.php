@@ -3,9 +3,14 @@
 
                 <h1>Nouvel article</h1>
 
+                <!-- <?php 
+                echo $error_image;
+                echo '<br>';
+                echo $error_name;
+                ?> -->
                 <!-- defini vers quelle methode envoyer le form -->
                <?php 
-               $link=base_url('edit/create_post');
+               $link=base_url('edit/create');
                echo form_open_multipart($link); ?>
                <?php
 
@@ -38,7 +43,7 @@
                 $data_image = array(
                'type'  => 'file',
                'Size'   => '20',
-               'name'   => 'file'
+               'name'   => 'userfile'
                );
                
                ?>
@@ -62,7 +67,7 @@
                 
                 <?php echo form_error('file'); ?>
                 
-                <?php echo form_label('Image de l\'article', 'file'); ?>
+                <?php echo form_label('Image de l\'article', 'userfile'); ?>
                 <?= form_input($data_image); ?>
                 
                 <?php echo form_submit('mysubmit', 'Publish', array('class' => 'btn btn-primary')); ?>

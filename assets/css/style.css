@@ -1,4 +1,26 @@
+@font-face {
+    font-family: "sullivan";
+    src: url('../fonts/Sullivan.ttf')
+}
 
+.fbtwit{
+    color: #175079;
+    font-family: inherit;
+    font-size: 45px;
+}
+h1 {
+    font-family: inherit;
+    font-size: 75px;
+}
+h2,h3,h4,h5,h6{
+    font-family: "sullivan";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: bold;
+}
+p{
+    font-family: "Alegreya";
+}
 /* DEBUT NAVBARRE*/
 
 .btn_nav_lang_en {
@@ -71,10 +93,7 @@
 
 /*Page About*/
 
-@font-face {
-    font-family: "sullivan";
-    src: url('../fonts/Sullivan.ttf')
-}
+
 #box_about{
     padding: 0 5% 0 15%;
 }
@@ -195,7 +214,10 @@
     margin: 0 0 0 5%;
 }
 #copyright > p {
-    margin: 5% 0;
+    margin: 3% 0;
+}
+#dev>a{
+    color: lightblue;
 }
 a#back-top{
     display: none !important;

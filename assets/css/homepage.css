@@ -1,10 +1,18 @@
 *{
     box-sizing: border-box;
 }
+#ban_undercarousel{
+    /* margin-left: -15px; 
+    margin-right: -15px;  */
+    border-radius: 0;
+    background-color: #17507a;
+    padding: 3% 0 5% 0;
+    margin: 4% -15px 4% -15px;
+}
 #homeimg1 {
     width: 95%;
     height: 95%;
-    border: 8px solid #175970;
+    border: 4px solid #175970;
     margin-bottom: 4%;
 }
 
@@ -14,9 +22,11 @@
     color: gray;
     font-weight: bold;
 }
-.jumbofont{
-    color: #97bed3;
+.jumbofont {
+    color: white;
     font-size: 20px;
+    font-family: inherit;
+    margin: 14% 0 0 0;
 }
 .jumbotron .jumbopara{
     color: #a39a9f;
@@ -33,12 +43,13 @@ div.jumbotron{
     padding-bottom: 15px;
     color: #17507a;
     font-weight: 600;
+    font-size: 60px;
 }
 .taille{
     width:324px;
     height: 252px;
     margin-bottom: 10px;
-     border: 5px solid #175970;
+     border: 4px solid #175970;
 }
 .syl.fa-users{
     color: #a39a9f;

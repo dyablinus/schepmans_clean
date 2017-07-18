@@ -1,19 +1,27 @@
-#titre_equipe {
+
+#titre_equipe > h1{
     color: #175079;
-    font-size: 55px;
     padding: 1.5% 0;
     margin: 0 0 3% 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f8f8f8;
 }
-
-.row_equipe {
-    background-color: #eee;
-    margin: 0 0 5% 0;
+.section_elus{
+    background-color: #f8f8f8;
     padding: 3% 0 3% 5%;
+    margin:0 0 5% 0;
+    
+}
+.sub_title{
+    color: #175079;
+    margin: 0 6% 5% 0;
+}
+.row_equipe {
+    margin: 0 0 5% 0; 
+    padding: 0% 0 0% 5%;
 }
 
 .elue_equipe {
-    font-size:20px;
+    font-size:16px;
     color: #175079;
     margin: 0 0 5% 0;
 }
@@ -29,7 +37,7 @@
     font-size: 16px;
 }
 .portrait_equipe {
-    width: 125px;
+     width: 125px; 
     margin: 0 0 25% 66%;
 }
 .email_equipe, .phone_equipe {
@@ -39,7 +47,8 @@
 .block_equipe{
     margin: 0 0 0 5%;
     width: 230px;
-    padding: 0 ;
+    padding: 0 0 7% 0;
+    border-bottom: 1px solid #175079;
 }
 
 .plane_equipe {
@@ -48,8 +57,12 @@
 }
 
 @media only screen and (max-width: 768px) {
-#titre_equipe{
-    font-size: 45px;
+
+.sub_title{
+    font-size: 30px;
+}
+#titre_equipe > h1{
+    font-size: 50px;
     margin: 0 0 8% 0;
 }
 .elue_equipe{
@@ -71,7 +84,7 @@
     font-size: 14px;
 }
 .portrait_equipe {
-    margin: 0;
+    margin: 10% 0 0 0;
     width: 100px;
     height: 100px;
 }
@@ -79,8 +92,8 @@
     width: 100px;
     margin: 0 0 0 13%;
 }
-.row_equipe .col-sm-6{
-    padding-left: 0;
+.row_equipe {
+    padding: 0;
 }
 .block_equipe_last{
     margin: 0 0 0 28%;
