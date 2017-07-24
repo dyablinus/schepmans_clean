@@ -31,18 +31,20 @@ class Edit extends MY_Controller {
 
         public function create(){
 
-            $this->form_validation->set_rules('title', 'Title', 'required|min_length[42]|max_length[60]');
-            $this->form_validation->set_rules('texte', 'Texte', 'required|min_length[120]|max_length[210]');
+            $this->form_validation->set_rules('title', 'Title', 'required|min_length[12]|max_length[60]');
+            $this->form_validation->set_rules('texte', 'Texte', 'required|min_length[60]|max_length[210]');
             $this->form_validation->set_rules('date', 'Date','required');
             $this->form_validation->set_rules('link', 'Link','valid_url');
 
-            $config_image = array();
-            $config_image ['upload_path'] = './uploads/schepmans/files/schepmans_';
-            $config_image ['aloowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
-            $config_image ['max_size'] = '1024';
+            $config = array();
+            $config ['upload_path'] = './uploads/schepmans/files/schepmans_';
+            $config ['aloowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
+            $config ['max_size'] = '100';
+            $config['max_width'] = '1024';
+            $config['max_height'] = '768';
                 
             
-            $this->load->library('upload',$config_image);
+            $this->load->library('upload',$config);
             if($this->form_validation->run()==false and empty($_Files['userfile']['name'][0])){
                 // $error = array(
                 //     'error_image' => 'Ajoutez une image à l\'article',
@@ -78,7 +80,7 @@ class Edit extends MY_Controller {
                     "texte" => $_POST['texte'],
                     "date" => $_POST['date'],
                     "link" => $_POST['link'],
-                    "file_name" => $data
+                    "file_name" => 'userfile'
                 );
        
              $this->edit_model->create($data_article);
