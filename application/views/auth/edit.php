@@ -68,7 +68,7 @@
                 <?php echo form_error('file'); ?>
                 
                 <?php echo form_label('Image de l\'article', 'userfile'); ?>
-                <?= form_input($data_image); ?>
+                <?= form_upload($data_image); ?>
                 
                 <?php echo form_submit('mysubmit', 'Publish', array('class' => 'btn btn-primary')); ?>
 
