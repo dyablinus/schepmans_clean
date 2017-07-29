@@ -69,7 +69,7 @@
         
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="<?= base_url("#")?>" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="<?= base_url("/auth")?>" class="dropdown-toggle" data-toggle="dropdown">
               <!--<img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">-->
               <span class="hidden-xs">Admin</span>
             </a>
@@ -110,8 +110,8 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         
-        <li class="active treeview">
-          <a href="<?= base_url("/newsletter")?>">
+        <li class="treeview">
+          <a href="<?= base_url("/auth")?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
@@ -124,7 +124,7 @@
         </li>
         
         <li>
-          <a href="<?= base_url("/newsletter/listutilisateurs")?>">
+          <a href="<?= base_url("/newsletter")?>">
             <i class="fa fa-envelope"></i> <span>Newsletter</span>
           </a>
         </li>
@@ -162,7 +162,7 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>44</h3>
+              <h3><?php echo $this->db->count_all('pb_user');?></h3>
 
               <p>Inscrits à la newsletter</p>
             </div>

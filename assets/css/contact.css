@@ -61,7 +61,9 @@ text-align: center;
 }
 .contact_categorie {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: 500;
 }
 .inline_block {
     display: inline-block;

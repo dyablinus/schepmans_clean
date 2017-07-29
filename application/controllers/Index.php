@@ -43,7 +43,8 @@ class index extends MY_Controller {
 	            );
     
     if ($this->form_validation->run() == FALSE){
-         $this->render1('schepmans/about');
+        $this->session->set_flashdata('msg', 'veuillez remplir tout les champs');
+         $this->render('schepmans/index');
      } else {
           $data_insert = array(
               'name' => $name,
@@ -53,6 +54,7 @@ class index extends MY_Controller {
      $this->index_model->insert($data_insert);
      $data['titre'] = 'inscrit';
      $this->data["result"] =$this->index_model->get_where();
+     $this->session->set_flashdata('msg', 'inscription validé');     
      $this->render('schepmans/index');
       }
     }

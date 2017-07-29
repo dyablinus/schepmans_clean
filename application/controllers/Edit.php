@@ -31,58 +31,33 @@ class Edit extends MY_Controller {
 
         public function create(){
 
-            $this->form_validation->set_rules('title', 'Title', 'required|min_length[42]|max_length[60]');
-            $this->form_validation->set_rules('texte', 'Texte', 'required|min_length[120]|max_length[210]');
-            $this->form_validation->set_rules('date', 'Date','required');
-            $this->form_validation->set_rules('link', 'Link','valid_url');
+            // $this->form_validation->set_rules('title', 'Title', 'required|min_length[42]|max_length[60]');
+            // $this->form_validation->set_rules('texte', 'Texte', 'required|min_length[120]|max_length[210]');
+            // $this->form_validation->set_rules('date', 'Date','required');
+            // $this->form_validation->set_rules('link', 'Link','valid_url');
 
-            $config_image = array();
-            $config_image ['upload_path'] = './uploads/schepmans/files/schepmans_';
-            $config_image ['aloowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
-            $config_image ['max_size'] = '1024';
-                
             
-            $this->load->library('upload',$config_image);
-            if($this->form_validation->run()==false and empty($_Files['userfile']['name'][0])){
-                // $error = array(
-                //     'error_image' => 'Ajoutez une image à l\'article',
-                //     'error_title' => 'Completez les champs manquants'
-                // );
+            $config['upload_path']   = './uploads';
+            $config['aloowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
+            $config['max_size']      = 100;
+            $config['max_width']     = 1024;
+            $config['max_height']    = 768;
                 
-                $this->authrender('auth/edit');
-                
-            }elseif ($this->form_validation->run()==true and empty($_Files['userfile']['name'][0])){
-                // $error = array(
-                //     'error_image' => 'Ajoutez une image à l\'article',
-                //     'error_title' => ''
-                // );
-                $this->authrender('auth/edit');
-                
-                
-            }elseif ($this->form_validation->run()==false and !empty($_Files['userfile']['name'][0])){
-               !$this->upload->data();
-                // $error = array(
-                //     'error_image' => ' ',
-                //     'error_title' => 'Completez les champs manquants'
-                // );
-                $this->authrender('auth/edit');
-                
-            }elseif ($this->form_validation->run()==true and !empty($_Files['userfile']['name'][0])){
-                $this->upload->do_upload();
-                $data = array('upload_data' => $this->upload->data()); 
-                // $this->$data['upload_data']['file_name'];
-            }
+            $this->load->library('upload',$config);
 
-                $data_article = array(
-                    "title" => $_POST['title'],
-                    "texte" => $_POST['texte'],
-                    "date" => $_POST['date'],
-                    "link" => $_POST['link'],
-                    "file_name" => $data
-                );
+            if ( ! $this->upload->do_upload('userfile'))
+                {
+                        $error = array('error' => $this->upload->display_errors());
+
+                        $this->authrender('auth/dashboard');
+                }
+                else
+                {
+                        $data = array('upload_data' => $this->upload->data());
+
+                        $this->authrender('auth/edit');
+                }
        
-             $this->edit_model->create($data_article);
-             $this->authrender('auth/dashboard');
             
         }
         // public function create_post(){
@@ -176,5 +151,5 @@ class Edit extends MY_Controller {
     //                 }
     //             }
     //     }       
-        
+
 }

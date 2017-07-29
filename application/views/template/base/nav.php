@@ -25,30 +25,25 @@
                     <i class="icon_top fa fa-linkedin-square" id="link" aria-hidden="true"></i>
                 </a>
             </li>
-            <li class="actu_navtop col-xs-3 col-sm-3">
-                <a href="#" accesskey="a" title="Actualité">
-                    <i class="icon_top fa fa-rss" aria-hidden="true"></i>
-                </a>
-            </li>
         </ul>
     </div>
 
 
-<div class="col-xs-6 col-sm-6 col-md-2" id="menu_langue">
+    <!-- <div class="col-xs-6 col-sm-6 col-md-2" id="menu_langue">
 
-  <div class="lang_fr">
-     <a class="btn_nav_lang_fr" href="http://localhost/schepmans/langchange/change/fr">FR</a>
-  </div>
+        <div class="lang_fr">
+            <a class="btn_nav_lang_fr" href="http://localhost/schepmans/langchange/change/fr">FR</a>
+        </div>
 
-  <div class="lang_en">
-    <a class="btn_nav_lang_en" href="http://localhost/schepmans/langchange/change/en">EN</a>
-  </div>
+        <div class="lang_en">
+            <a class="btn_nav_lang_en" href="http://localhost/schepmans/langchange/change/en">EN</a>
+        </div>
 
-  <div class="lang_nl">
-     <a class="btn_nav_lang_nl"href="http://localhost/schepmans/langchange/change/nl">NL</a>
-   </div>
+        <div class="lang_nl">
+            <a class="btn_nav_lang_nl"href="http://localhost/schepmans/langchange/change/nl">NL</a>
+        </div>
 
-</div>
+    </div> -->
 
 </nav>
 <nav class="navbar navbar-default navbar_top" role="navigation">

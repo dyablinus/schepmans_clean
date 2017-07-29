@@ -9,7 +9,7 @@
                 echo $error_name;
                 ?> -->
                 <!-- defini vers quelle methode envoyer le form -->
-               <?php 
+               <!-- <?php 
                $link=base_url('edit/create');
                echo form_open_multipart($link); ?>
                <?php
@@ -72,10 +72,18 @@
                 
                 <?php echo form_submit('mysubmit', 'Publish', array('class' => 'btn btn-primary')); ?>
 
-                <?php echo form_close() ?>
+                <?php echo form_close() ?> -->
 
 
+                <?php echo form_open_multipart('edit/create');?>
 
+                <input type="file" name="userfile" size="20" />
+
+                <br /><br />
+
+                <input type="submit" value="upload" />
+
+                </form>
   
 
         </section>

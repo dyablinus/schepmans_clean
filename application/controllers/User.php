@@ -30,13 +30,13 @@ class User extends MY_Controller {
 			$this->user_model->contact_send($nom,$prenom,$email,$message);
 
 			// envoyer par email
-	$data_msg = array(
-						"var" => "mavar",
-						"nom"=>$nom,
-						"prenom"=>$prenom,
-						"email"=>$email,
-						"message"=>$message
-					 );
+			$data_msg = array(
+								"var" => "mavar",
+								"nom"=>$nom,
+								"prenom"=>$prenom,
+								"email"=>$email,
+								"message"=>$message
+							);
             $this->load->library('email');
             // $config['protocol']='smtp';
             // $config['smtp_host']='your host';
