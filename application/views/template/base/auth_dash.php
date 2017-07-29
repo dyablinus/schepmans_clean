@@ -137,10 +137,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?= base_url("/assets/pages/examples/invoice.html")?>"><i class="fa fa-circle-o"></i> Slider</a></li>
-            <li><a href="<?= base_url("/edit")?>"><i class="fa fa-circle-o"></i> Home</a></li>
-            <li><a href="<?= base_url("/assets/pages/examples/404.html")?>"><i class="fa fa-circle-o"></i> Actualités</a></li>
-            <li><a href="<?= base_url("/assets/pages/examples/500.html")?>"><i class="fa fa-circle-o"></i> Molenbeek</a></li>
+            <li><a href="<?= base_url("/edit/slider")?>"><i class="fa fa-circle-o"></i> Slider</a></li>
+            <li><a href="<?= base_url("/edit")?>"><i class="fa fa-circle-o"></i> Actualités</a></li>
+            <li><a href="<?= base_url("/edit/molenbeek")?>"><i class="fa fa-circle-o"></i> Molenbeek</a></li>
 
           </ul>
         </li>
