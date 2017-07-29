@@ -14,7 +14,6 @@ class Edit extends MY_Controller {
         	 $this->lang->load('auth');
              }
 
-        protected $allowed_types = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
 
         public function index(){
             if (!$this->ion_auth->logged_in())
@@ -29,19 +28,7 @@ class Edit extends MY_Controller {
         }
 
 
-        public function create(){
-            $url = $this->do_upload();
-            $data_article = array(
-                    'tilte' => $_POST['title'],
-                    'texte' => $_POST['texte'],
-                    'date' => $_POST['date'],
-                    'link' => $_POST['link']
-            );
-            $this->Edit_model->create($tilte, $texte, $date, $link, $create);
-          
-            
-        }
-       public function do_upload() {
+       public function create() {
 
 
 
@@ -51,7 +38,7 @@ class Edit extends MY_Controller {
         $ext = end((explode(".", $name))); # extra () to prevent notice
 
     $config['upload_path']   = './uploads/schepmans/files/schepmans_';
-    $config['allowed_types'] = 'gif|jpg|png';
+    $config['allowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
     $config['max_size']      = 0;
 
     $this->load->library('upload', $config);

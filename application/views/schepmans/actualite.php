@@ -17,12 +17,12 @@
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box_actu">  
                 <a href="" type="button"target="_blank">
                     <h4 class="title_article"></h4> 
-                    <p id="actu_margin_titre" class="hidden_actu"><h4>Lutter contre les incivilités</h4>
+                    <div id="actu_margin_titre" class="hidden_actu"><h4>Lutter contre les incivilités</h4>
                     <div class="date hidden_actu">
                         <i class="fa fa-calendar-o" aria-hidden="true">17.07.17</i>
-                        <h6></h6>
+                        
                     </div>
-
+<p>
 Les incivilités de quelques-uns empoisonnent la vie des habitants dans les logements sociaux.
 
 On le vit trop souvent dans certains immeubles. Pour lutter plus efficacement contre ces
@@ -39,6 +39,7 @@ l&#39;élargissement des compétences des gardiens. A suivre...
 
 Article dans La Capitale.</p>
                 </a>
+                </div>
             </div>
 
         <!--FIN COL 12 ACTU -->
@@ -54,12 +55,12 @@ Article dans La Capitale.</p>
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box_actu">  
                 <a href="" type="button"target="_blank">
                     <h4 class="title_article"></h4> 
-                    <p id="actu_margin_titre" class="hidden_actu"><h4>Aider les copropriétaires</h4>
+                    <div id="actu_margin_titre" class="hidden_actu"><h4>Aider les copropriétaires</h4>
                     <div class="date hidden_actu">
                         <i class="fa fa-calendar-o" aria-hidden="true">17.07.17</i>
-                        <h6></h6>
+                    
                     </div>
-
+<p>
 
 La bonne gestion des copropriétés est une problématique très importante à Bruxelles (il y en a
 
@@ -98,7 +99,7 @@ mécanisme permettrait à la fois d’éviter les difficultés de financement de
 de clarifier les relations entre copropriétaires.</p>
                 </a>
             </div>
-
+            </div>
         <!--FIN COL 12 ACTU -->
         </div>
     </div>
