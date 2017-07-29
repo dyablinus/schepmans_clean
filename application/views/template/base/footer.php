@@ -41,7 +41,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">
-                            <?php echo lang('footer_h4_actu');?>
+                            Suivez l'actualité de Françoise Schepmans
                         </h4>
                     </div>
                     <div class="modal-body">
@@ -85,13 +85,6 @@
                                         <?php echo form_submit('mysubmit', 'Submit', array('class' => 'btn btn-primary')); ?>
 
                                          <?= form_close() ?>
-
-
-                                 <form style="padding:3px;text-align:center;" action="https://tinyletter.com/Schepmans" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/Schepmans', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:50%" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="S'abonner" /></form>
-
-                            
-                            
-
 
                             </div>
 

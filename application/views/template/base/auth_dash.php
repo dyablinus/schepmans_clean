@@ -129,19 +129,10 @@
           </a>
         </li>
 
-        <li class="treeview">
-          <a href="<?= base_url("#")?>">
-            <i class="fa fa-files-o"></i> <span>Pages web</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+        <li>
+          <a href="<?= base_url("/edit")?>">
+            <i class="fa fa-files-o"></i> <span>Éditer news</span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href="<?= base_url("/edit/slider")?>"><i class="fa fa-circle-o"></i> Slider</a></li>
-            <li><a href="<?= base_url("/edit")?>"><i class="fa fa-circle-o"></i> Actualités</a></li>
-            <li><a href="<?= base_url("/edit/molenbeek")?>"><i class="fa fa-circle-o"></i> Molenbeek</a></li>
-
-          </ul>
         </li>
 
       </ul>

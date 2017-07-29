@@ -3,57 +3,80 @@
     
     <div class="carousel-inner">
         <div class="item">
-            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="<?= base_url ("/assets/images/slider/a.jpg") ?>">
-            <div class="container">
-                <div class="carousel-caption" id="captions">
-                    <h2 class="carousel_titre">Françoise Schepmans</h2>
-                    <p>Françoise Schepmans est une femme politique belge, députée mr. Elle actuellement bourgemestre de Molenbeek-Saint-Jean </p>
-                 
+            <?php $query = $this->db->query("SELECT * FROM sliders ORDER BY id DESC LIMIT 1;");
+                foreach($query->result() as $rows){ ?>
+                
+                <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>">
+                <div class="container">
+                    <div class="carousel-caption" id="captions">
+                        <h2 class="carousel_titre"><?php echo $rows->title ?></h2>
+                        <p><?php echo $rows->texte ?></p>
+                    </div>
                 </div>
-            </div>
+
+            <?php } ?> 
         </div>
         <div class="item">
-            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="<?= base_url ("/assets/images/slider/b.jpg") ?>">
-            <div class="container">
-                <div class="carousel-caption" id="captions">
-                    <h2 class="carousel_titre">Françoise Schepmans</h2>
-                    <!-- <p>Durant les prochaines élections à Bruxelles, Françoise Schepmans sera opposée à Joelle Milquet, Yvan Mayeur et Catherine Moureaux la fille
-                    de l'ancine bourgmestre Philippe Moureaux.</p> -->
-                 
+            <?php $query = $this->db->query("SELECT * FROM sliders ORDER BY id DESC LIMIT 1,1;");
+                foreach($query->result() as $rows){ ?>
+
+                <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>">
+                <div class="container">
+                    <div class="carousel-caption" id="captions">
+                        <h2 class="carousel_titre"><?php echo $rows->title ?></h2>
+                        <!-- <p><?php echo $rows->texte ?></p> -->
+                    </div>
                 </div>
-            </div>
+
+            <?php } ?> 
         </div>
+
         <div class="item active">
-            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="<?= base_url ("/assets/images/slider/c.jpg") ?>">
-            <div class="container">
-                <div class="carousel-caption" id="captions">
-                    <h2 class="carousel_titre">Françoise Schepmans</h2>
-                    <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
-                   
+            <?php $query = $this->db->query("SELECT * FROM sliders ORDER BY id DESC LIMIT 2,1;");
+                foreach($query->result() as $rows){ ?>
+
+                <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>">
+                <div class="container">
+                    <div class="carousel-caption" id="captions">
+                        <h2 class="carousel_titre"><?php echo $rows->title ?></h2>
+                        <!-- <p><?php echo $rows->texte ?></p> -->
+                    </div>
                 </div>
-            </div>
+
+            <?php } ?>    
         </div>
+
         <div class="item">
-            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Fourth slide" alt="Third slide" src="<?= base_url ("/assets/images/slider/d.jpg") ?>">
-            <div class="container">
-                <div class="carousel-caption" id="captions">
-                    <h2 class="carousel_titre">Françoise Schepmans</h2>
-                    <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
-                   
+            <?php $query = $this->db->query("SELECT * FROM sliders ORDER BY id DESC LIMIT 3,1;");
+                foreach($query->result() as $rows){ ?>
+
+                <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Fourth slide" alt="Fourth slide" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>">
+                <div class="container">
+                    <div class="carousel-caption" id="captions">
+                        <h2 class="carousel_titre"><?php echo $rows->title ?></h2>
+                        <!-- <p><?php echo $rows->texte ?></p>  -->
+                    </div>
                 </div>
-            </div>
+
+            <?php } ?>   
         </div>
+
         <div class="item">
-            <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Fifth slide" alt="Third slide" src="<?= base_url ("/assets/images/slider/e.jpg") ?>">
-            <div class="container">
-                <div class="carousel-caption" id="captions">
-                    <h2 class="carousel_titre">Françoise Schepmans</h2>
-                    <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
-                   
+            <?php $query = $this->db->query("SELECT * FROM sliders ORDER BY id DESC LIMIT 4,1;");
+                foreach($query->result() as $rows){ ?>
+
+                <img class="img-responsive img_carousel" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Fifth slide" alt="Fifth  slide" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>">
+                <div class="container">
+                    <div class="carousel-caption" id="captions">
+                        <h2 class="carousel_titre"><?php echo $rows->title ?></h2>
+                        <!-- <p><?php echo $rows->texte ?></p> -->
+                    </div>
                 </div>
-            </div>
+
+            <?php } ?>    
         </div>
     </div>
+    
     <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
