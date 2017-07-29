@@ -15,7 +15,6 @@ class Edit extends MY_Controller {
              }
 
 
-
         public function index(){
             if (!$this->ion_auth->logged_in())
             {
@@ -27,13 +26,16 @@ class Edit extends MY_Controller {
                 $this->authrender('auth/edit');
             }
         }
-
     public function create() {
 
         $fileData = array();
         // File upload script
         $name = $_FILES["userfile"]["name"];
         $ext = end((explode(".", $name))); # extra () to prevent notice
+
+    $config['upload_path']   = './uploads/schepmans/files/schepmans_';
+    $config['allowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
+    $config['max_size']      = 0;
 
         $config['upload_path']   = './uploads/schepmans/files/schepmans_';
         $config['allowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
@@ -45,6 +47,7 @@ class Edit extends MY_Controller {
         $this->form_validation->set_rules('date', 'date', 'required|min_length[2]');
         $this->form_validation->set_rules('texte', 'texte', 'required|min_length[2]');
         $this->form_validation->set_rules('link', 'link', 'required|min_length[2]');
+        $this->form_validation->set_rules('valeur', 'value', 'required');
 
         if ($this->form_validation->run() == TRUE) {
 
@@ -64,7 +67,7 @@ class Edit extends MY_Controller {
                     'texte' => $this->input->post('texte', true),
                     'link' => $this->input->post('link', true),
                     'file_name' => $file_data['file_name'],
-                    
+                    'valeur' => $this->input->post('valeur', true),
                 ));
 
                 $this->session->set_flashdata('success', 'Form submitted successfully');
@@ -77,6 +80,7 @@ class Edit extends MY_Controller {
             $this->session->set_flashdata('error', validation_errors());
             redirect('edit');
         }
+        
     }
 
 
