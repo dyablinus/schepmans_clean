@@ -3,7 +3,7 @@
 
                 <h1>Nouvel article</h1>
 
-              
+             
                 <!-- defini vers quelle methode envoyer le form -->
                <?php 
                $link=base_url('edit/create');
@@ -43,10 +43,17 @@
                );
                
                ?>
-                
+                <select name="valeur" id="valeur">
+                        <option class="no_value" value="">---</option>
+                        <option class="Molenbeek" for="valeur">Molenbeek</option>
+                        <option class="Actu" for="valeur">Actu</option>      
+                </select>
+
+                <br>
                 <?php echo form_error('title'); ?>
                 <?php echo form_label('Titre de l\'article', 'title'); ?>
                 <?= form_input($data_title); ?>
+                
                 
                 <?php echo form_error('date'); ?>
                 <?php echo form_label('Date de publication', 'date'); ?>
@@ -54,6 +61,7 @@
                 
                 <?php echo form_error('texte'); ?>
                 <?php echo form_label('Texte d\'introduction de l\'article', 'texte'); ?>
+                
                 <?= form_textarea($data_texte); ?>
                 
                 <?php echo form_error('link'); ?>
