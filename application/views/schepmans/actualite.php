@@ -7,12 +7,14 @@
 
     <div id="barre_actu"></div>
 
-    <?php $query = $this->db->query("SELECT * FROM posts ORDER BY id DESC LIMIT 10;");
+    <?php $query = $this->db->query("SELECT * FROM posts WHERE valeur='Actualite' ORDER BY id DESC LIMIT 10;");
           foreach($query->result() as $rows){ ?>
         <div class="row">   
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <?php if ($rows->file_name): ?>
                     <img class="img_actu img-responsive" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" alt="">
+                    <?php endif;?>
                 </div>
                     
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box_actu">  

@@ -46,7 +46,7 @@
                 <select name="valeur" id="valeur">
                         <option class="no_value" value="">---</option>
                         <option class="Molenbeek" for="valeur">Molenbeek</option>
-                        <option class="Actu" for="valeur">Actu</option>      
+                        <option class="actu" for="valeur">Actualite</option>      
                 </select>
 
                 <br>
