@@ -44,6 +44,7 @@ class Edit extends MY_Controller {
        public function do_upload() {
 
 
+
         $fileData = array();
         // File upload script
         $name = $_FILES["userfile"]["name"];

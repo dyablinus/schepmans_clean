@@ -59,16 +59,15 @@ class Newsletter extends MY_Controller {
 		{
 			// redirect them to the home page because they must be an administrator to view this
             //$this->load->view('auth/newsletter');
-			$this->listutilisateurs();
-		}
-	}
-	public function listutilisateurs(){
 		 $this->data["result"] = $this->index_model->get_where();
 		//  var_dump($this->index_model->get_where()->result());
        $this->authrender('auth/newsletter');
+			
+		}
 	}
+	
 
-	    public function show($id=FALSE){
+	public function show($id=FALSE){
         if($id===FALSE){
             $this->index();
             return;
@@ -78,7 +77,39 @@ class Newsletter extends MY_Controller {
 		
        $this->data["result"] = $this->index_model->get_where($where);
        $this->load->view('auth/newsletter',$this->data);
-}
+	}
+
+		public function csv($value='')
+        {
+            $filename = "CSV_FILE_".date("YmdH_i_s").'.csv';
+
+            header('Conten-type:text/csv');
+            header('Content-Disposition: attachment;filename='.$filename);
+            header('Cache-Control: no-store, no-cache, must-revalidate');
+            header('Cache-Control: post-check=0, pre-check=0');
+            header('Pragma: no-cache');
+            header('Expires:0');
+
+            $handle = fopen('php://output','w');
+
+            fputcsv($handle, array(
+                // 'Nom',
+                // 'Prenom',
+                'Email',
+            ));
+
+            $this->db->select('email');
+            $this->db->from('pb_user');
+            $query = $this->db->get();
+            $data['pb_user'] = $query->result_array();
+
+            foreach ($data['pb_user'] as $key => $row)
+            {
+                fputcsv($handle, $row);
+            }
+            fclose($handle);
+            exit;
+        }
 
 >>>>>>> 42e20c4d789dfde6310c4b38e99e7d8488d12bba
 

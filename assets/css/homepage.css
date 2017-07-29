@@ -17,10 +17,11 @@
 }
 
 .articlfont{
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 15%;
-    color: gray;
+    color: #17507a;
     font-weight: bold;
+    font-family: inherit;
 }
 .jumbofont {
     color: white;
@@ -67,6 +68,7 @@ div.jumbotron{
 .colorpara{
     color: #848484;
     padding-bottom: 10px;
+    font-size: 17px;
 }
 .border.button.gray{
     background-color: lightgray;
@@ -99,13 +101,18 @@ div.jumbotron{
     .fafa .fa{
     font-size: 15px;
     }
-    .jumbotron{
-       padding: 1px 15px;
-    }
-    div.jumbotron{
+
+    #ban_undercarousel{
        margin-top: 10%;
+       padding: 0% 0 5% 0;
     }
-    .jumbotron .jumbofont{
+    .jumbofont{
         font-size: 11px;
+    }
+    .padactu {
+        font-size: 29px;
+    }
+    .artilfont{
+        font-size: 25px;
     }
 }

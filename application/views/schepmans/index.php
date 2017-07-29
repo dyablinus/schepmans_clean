@@ -114,15 +114,14 @@
         <div class="row">
             <div class="col-md-12 textdeco">
         
-                <h1 class="padactu"><?php echo lang('index_h2_padactu');?></h1>
+                <h1 class="padactu">Festival Bruxellons à Karreveld</h1>
                 
                 <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i> News.</p>
 
-                <a  href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img src="<?= base_url ("assets/images/schep2.jpg") ?>" id="homeimg1" alt="Dernier article paru sur la Bourgmestre">
+                <a  href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img src="<?= base_url ("assets/images/molenbeek/a.jpg") ?>" id="homeimg1" alt="Dernier article paru sur la Bourgmestre">
                 </a>
                 
-                <p class="colorpara"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quis sapiente minima voluptatem fuga aliquam et accusamus
-                labore, mollitia pariatur nulla provident officiis ut eveniet dolorem velit, inventore magni quasi?
+                <p class="colorpara">Envie de fous rires ? Le festival Bruxellons joue la célèbre pièce « Bossemans et Coppenolle » au Château du Karreveld durant l’été. D’autres spectacles sont encore à l’affiche. Vous pouvez découvrir tout le programme sur le site <a target="_blank" href="www.bruxellons.be"></a>
                 </p>
 
             </div>
@@ -132,30 +131,28 @@
 
             <div class="col-md-6 textdeco">
                 
-                <h2 class="articlfont"><?php echo lang('index_h2_articlfont_pierre');?></h2>
+                <h2 class="articlfont">Deux nouvelles écoles secondaires en 2017 !?</h2>
                 
                 <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
                 </p>
 
-                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/art1.jpg") ?>" alt="Relate les derniers évènements sur la vice députée"></a>
+                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/molenbeek/b.jpg") ?>" alt="Relate les derniers évènements sur la vice députée"></a>
                 
-                <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
-                facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.
+                <p class="colorpara">Pour le groupe libéral, l’éducation de nos jeunes est primordiale afin qu’ils puissent s’épanouir et se préparer à l’avenir avec les meilleurs atouts. Il faut répondre à cette priorité avec rapidité car le boom démographique...
                 </p>
 
             </div>
 
             <div class="col-md-6 textdeco">
                 
-                <h2 class="articlfont"><?php echo lang('index_h2_articlfont_michel');?></h2>
+                <h2 class="articlfont">Aider les copropriétaires</h2>
                 
                 <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
                 </p>
                 
-                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/art2.jpg") ?>" alt="Présentation des actions en faveur de "></a>
+                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/articles/1.jpg") ?>" alt="Présentation des actions en faveur de "></a>
 
-                <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
-                facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.
+                <p class="colorpara">La bonne gestion des copropriétés est une problématique très importante à Bruxelles (il y en a 33.600 !) et particulièrement dans les quartiers tels que le Machtens et le Mettewie. En effet...
                 </p>
 
             </div>
@@ -165,30 +162,28 @@
         <div class="row">
             <div class="col-md-6 textdeco">
                 
-                <h2 class="articlfont"><?php echo lang('index_h2_articlfont_aimarre');?></h2>
+                <h2 class="articlfont">Au service des habitants ! </h2>
                 
                 <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
                 </p>
                 
-                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/schep5.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean"></a>
+                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/molenbeek/c.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean"></a>
                 
-                <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
-                facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.
+                <p class="colorpara">Afin d’accueillir les citoyens dans de bonnes conditions, un nouveau bâtiment administratif a été construit rue Sainte-Marie, à proximité de la Maison communale et de la station Comte de Flandre. Impossible de le manquer...
                 </p>
 
             </div>
 
             <div class="col-md-6 textdeco">
                 
-                <h2 class="articlfont"><?php echo lang('index_h2_articlfont_relou');?></h2>
+                <h2 class="articlfont">Plantu expose à Molenbeek</h2>
                 
                 <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
                 </p>
 
-                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/art3.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'"></a>
+                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/molenbeek/d.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'"></a>
                 
-                <p class="colorpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab adipisci at magnam excepturi totam nemo repellat
-                    facilis provident aut possimus iste nihil dolore delectus, esse nisi cum, numquam. Dolores.
+                <p class="colorpara">Un bel événement en préparation: une exposition des dessins de Plantu, le célèbre caricaturiste français du journal Le Monde, se déroulera  au mois de novembre au Château du Karreveld. Ce sera l’occasion aussi d’initier les jeunes à la caricature. A lire dans le journal La Capitale.
                 </p>
 
             </div>

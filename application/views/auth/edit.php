@@ -3,11 +3,7 @@
 
                 <h1>Nouvel article</h1>
 
-                <!-- <?php 
-                echo $error_image;
-                echo '<br>';
-                echo $error_name;
-                ?> -->
+              
                 <!-- defini vers quelle methode envoyer le form -->
                <?php 
                $link=base_url('edit/create');
@@ -72,10 +68,7 @@
                 
                 <?php echo form_submit('mysubmit', 'Publish', array('class' => 'btn btn-primary')); ?>
 
-                <?php echo form_close() ?>
-
-
-
+                <?php echo form_close() ?> 
   
 
         </section>
