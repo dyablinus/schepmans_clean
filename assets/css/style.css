@@ -157,6 +157,15 @@ p{
 
 /*FIN CALENDAR*/
 
+/*DEBUT ARTICLE*/
+
+.title_article{
+    font-size: 60px;
+    margin: 0 0 5% 0;
+    color: #175079;
+}
+
+/*FIN ARTICLE*/
 
 /*DEBUT FOOTER*/
 .nav_footer {

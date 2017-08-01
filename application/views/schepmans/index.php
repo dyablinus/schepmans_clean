@@ -147,7 +147,7 @@
                     
                     <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?><i class="syl fa fa-info-circle" aria-hidden="true"></i> News.</p>
 
-                    <a  href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" id="homeimg1" alt="Dernier article paru sur la Bourgmestre">
+                    <a  target="_blank" href="<?php echo base_url("/actualite/show/".$rows->id) ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" id="homeimg1" alt="Dernier article paru sur la Bourgmestre">
                     </a>
                     
                     <?php if (strlen(($rows->texte)) > 255 ){?>
@@ -164,7 +164,7 @@
             foreach($query->result() as $rows){ ?>
                 <div class="col-md-6 textdeco">
                     
-                    <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
+                    <a target="_blank" href="<?php echo base_url("/actualite/show/".$rows->id) ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
                     <?php if (strlen(($rows->title)) > 36 ){?>
                         <h2 class="articlfont"><?php $t = substr($rows->title, 0, 36)." ...";echo $t ?> </h2>
                     <?php }else{ ?>
@@ -175,7 +175,7 @@
                     <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?>           
                     </p>
 
-                    <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
+                    <a target="_blank" href="<?php echo base_url("/actualite/show/".$rows->id) ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
                     <?php if ($rows->file_name): ?>
                     <img class="taille img-responsive" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" alt="Relate les derniers évènements sur la vice députée">
                     <?php endif;?>
@@ -197,7 +197,7 @@
             foreach($query->result() as $rows){ ?>
                 <div class="col-md-6 textdeco">
                     
-                    <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
+                    <a target="_blank" href="<?php echo base_url("/actualite/show/".$rows->id) ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
                     <?php if (strlen(($rows->title)) > 36 ){?>
                         <h2 class="articlfont"><?php $t = substr($rows->title, 0, 36)." ...";echo $t ?> </h2>
                     <?php }else{ ?>
@@ -208,7 +208,7 @@
                     <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?>            
                     </p>
 
-                    <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
+                    <a target="_blank" href="<?php echo base_url("/actualite/show/".$rows->id) ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
                     <?php if ($rows->file_name): ?>
                     <img class="taille img-responsive" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" alt="Relate les derniers évènements sur la vice députée">
                     <?php endif;?>

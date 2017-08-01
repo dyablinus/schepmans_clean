@@ -17,8 +17,19 @@ class Actualite extends MY_Controller {
 
      public function archives(){
 		 $this->data["result"] = $this->edit_model->get_where();
-		//  var_dump($this->index_model->get_where()->result());
+
        $this->render('schepmans/actualite');
+	}
+
+	public function show($id=FALSE){
+    // place en paramettre l'id
+        if($id===FALSE){
+            $this->index();
+            return;
+        }
+        $where = array("id" => $id);
+       $this->data["result"] = $this->edit_model->get_where($where);
+       $this->render('schepmans/article');
 	}
 
 }
