@@ -172,7 +172,7 @@
                     <?php }?>
                     </a>
 
-                    <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?><i class="syl fa fa-info-circle" aria-hidden="true"></i>            
+                    <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?>           
                     </p>
 
                     <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
@@ -205,7 +205,7 @@
                     <?php }?>
                     </a>
 
-                    <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?><i class="syl fa fa-info-circle" aria-hidden="true"></i>            
+                    <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?>            
                     </p>
 
                     <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">

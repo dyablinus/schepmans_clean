@@ -61,6 +61,9 @@ div.jumbotron{
 .syl.fa-thumbs-up{
     color: #a39a9f;
 }
+.fa-clock-o, .fa-info-circle {
+    padding: 0 1%;
+}
 .timer{
     margin-bottom: 3%;
     color: #9d9c9c;

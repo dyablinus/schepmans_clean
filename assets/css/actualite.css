@@ -30,6 +30,9 @@
 .date h6 {
     display: inline-block;
 }
+.fa-calendar-o{
+    padding: 0 1% 2% 0;
+}
 .actu .col-md-12 {
     margin: 5% 0 0 0;
 }

@@ -21,7 +21,7 @@
                     <a href="<?php echo $rows->link ?>" type="button" target="_blank"> 
                         <div id="actu_margin_titre" class="hidden_actu"><h4><?php echo $rows->title ?></h4>
                             <div class="date hidden_actu">
-                                <i class="fa fa-calendar-o" aria-hidden="true"><?php echo $rows->date ?></i>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i><?php echo $rows->date ?>
                             </div>
                             <p><?php echo $rows->texte ?></p>
                         </div>
