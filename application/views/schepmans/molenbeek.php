@@ -22,10 +22,12 @@
             </p>
             <?php if ($rows->file_name): ?>
             <img class="img_molenbeek img-responsive" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" alt="">
+            <?php endif;?>
             
             <div id="barre_molen"></div>
-        
-    <?php } ?> 
 
+   
+    <?php } ?>
+
+    
 </div>
-

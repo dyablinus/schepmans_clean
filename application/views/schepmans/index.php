@@ -136,80 +136,68 @@
 
         <div class="row">
             <div class="col-md-12 textdeco">
-        
-                <h1 class="padactu">Festival Bruxellons à Karreveld</h1>
-                
-                <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i> News.</p>
+                <?php $query = $this->db->query("SELECT * FROM posts WHERE valeur='Molenbeek' ORDER BY id DESC LIMIT 1;");
+                foreach($query->result() as $rows){ ?>
 
-                <a  href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img src="<?= base_url ("assets/images/molenbeek/a.jpg") ?>" id="homeimg1" alt="Dernier article paru sur la Bourgmestre">
-                </a>
-                
-                <p class="colorpara">Envie de fous rires ? Le festival Bruxellons joue la célèbre pièce « Bossemans et Coppenolle » au Château du Karreveld durant l’été. D’autres spectacles sont encore à l’affiche. Vous pouvez découvrir tout le programme sur le site <a target="_blank" href="www.bruxellons.be"></a>
-                </p>
+                    <h1 class="padactu"><?php echo $rows->title ?></h1>
+                    
+                    <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?><i class="syl fa fa-info-circle" aria-hidden="true"></i> News.</p>
 
+                    <a  href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" id="homeimg1" alt="Dernier article paru sur la Bourgmestre">
+                    </a>
+                    
+                    <p class="colorpara"><?php echo $rows->texte ?> </p>
+                <?php } ?>
             </div>
             
         </div>
         <div class="row">
+            <?php $query = $this->db->query("SELECT * FROM posts WHERE valeur='Molenbeek' ORDER BY id DESC LIMIT 1,2;");
+            foreach($query->result() as $rows){ ?>
+                <div class="col-md-6 textdeco">
+                    
+                    <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
+                    <h2 class="articlfont"><?php echo $rows->title ?></h2>
+                    </a>
+                    
+                    <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?><i class="syl fa fa-info-circle" aria-hidden="true"></i>            
+                    </p>
 
-            <div class="col-md-6 textdeco">
-                
-                <h2 class="articlfont">Deux nouvelles écoles secondaires en 2017 !?</h2>
-                
-                <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
-                </p>
+                    <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
+                    <?php if ($rows->file_name): ?>
+                    <img class="taille img-responsive" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" alt="Relate les derniers évènements sur la vice députée">
+                    <?php endif;?>
+                    </a>
+                    
+                    <p class="colorpara"><?php echo $rows->texte ?> </p>
 
-                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/molenbeek/b.jpg") ?>" alt="Relate les derniers évènements sur la vice députée"></a>
-                
-                <p class="colorpara">Pour le groupe libéral, l’éducation de nos jeunes est primordiale afin qu’ils puissent s’épanouir et se préparer à l’avenir avec les meilleurs atouts. Il faut répondre à cette priorité avec rapidité car le boom démographique...
-                </p>
-
-            </div>
-
-            <div class="col-md-6 textdeco">
-                
-                <h2 class="articlfont">Aider les copropriétaires</h2>
-                
-                <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>            
-                </p>
-                
-                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/articles/1.jpg") ?>" alt="Présentation des actions en faveur de "></a>
-
-                <p class="colorpara">La bonne gestion des copropriétés est une problématique très importante à Bruxelles (il y en a 33.600 !) et particulièrement dans les quartiers tels que le Machtens et le Mettewie. En effet...
-                </p>
-
-            </div>
+                </div>
+            <?php } ?>
         
         </div>
 
         <div class="row">
-            <div class="col-md-6 textdeco">
-                
-                <h2 class="articlfont">Au service des habitants ! </h2>
-                
-                <p class="timer"><i class="fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
-                </p>
-                
-                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/molenbeek/c.jpg") ?>" alt="L'avenir pour l'urbanisation de Molenbeek-saint-jean"></a>
-                
-                <p class="colorpara">Afin d’accueillir les citoyens dans de bonnes conditions, un nouveau bâtiment administratif a été construit rue Sainte-Marie, à proximité de la Maison communale et de la station Comte de Flandre. Impossible de le manquer...
-                </p>
+            <?php $query = $this->db->query("SELECT * FROM posts WHERE valeur='Molenbeek' ORDER BY id DESC LIMIT 3,2;");
+            foreach($query->result() as $rows){ ?>
+                <div class="col-md-6 textdeco">
+                    
+                    <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
+                    <h2 class="articlfont"><?php echo $rows->title ?></h2>
+                    </a>
 
-            </div>
+                    <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?><i class="syl fa fa-info-circle" aria-hidden="true"></i>            
+                    </p>
 
-            <div class="col-md-6 textdeco">
-                
-                <h2 class="articlfont">Plantu expose à Molenbeek</h2>
-                
-                <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i> June 17, 2012 <i class="syl fa fa-info-circle" aria-hidden="true"></i>           
-                </p>
+                    <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
+                    <?php if ($rows->file_name): ?>
+                    <img class="taille img-responsive" src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" alt="Relate les derniers évènements sur la vice députée">
+                    <?php endif;?>
+                    </a>
+                    
+                    <p class="colorpara"><?php echo $rows->texte ?> </p>
 
-                <a href="<?= base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img class="taille img-responsive" src="<?= base_url ("/assets/images/molenbeek/d.jpg") ?>" alt="La bourgemestre à l'écoute des riverain'"></a>
-                
-                <p class="colorpara">Un bel événement en préparation: une exposition des dessins de Plantu, le célèbre caricaturiste français du journal Le Monde, se déroulera  au mois de novembre au Château du Karreveld. Ce sera l’occasion aussi d’initier les jeunes à la caricature. A lire dans le journal La Capitale.
-                </p>
-
-            </div>
+                </div>
+            <?php } ?>
         
         </div>
         
