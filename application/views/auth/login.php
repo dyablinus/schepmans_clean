@@ -1,6 +1,6 @@
 
 
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-md-offset-4">
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-md-offset-4" style="margin-bottom: 70%">
   
   <h2><?php echo lang('login_heading');?></h2>
   <p><?php echo lang('login_subheading');?></p>

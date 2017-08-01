@@ -1,5 +1,5 @@
 
-        <section class="col-lg-4 col-lg-offset-4 connectedSortable">
+        <section class="col-lg-4 col-md-offset-2 connectedSortable">
 
                 <h1>Nouvel article</h1>
 
@@ -43,6 +43,9 @@
                );
                
                ?>
+
+               <?php echo form_label('Catégorie de l\'article', 'valeur'); ?>
+               <br>
                 <select name="valeur" id="valeur">
                         <option class="no_value" value="">---</option>
                         <option class="Molenbeek" for="valeur">Molenbeek</option>
@@ -52,33 +55,32 @@
                 <br>
                 <?php echo form_error('title'); ?>
                 <?php echo form_label('Titre de l\'article', 'title'); ?>
-                <?= form_input($data_title); ?>
+                <?php echo form_input($data_title); ?>
                 
                 
                 <?php echo form_error('date'); ?>
                 <?php echo form_label('Date de publication', 'date'); ?>
-                <?= form_input($data_date); ?>
-                
-                <?php echo form_error('texte'); ?>
-                <?php echo form_label('Texte d\'introduction de l\'article', 'texte'); ?>
-                
-                <?= form_textarea($data_texte); ?>
+                <?php echo form_input($data_date); ?>
                 
                 <?php echo form_error('link'); ?>
-                
                 <?php echo form_label('Lien vers le site de l\'article', 'link'); ?>
-                <?= form_input($data_link); ?>
+                <?php echo form_input($data_link); ?>
                 
                 <?php echo form_error('file'); ?>
-                
                 <?php echo form_label('Image de l\'article', 'userfile'); ?>
-                <?= form_upload($data_image); ?>
+                <?php echo form_upload($data_image); ?>
+                
+        </section>
+
+        <section class="col-lg-4  connectedSortable" style="margin-top: 3%;">
+                <?php echo form_error('texte'); ?>
+                <?php echo form_label('Texte d\'introduction de l\'article', 'texte'); ?>
+                <?php echo form_textarea($data_texte); ?>
                 
                 <?php echo form_submit('mysubmit', 'Publish', array('class' => 'btn btn-primary')); ?>
 
                 <?php echo form_close() ?> 
-  
-
         </section>
+
 
  

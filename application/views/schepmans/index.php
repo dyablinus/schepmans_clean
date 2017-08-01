@@ -139,14 +139,22 @@
                 <?php $query = $this->db->query("SELECT * FROM posts WHERE valeur='Molenbeek' ORDER BY id DESC LIMIT 1;");
                 foreach($query->result() as $rows){ ?>
 
-                    <h1 class="padactu"><?php echo $rows->title ?></h1>
+                    <?php if (strlen(($rows->title)) > 36 ){?>
+                        <h1 class="padactu"><?php $t = substr($rows->title, 0, 36)." ...";echo $t ?> </h1>
+                    <?php }else{ ?>
+                        <h1 class="padactu"><?php echo $rows->title ?> </h1>
+                    <?php }?>
                     
                     <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?><i class="syl fa fa-info-circle" aria-hidden="true"></i> News.</p>
 
                     <a  href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"><img src="<?php echo base_url("uploads/schepmans/files/schepmans_/$rows->file_name")?>" id="homeimg1" alt="Dernier article paru sur la Bourgmestre">
                     </a>
                     
-                    <p class="colorpara"><?php echo $rows->texte ?> </p>
+                    <?php if (strlen(($rows->texte)) > 255 ){?>
+                        <p class="colorpara"><?php $t = substr($rows->texte, 0, 255)." ...";echo $t ?> </p>
+                    <?php }else{ ?>
+                        <p class="colorpara"><?php echo $rows->texte ?> </p>
+                    <?php }?>
                 <?php } ?>
             </div>
             
@@ -157,9 +165,13 @@
                 <div class="col-md-6 textdeco">
                     
                     <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
-                    <h2 class="articlfont"><?php echo $rows->title ?></h2>
+                    <?php if (strlen(($rows->title)) > 36 ){?>
+                        <h2 class="articlfont"><?php $t = substr($rows->title, 0, 36)." ...";echo $t ?> </h2>
+                    <?php }else{ ?>
+                        <h2 class="articlfont"><?php echo $rows->title ?> </h2>
+                    <?php }?>
                     </a>
-                    
+
                     <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?><i class="syl fa fa-info-circle" aria-hidden="true"></i>            
                     </p>
 
@@ -169,7 +181,11 @@
                     <?php endif;?>
                     </a>
                     
-                    <p class="colorpara"><?php echo $rows->texte ?> </p>
+                    <?php if (strlen(($rows->texte)) > 255 ){?>
+                        <p class="colorpara"><?php $t = substr($rows->texte, 0, 255)." ...";echo $t ?> </p>
+                    <?php }else{ ?>
+                        <p class="colorpara"><?php echo $rows->texte ?> </p>
+                    <?php }?>
 
                 </div>
             <?php } ?>
@@ -182,7 +198,11 @@
                 <div class="col-md-6 textdeco">
                     
                     <a href="<?php echo base_url("/actualite") ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'">
-                    <h2 class="articlfont"><?php echo $rows->title ?></h2>
+                    <?php if (strlen(($rows->title)) > 36 ){?>
+                        <h2 class="articlfont"><?php $t = substr($rows->title, 0, 36)." ...";echo $t ?> </h2>
+                    <?php }else{ ?>
+                        <h2 class="articlfont"><?php echo $rows->title ?> </h2>
+                    <?php }?>
                     </a>
 
                     <p class="timer"><i class="syl fa fa-clock-o" aria-hidden="true"></i><?php echo $rows->date ?><i class="syl fa fa-info-circle" aria-hidden="true"></i>            
@@ -194,7 +214,11 @@
                     <?php endif;?>
                     </a>
                     
-                    <p class="colorpara"><?php echo $rows->texte ?> </p>
+                    <?php if (strlen(($rows->texte)) > 255 ){?>
+                        <p class="colorpara"><?php $t = substr($rows->texte, 0, 255)." ...";echo $t ?> </p>
+                    <?php }else{ ?>
+                        <p class="colorpara"><?php echo $rows->texte ?> </p>
+                    <?php }?>
 
                 </div>
             <?php } ?>
