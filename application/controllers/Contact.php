@@ -36,7 +36,7 @@ class Contact extends MY_Controller {
 
         if ($this->form_validation->run() == FALSE)
         {
-                redirect('/?validation=0&n='.$prenom.'&c='.$nom.'&email='.$email.'&message='.$message.'#contain_contact');
+                redirect('/contact?validation=0&n='.$prenom.'&c='.$nom.'&email='.$email.'&message='.$message.'#contain_contact');
         }
 
         $msg = $this->load->view("mail/index",$data_msg, TRUE);

@@ -135,6 +135,12 @@
           </a>
         </li>
 
+        <li>
+          <a href="<?= base_url("/edit/show_all")?>">
+            <i class="fa fa-pencil-square-o"></i> <span>Modifier article</span>
+          </a>
+        </li>
+
       </ul>
     </section>
     <!-- /.sidebar -->
