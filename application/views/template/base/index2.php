@@ -35,9 +35,9 @@ Ses evenements, Les membres de son équipes, ses actions de député et bourgmes
     <title>Françoise Schepmans femme politique belge, retrouvez toutes ses informations et contact</title>
 
 </head>
-<body style="background-image: linear-gradient(rgba(156, 156, 255, 0.19), white);">
+<body style="background-image: linear-gradient(rgba(156, 156, 255, 0.19), white); background-repeat: no-repeat;">
 
-<div style="background-color: white; box-shadow: -1em 0 125px black, 1em 0 125px black;" class="container paddingsite">
+<div style="background-color: white; box-shadow: -0.5em 0 75px rgba(0, 0, 0, 0.55), 0.5em 0 75px rgba(0, 0, 0, 0.55);" class="container paddingsite">
 
 <?php  $this->load->view('template/base/nav'); ?> 
 
