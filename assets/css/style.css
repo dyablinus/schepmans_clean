@@ -2,6 +2,16 @@
     font-family: "sullivan";
     src: url('../fonts/Sullivan.ttf')
 }
+html{
+    height: 100%
+}
+body{
+    min-height: 100%;
+    position: relative;
+}
+body div.paddingsite{
+    padding-bottom: 116px;
+}
 
 .fbtwit{
     color: #175079;
@@ -233,6 +243,10 @@ a#back-top{
 }
 #footer_padding{
     padding: initial;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     
 }
 
