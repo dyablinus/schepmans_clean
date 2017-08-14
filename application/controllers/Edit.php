@@ -96,7 +96,7 @@ class Edit extends MY_Controller {
             'id' => $id
         );
         $this->data["result"] = $this->edit_model->get_where($where);
-        $this->render('edit/update_post');
+        $this->authrender('auth/update_post');
         // renvoyer post pré-rempli
     }
 
@@ -109,16 +109,16 @@ class Edit extends MY_Controller {
         // maj db, appel de la methode du model
         $this->post_model->update($title,$message,$id);
         // renvoyer message success
-        $this->render('post/updated');
+        $this->authrender('auth/updated');
     }
 
     //suppression post
     public function delete($id){
         // recup id entre paranthese dans la function
         // delete post
-        $this->post_model->delete($id);
+        $this->edit_model->delete($id);
         // renvois message
-        $this->render('post/deleted');
+        $this->authrender('auth/show_all');
     }
 
     public function create_slider() {
