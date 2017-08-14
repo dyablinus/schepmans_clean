@@ -1,12 +1,12 @@
-<?php
-        $nom = isset($input_nom)?$input_nom:"";
-        $prenom = isset($input_prenom)?$input_prenom:"";
-        $email = isset($input_email)?$input_email:"";
-        $message = isset($input_message)?$input_message:"";
-        ?>
     <div class="container" id="contain_contact">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-lg-7 box_form_contact">
+                <?php
+                    $prenom = isset($_GET['n'])?$_GET['n']:"";
+                    $nom = isset($_GET['c'])?$_GET['c']:"";
+                    $email = isset($_GET['email'])?$_GET['email']:"";
+                    $message = isset($_GET['message'])?$_GET['message']:"";
+                ?>
                         <?php 
                             if(isset($_GET["mail"])){
                                 if($_GET["mail"] == 1){

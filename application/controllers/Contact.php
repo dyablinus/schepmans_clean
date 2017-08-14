@@ -11,7 +11,6 @@ class Contact extends MY_Controller {
 	}
 
 	    public function contact_post(){
-    //if($this->form_validation->run()){
 
         // récupérer les données
         $nom = $this->input->post('nom');
@@ -37,7 +36,7 @@ class Contact extends MY_Controller {
 
         if ($this->form_validation->run() == FALSE)
         {
-                redirect('/?validation=0&n='.$prenom.'&c='.$nom.'&email='.$email.'&message='.$message.'&reference='.'#section_register');
+                redirect('/?validation=0&n='.$prenom.'&c='.$nom.'&email='.$email.'&message='.$message.'#contain_contact');
         }
 
         $msg = $this->load->view("mail/index",$data_msg, TRUE);
@@ -52,9 +51,9 @@ class Contact extends MY_Controller {
 
 
         if(mail( 'fschepmans@molenbeek.irisnet.be', "Notification mail", $msg, $headers )){
-            redirect('/?mail=1#section_register');
+            redirect('/?mail=1#contain_contact');
         }else{
-            redirect('/?mail=0#section_register');
+            redirect('/?mail=0#contain_contact');
         }
         
 }
