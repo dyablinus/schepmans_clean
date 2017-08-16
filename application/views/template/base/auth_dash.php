@@ -110,34 +110,34 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         
-        <li class="treeview">
-          <a href="<?= base_url("/auth")?>">
+        <li style="font-size:20px">
+          <a href="<?= base_url("/auth/index")?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
 
-        <li>
+        <li style="font-size:20px">
           <a href="<?= base_url("/calendrier")?>">
             <i class="fa fa-calendar"></i> <span>Calendrier</span>
 
           </a>
         </li>
         
-        <li>
+        <li style="font-size:20px">
           <a href="<?= base_url("/newsletter")?>">
             <i class="fa fa-envelope"></i> <span>Newsletter</span>
           </a>
         </li>
 
-        <li>
-          <a href="<?= base_url("/edit")?>">
-            <i class="fa fa-files-o"></i> <span>Éditer news</span>
+        <li style="font-size:20px">
+          <a href="<?= base_url("/edit/show_all")?>">
+            <i class="fa fa-pencil-square-o"></i> <span>Modifier articles</span>
           </a>
         </li>
 
-        <li>
-          <a href="<?= base_url("/edit/show_all")?>">
-            <i class="fa fa-pencil-square-o"></i> <span>Modifier article</span>
+        <li style="font-size:20px">
+          <a href="<?= base_url("/edit")?>">
+            <i class="fa fa-files-o"></i> <span>Ajouter un article</span>
           </a>
         </li>
 
