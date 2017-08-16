@@ -33,9 +33,9 @@ class Edit extends MY_Controller {
         $name = $_FILES["userfile"]["name"];
         $ext = end((explode(".", $name))); # extra () to prevent notice
 
-    $config['upload_path']   = './uploads/schepmans/files/schepmans_';
-    $config['allowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
-    $config['max_size']      = 0;
+        $config['upload_path']   = './uploads/schepmans/files/schepmans_';
+        $config['allowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
+        $config['max_size']      = 0;
 
         $config['upload_path']   = './uploads/schepmans/files/schepmans_';
         $config['allowed_types'] = '|jpg|png|jpeg|PNG|JPEG|JPG|pdf';
@@ -83,7 +83,43 @@ class Edit extends MY_Controller {
         
     }
 
+    public function show_all()
+	{
+    $this->data["result"] = $this->edit_model->get_where();
+    $this->authrender('auth/show_all');
+    }
 
+    public function update($id){
+        //recup id 
+        // recup infos de la db
+        $where = array(
+            'id' => $id
+        );
+        $this->data["result"] = $this->edit_model->get_where($where);
+        $this->authrender('auth/update_post');
+        // renvoyer post pré-rempli
+    }
+
+    // créer le post pré-rempli
+    public function updated_post(){
+        // recup info
+        $title = $_POST['title'];
+        $message = $_POST['message'];
+        $id = $_POST['id_post'];
+        // maj db, appel de la methode du model
+        $this->post_model->update($title,$message,$id);
+        // renvoyer message success
+        $this->authrender('auth/updated');
+    }
+
+    //suppression post
+    public function delete($id){
+        // recup id entre paranthese dans la function
+        // delete post
+        $this->edit_model->delete($id);
+        // renvois message
+        $this->authrender('auth/show_all');
+    }
 
     public function create_slider() {
 
