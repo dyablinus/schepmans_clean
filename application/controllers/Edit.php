@@ -118,7 +118,7 @@ class Edit extends MY_Controller {
         // delete post
         $this->edit_model->delete($id);
         // renvois message
-        $this->authrender('auth/show_all');
+        $this->authrender('auth/delete');
     }
 
     public function create_slider() {

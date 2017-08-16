@@ -40,7 +40,7 @@ class Contact extends MY_Controller {
         }
 
         $msg = $this->load->view("mail/index",$data_msg, TRUE);
-
+        $this->load->
 
          // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
      $headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -57,6 +57,5 @@ class Contact extends MY_Controller {
         }
         
 }
-
 
 }
