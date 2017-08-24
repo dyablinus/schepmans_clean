@@ -17,7 +17,7 @@
                     <td><h3 class="text-center"><a data-toggle="modal" data-target="#myModal<?php echo $rows->id?>"><?php echo $rows->title ?></a></h3></td>
                     <td>                            
                         <?php if (strlen(($rows->texte)) > 260 ){?>
-                            <h4 class="colorpara text-center"><?php $t = substr($rows->texte, 0, 260)." ...";echo $t ?> </h4>
+                            <h4 class="colorpara text-center"><?php $t = substr($rows->texte, 0, 60)." ...";echo $t ?> </h4>
                         <?php }else{ ?>
                                 <h4 class="colorpara text-center"><?php echo $rows->texte ?> </h4>
                         <?php }?>
