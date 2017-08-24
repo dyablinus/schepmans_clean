@@ -11,6 +11,14 @@ class Edit_model extends CI_Model {
     $this->load->database();
 	}
 
+public function get_where_order_limit($where=array(),$order="desc",$by="id",$limit = 10){
+    $this->db->where('deleted',0);
+    // va chercher dans db table
+    $this->db->order_by($by,$order)
+             ->limit($limit);
+    $result = $this->db->get_where($this->table,$where);
+    return $result;
+}
 
 public function get_where($where=array()){
     $this->db->where('deleted',0);

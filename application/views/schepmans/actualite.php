@@ -7,7 +7,7 @@
 
     <div id="barre_actu"></div>
 
-    <?php $query = $this->db->query("SELECT * FROM posts WHERE valeur='Actualite' ORDER BY id DESC LIMIT 10;");
+     <?php //$query = $this->db->query("SELECT * FROM posts WHERE valeur='Actualite' ORDER BY id DESC LIMIT 10;"); 
           foreach($query->result() as $rows){ ?>
         <div class="row">   
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
