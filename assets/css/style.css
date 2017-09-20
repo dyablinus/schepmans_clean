@@ -8,6 +8,7 @@ html{
 body{
     min-height: 100%;
     position: relative;
+    background-repeat: no-repeat;
 }
 body div.paddingsite{
     padding-bottom: 116px;
