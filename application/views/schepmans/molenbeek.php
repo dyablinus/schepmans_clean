@@ -11,7 +11,7 @@
         </div>
 
     </div>
-    <?php $query = $this->db->query("SELECT * FROM posts WHERE valeur='Molenbeek' ORDER BY id DESC LIMIT 10;");
+    <?php //$query = $this->db->query("SELECT * FROM posts WHERE valeur='Molenbeek' ORDER BY id DESC LIMIT 10;");
         foreach($query->result() as $rows){ ?>
             
             <h2 class="molenbeek_title"><?php echo $rows->title ?></h2>

@@ -4,8 +4,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Molenbeek extends MY_Controller {
 		 public function __construct(){
 			 parent::__construct();
+             $this->load->model('edit_model');
 		 }
     public function index(){
+          $where = array("valeur" => 'Molenbeek');
+       $this->data["query"] = $this->edit_model->get_where_order_limit($where);
 		$this->render('schepmans/molenbeek');
 	}
 

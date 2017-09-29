@@ -10,15 +10,9 @@ class Actualite extends MY_Controller {
 
 
     public function index(){
-
-		$this->archives();
-	}
-
-
-     public function archives(){
-		 $this->data["result"] = $this->edit_model->get_where();
-
-       $this->render('schepmans/actualite');
+        $where = array("valeur" => 'Actualite');
+        $this->data["query"] = $this->edit_model->get_where_order_limit($where);
+		$this->render('schepmans/actualite');
 	}
 
 	public function article($id=FALSE){

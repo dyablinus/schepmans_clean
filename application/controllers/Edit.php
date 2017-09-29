@@ -103,13 +103,15 @@ class Edit extends MY_Controller {
     }
 
     // créer le post pré-rempli
-    public function updated_post(){
+    public function updated_post($id){
         // recup info
         $title = $_POST['title'];
-        $message = $_POST['message'];
+        $texte = $_POST['texte'];
+        $date = $_POST['date'];
+        $link = $_POST['link'];
         $id = $_POST['id_post'];
         // maj db, appel de la methode du model
-        $this->post_model->update($title,$message,$id);
+        $this->edit_model->update($title,$texte,$date,$link,$id);
         // renvoyer message success
         $this->authrender('auth/updated');
     }

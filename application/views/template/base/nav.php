@@ -62,7 +62,8 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul id="nav_j" class="nav navbar-nav nav_haut">
            <li class="hovernav">
-            <a title="Aller vers la page d'accueil" accesskey="h" class="a_nav_top" href="<?= base_url("/index") ?>">HOME</a>
+            <!-- <a title="Aller vers la page d'accueil" accesskey="h" class="a_nav_top" href="<?= base_url("/index") ?>">HOME</a> -->
+            <a title="Aller vers la page d'accueil" accesskey="h" class="a_nav_top" href="<?= base_url("/") ?>">HOME</a>
            </li>
             <li class="hovernav">
             <a title="En savoir d\'avantage sur Françoise Schepmans" accesskey="q" class="a_nav_top" href="<?= base_url("/about") ?>"><?php echo lang('nav_a_href_whoim');?></a>
