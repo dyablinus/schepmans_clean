@@ -103,7 +103,7 @@ class Edit extends MY_Controller {
     }
 
     // créer le post pré-rempli
-    public function update_post($id){
+    public function updated_post($id){
         // recup info
         $title = $_POST['title'];
         $texte = $_POST['texte'];
