@@ -103,7 +103,7 @@ class Edit extends MY_Controller {
     }
 
     // créer le post pré-rempli
-    public function updated_post($id){
+    public function update_post($id){
         // recup info
         $title = $_POST['title'];
         $texte = $_POST['texte'];
@@ -113,7 +113,7 @@ class Edit extends MY_Controller {
         // maj db, appel de la methode du model
         $this->edit_model->update($title,$texte,$date,$link,$id);
         // renvoyer message success
-        $this->authrender('auth/updated');
+        $this->authrender('auth/upload_success');
     }
 
     //suppression post

@@ -40,7 +40,7 @@
                         </div>
                         <div class="modal-body" id="contentEdit">
 
-                                <?= form_open('edit/updated_post/'); ?>
+                                <?= form_open('edit/update_post/'); ?>
                                 <?php
 
                                 $data_title = array(

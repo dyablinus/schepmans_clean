@@ -3,7 +3,7 @@
     <h1>Modifier l'article</h1>
 
     <?php foreach($result->result() as $rows){ ?>
-    <?= form_open('edit/updated_post/'); ?>
+    <?= form_open('edit/update_post/'); ?>
     <?php
 
     $data_title = array(

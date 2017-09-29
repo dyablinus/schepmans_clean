@@ -132,7 +132,7 @@
 
 <section>
 
-    <div class="col-xs-12 col-sm-12 col-md-8" id="marginpourfooter">
+    <div class="col-xs-12 col-sm-12 col-md-9" id="marginpourfooter">
 
         <div class="row">
             <div class="col-md-12 textdeco">
