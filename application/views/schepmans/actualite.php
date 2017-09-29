@@ -18,7 +18,7 @@
                 </div>
                     
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box_actu">  
-                    <a target="_blank" href="<?php echo base_url("/actualite/show/".$rows->id) ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"> 
+                    <a target="_blank" href="<?php echo base_url("/actualite/article/".$rows->id) ?>" title="Plus d'information sur cet artcile de Françoise Schepmans'"> 
                         <div id="actu_margin_titre" class="hidden_actu"><h4><?php echo $rows->title ?></h4>
                             <div class="date hidden_actu">
                                 <i class="fa fa-calendar-o" aria-hidden="true"></i><?php echo $rows->date ?>

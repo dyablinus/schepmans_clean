@@ -1,7 +1,8 @@
 
         <!-- Left col -->
         <section class="col-lg-6 connectedSortable">
-        
+                <?php echo $this->session->flashdata('success'); ?> 
+                <?php echo $this->session->flashdata('error'); ?>
           <!-- TO DO List -->
 
           <h1>Éditer le slider de la page d'accueil</h1>

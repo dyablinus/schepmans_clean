@@ -21,7 +21,7 @@ class Actualite extends MY_Controller {
        $this->render('schepmans/actualite');
 	}
 
-	public function show($id=FALSE){
+	public function article($id=FALSE){
     // place en paramettre l'id
         if($id===FALSE){
             $this->index();

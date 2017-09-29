@@ -1,6 +1,8 @@
 
+                
         <section class="col-lg-4 col-md-offset-2 connectedSortable">
-
+                <?php echo $this->session->flashdata('success'); ?> 
+                <?php echo $this->session->flashdata('error'); ?>
                 <h1>Nouvel article</h1>
 
              
@@ -63,7 +65,7 @@
                 <?php echo form_input($data_date); ?>
                 
                 <?php echo form_error('link'); ?>
-                <?php echo form_label('Lien vers le site de l\'article', 'link'); ?>
+                <?php echo form_label('Lien vers le site de l\'article (optionnel)', 'link'); ?>
                 <?php echo form_input($data_link); ?>
                 
                 <?php echo form_error('file'); ?>
@@ -78,9 +80,9 @@
                 <?php echo form_textarea($data_texte); ?>
                 
                 <?php echo form_submit('mysubmit', 'Publish', array('class' => 'btn btn-primary')); ?>
-
                 <?php echo form_close() ?> 
         </section>
+                
 
 
  

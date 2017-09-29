@@ -43,14 +43,14 @@ class Edit extends MY_Controller {
 
         $this->load->library('upload', $config);
 
+        $this->form_validation->set_rules('valeur', 'value', 'required');
         $this->form_validation->set_rules('title', 'Title', 'required|min_length[2]');
         $this->form_validation->set_rules('date', 'date', 'required|min_length[2]');
         $this->form_validation->set_rules('texte', 'texte', 'required|min_length[2]');
-        $this->form_validation->set_rules('link', 'link', 'required|min_length[2]');
-        $this->form_validation->set_rules('valeur', 'value', 'required');
+       
 
-        if ($this->form_validation->run() == TRUE) {
-
+      
+            
             if ($this->upload->do_upload('userfile')) {
 
                 $data = $this->upload->data(); // Get the file data
@@ -62,22 +62,24 @@ class Edit extends MY_Controller {
 
                 $this->db->insert('posts', array(
                     // So you can work with the values, like:
+                    'valeur' => $this->input->post('valeur', true),
                     'title' => $this->input->post('title', true), // TRUE is XSS protection
                     'date' => $this->input->post('date', true),
                     'texte' => $this->input->post('texte', true),
                     'link' => $this->input->post('link', true),
                     'file_name' => $file_data['file_name'],
-                    'valeur' => $this->input->post('valeur', true),
                 ));
 
-                $this->session->set_flashdata('success', 'Form submitted successfully');
+                $this->session->set_flashdata('success', "<div class='alert alert-success' style='font-size: 20px;'>Succés.</div>");
                 redirect('edit');
-            } else {
-                $this->session->set_flashdata('error', $this->upload->display_errors());
-                redirect('edit');
-            }
-            } else {
-            $this->session->set_flashdata('error', validation_errors());
+            } 
+            // else {
+            //     $this->session->set_flashdata('error', $this->upload->display_errors());
+            //     redirect('edit');
+            // }
+             else {
+                
+            $this->session->set_flashdata('error', "<div class='alert alert-danger' style='font-size: 20px;'>Veuillez remplir toutes les cases.</div>");
             redirect('edit');
         }
         
@@ -135,9 +137,9 @@ class Edit extends MY_Controller {
         $this->load->library('upload', $config);
 
         $this->form_validation->set_rules('title', 'Title', 'required|min_length[2]');
-        // $this->form_validation->set_rules('date', 'date', 'required|min_length[2]');
-        // $this->form_validation->set_rules('texte', 'texte', 'required|min_length[2]');
-        // $this->form_validation->set_rules('link', 'link', 'required|min_length[2]');
+        $this->form_validation->set_rules('date', 'date', 'required|min_length[2]');
+        $this->form_validation->set_rules('texte', 'texte', 'required|min_length[2]');
+        $this->form_validation->set_rules('link', 'link', 'required|min_length[2]');
 
         if ($this->form_validation->run() == TRUE) {
 
@@ -160,15 +162,15 @@ class Edit extends MY_Controller {
                     
                 ));
 
-                $this->session->set_flashdata('success', 'Form submitted successfully');
-                redirect('edit');
+               $this->session->set_flashdata('success', "<div class='alert alert-success' style='font-size: 20px;'>Succés.</div>");
+                redirect('auth/index');
             } else {
                 $this->session->set_flashdata('error', $this->upload->display_errors());
-                redirect('edit');
+                redirect('auth/index');
             }
             } else {
-            $this->session->set_flashdata('error', validation_errors());
-            redirect('edit');
+            $this->session->set_flashdata('error', "<div class='alert alert-danger' style='font-size: 20px;'>Veuillez remplir toutes les cases.</div>");
+            redirect('auth/index');
         }
     }
 
